@@ -1,0 +1,481 @@
+ .legalvisionbannerbtn {
+          position: relative;
+        }
+        .legalvision-gridR .listText li {
+          text-align: left;
+          display: flex;
+          align-items: center;
+          gap: 9px 8px;
+          margin: 5px 0;
+        }
+        .legalvision-flex .legalvision-gridR strong {
+          display: inline-block;
+          margin-top: 4px;
+          font-size: 28px;
+          font-weight: 600;
+      }
+          .lightButton {
+    position: relative;
+}
+
+        .legalvision-gridR .listText {
+          display: flex;
+          justify-content: center;
+          text-align: left;
+        }
+        .legalvisionSectionBanner h2 {
+          color: #29292b;
+          text-align: center;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 415;
+          line-height: 60px;
+          letter-spacing: -1.44px;
+          font-family: sequel_sans !important;
+        }
+        .legalvisionSectionBanner h1 {
+            -webkit-text-fill-color: transparent;
+    text-align: center;
+    letter-spacing: -2.16px;
+    /* background: linear-gradient(90deg, #1ab2ff 10.15%, #ffb258 69%); */
+    -webkit-background-clip: text;
+    background-clip: text;
+    width: 1052px;
+    margin: 0 auto;
+    font-size: 99px;
+    font-style: normal;
+    font-weight: 425;
+    line-height: 121px;
+    font-family: sequel_sans_bold_disp !important;
+        }
+        .saprateSpace {
+          color: #757b8a;
+          max-width: 100%;
+          font-family: sequel_sans_roman_head !important;
+          max-width: 1022px;
+          margin: 22px auto 22px;
+          text-align: center;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+          display: inline-block;
+          width: 100%;
+        }
+        .legalvisionSectionBanner p {
+          max-width: 100%;
+          font-family: sequel_sans_roman_head !important;
+          padding-top: 15px;
+          max-width: 613px;
+          margin: 0 auto 20px;
+          color: #29292b;
+          text-align: center;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+        }
+        .downClickButton {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          cursor: pointer;
+        }
+        .legalvision-flex {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 20px;
+          padding: 100px 0;
+          align-items: center;
+        }
+        .legalvision-flex .legalvision-gridR {
+          text-align: center;
+        }
+        .legalvision-flex .legalvision-gridR ul li {
+          color: #757b8a;
+          text-align: center;
+          font-family: Sequel Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+          font-family: sequel_sans_roman_head !important;
+          list-style: none;
+        }
+        .legalvision-flex .legalvision-gridR p {
+          color: #29292b;
+          text-align: center;
+          letter-spacing: -0.72px;
+          max-width: 613px;
+          margin: 0 auto 20px;
+          padding-top: 9px;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          font-family: sequel_sans_roman_head !important;
+        }
+        .legalvision-flex .legalvision-gridR span {
+          color: #757b8a;
+          text-align: center;
+          font-family: Sequel Sans;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 32px;
+          letter-spacing: -0.72px;
+          font-family: sequel_sans_roman_head !important;
+        }
+        .legalvision-flex .legalvision-gridR h3 {
+          text-align: center;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 100;
+          line-height: 40px;
+          font-family: sequel_sans !important;
+          margin: 10px 0;
+          color: #29292b;
+        }
+        .legalvision-special-sec {
+          width: 1220px;
+          margin: 0 auto;
+        }
+        .legalvisionSectionBanner {
+    margin-top: -100px;
+    padding-top: 48px;
+}
+
+
+
+
+.partnerWrap {
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
+    gap: 0;
+    width: 1313px;
+    margin: -33px auto 0;
+    padding: 0 0 35px;
+    display: grid;
+}
+.partnerWrap .middleItem {
+    position: relative;
+    top: 28px;
+}
+.partnerWrap ul {
+    display: grid;
+    gap: 48px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.partnerWrap ul.leftItems {
+    position: relative;
+    left: 70px;
+}
+.partnerWrap ul.RightItems {
+    position: relative;
+    right: 70px;
+}
+.partnerWrap ul li {
+    list-style: none;
+    text-align: center;
+}
+.partnerWrap ul li span {
+    background: #757b8a;
+    border-radius: 9.43px;
+    justify-content: center;
+    align-items: center;
+    width: 37.71px;
+    height: 37.71px;
+    display: flex;
+    margin: 0 auto 6px;
+}
+.partnerWrap ul li p {
+    padding: 0;
+    display: inline-block;
+    color: #757b8a;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 20px;
+    font-family: 'sequel_sans' !important;
+    margin: 0;
+}
+.partnerWrap .activeBusiness {
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+.adminSlideWrap {
+    position: relative;
+}
+.adminSlideWrap img {
+    z-index: 2;
+    position: relative;
+    height: 86%;
+}
+.adminSlideWrap > img, .middleItem > img {
+    pointer-events: none;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.adminSlideWrap .adminSlideGrid {
+    gap: 36px;
+    width: 423px;
+    margin: 0 auto;
+    display: flex;
+    position: absolute;
+    top: 12px;
+    left: 2px;
+    right: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+.adminSlideTrack {
+    display: flex;
+    gap: 36px;
+    will-change: transform;
+    cursor: grab;
+}
+/* .adminSlideGrid img {
+    clip-path: polygon(0 0, 99% 0%, 100% 100%, 0 100%);dfgfd
+} */  
+.adminSlideItem img {
+    /* width: 421px; */
+    width: 420.8px;
+    -webkit-user-drag: none;
+    user-select: none;
+}
+.adminSlideGrid .itemActive {
+  display: block;
+}
+.adminSlideGrid .itemDeactive {
+  display: none;
+}
+.partnerWrap .activeBusiness .activeBorder:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    background: linear-gradient(0deg,#ffb258 14%,#24b3f8 109%);
+    z-index: -1;
+    border-radius: 25px;
+}
+.partnerWrap .activeBusiness .activeBorder {
+    background: #fff padding-box padding-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 20px;
+    min-width: 118.11px;
+    height: 87.22px;
+    padding: 12px 9px;
+    position: absolute;
+    left: 0;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, .2);
+    border-radius: 25px !important;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.partnerWrap .activeBusiness .activeBorder svg {
+    margin: 0 auto;
+}
+.partnerWrap .activeBusiness .activeBorder p {
+   padding: 0;
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 20px;
+    font-family: 'sequel_sans' !important;
+    margin: 0;
+}
+
+
+
+
+        @media screen and (max-width: 767px) {
+          .toMuchAdminApplication .sliderTabWrapper .slick-list {
+    padding: 11px 20px !important;
+}
+        }
+        @media screen and (max-width: 600px) {
+            .adminSlideItem img {
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 423.8px;
+}
+.adminSlideWrap img {
+    z-index: 2;
+    height: 100%;
+    position: relative;
+    object-fit: contain;
+}
+.adminSlideWrap .adminSlideGrid {
+    height: 200px;
+}
+          .partnerWrap ul.leftItems,.partnerWrap ul.RightItems {
+    position: relative;
+    left: 0;
+    right: 0;
+    display: inline-block;
+}
+.partnerWrap ul li {
+    margin: 0 9px;
+    display: inline-block;
+}
+          .partnerWrap {
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 0 0 35px;
+    display: grid;
+}
+
+.partnerWrap .activeBusiness .activeBorder {
+    height: 72.22px;
+    padding: 6px 9px;
+    position: relative;
+}
+.partnerWrap ul li p {
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.partnerWrap .activeBusiness .activeBorder p {
+    font-size: 13px;
+    letter-spacing: 0;
+}
+.downClickButton {
+    padding-top: 0 !important;
+}
+.adminSlideWrap .adminSlideGrid {
+    width: 269px;
+    margin: 0 auto;
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 0;
+}
+.adminSlideTrack {
+    gap: 36px;
+}
+
+.partnerWrap .activeBusiness {
+    z-index: 2;
+    position: absolute;
+    top: initial;
+    right: 0;
+    bottom: 19px;
+    left: 0;
+    margin: 0 auto;
+    width: 128px;
+}
+.partnerWrap .middleItem {
+    position: relative;
+    top: 0;
+}
+          .legalvisionSectionBanner {
+    margin-top: -66px;
+    padding-top: 36px;
+}
+.navbar-logo-wrapper1 img {
+    width: 169.94px;
+    height: auto;
+    margin-top: 10px;
+}
+.bgshadowwrapper1:before {
+    left: -277px;
+}
+.legalvision-flex .legalvision-gridR strong {
+    display: block;
+}
+.bgshadowwrapper1:after {
+    right: -270px;
+}
+      .legalvisionSectionBanner h1 {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 41px;
+    line-height: 63px;
+}
+          .legalvisionSectionBanner h2 {
+            font-size: 35px;
+            line-height: 26px;
+          }
+          .compaire-service01 img {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 0px;
+          }
+          .legalvisionSectionBanner p {
+            max-width: 100%;
+            margin: 11px auto 20px;
+            padding-top: 15px;
+            font-size: 18px;
+            line-height: 27px;
+            padding: 0 20px;
+          }
+          .saprateSpace {
+            font-size: 14px;
+            margin: 10px auto;
+          }
+          .legalvision-flex .legalvision-gridR h3 {
+            margin: 0px 0;
+            font-size: 23px;
+          }
+          .legalvision-special-sec {
+            width: 100%;
+            margin: 0 auto;
+          }
+          .legalvision-flex {
+            grid-template-columns: 1fr;
+            align-items: center;
+            gap: 20px;
+            padding: 46px 0 9px;
+            display: grid;
+          }
+          .legalvision-flex .legalvision-gridR span {
+            font-size: 20px;
+            line-height: 23px;
+          }
+          .legalvision-flex .legalvision-gridR ul li {
+            font-size: 19px;
+            line-height: 27px;
+          }
+          .legalvision-flex .legalvision-gridR p {
+            max-width: 90%;
+            margin: 0 auto 20px;
+            font-size: 19px;
+            line-height: 27px;
+          }
+          .sliderTabWrapper .slick-list {
+    padding: 11px 20px !important;
+}
+        }
+
+               .smokeyGradient {
+        background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+        background-size: 300%;
+        animation: smokeMove 6s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* font-weight: 600; */
+      }
+      
+      @keyframes smokeMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }

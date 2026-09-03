@@ -1,0 +1,161 @@
+@keyframes infiniteRotate {
+  0% { transform: rotateZ(0deg); }
+  100% { transform: rotateZ(360deg); }
+}
+
+@keyframes drawStroke {
+  0% {
+    stroke-dasharray: 0, 284.533;
+    stroke-dashoffset: 284.533;
+  }
+  100% {
+    stroke-dasharray: 284.533, 0;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fadeInOut {
+  0%, 50% { opacity: 1; }
+  50.1%, 100% { opacity: 0; }
+}
+
+.darkStyle {
+    color: #fff;
+    text-align: center;
+    background-color: #29292b;
+    border: 3px solid transparent;
+    border-radius: 2rem;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    padding: 18px 23px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    display: flex;
+    font-family: sequel_sans !important;
+  }
+  .darkStyle svg {
+    position: relative;
+    top: 4px;
+  }
+  .gradient_background{
+    border-radius: 2rem;
+    /* transform: scale(2); */
+    /* background-image: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%); */
+    padding: 1px;
+    position: relative;
+    display: inline-block;
+    /* transition: background-image 1s linear infinite; */
+  }
+
+/* Ensure content sits above decorative layers */
+.darkStyle {
+  position: relative;
+  z-index: 1;
+}
+
+/* Tron hover/rotate and stroke layers adapted for dark button */
+.btn-base--tron-radial1 {
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  display: block;
+  position: absolute;
+  inset: -3px;
+  opacity: 0;
+  border-radius: 2rem;
+  overflow: hidden;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  animation: fadeInOut 10s linear infinite;
+  pointer-events: none;
+}
+
+.radial-embed-nav1 {
+  border-radius: 2rem;
+  flex: none;
+  position: absolute;
+  inset: 0%;
+  overflow: hidden;
+}
+
+.radial-embed-nav1 svg {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.tron-icon_nav1 {
+  stroke: url(#linear-gradient-tronnav);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: black;
+  strokeWidth: 2px;
+  stroke-dasharray: 284.533, 284.533;
+  stroke-dashoffset: 284.533;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-btn--get-started:hover .tron-icon_nav1 {
+  animation: drawStroke 2s ease infinite;
+}
+
+.btn-base--tron-hover1 {
+  z-index: auto;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: absolute;
+  inset: -3px;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.tron-hover-rotate1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  animation: infiniteRotate 4s linear infinite;
+  transform-style: preserve-3d;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tron-hover-rotate1.small1 {
+  width: 15rem;
+  height: 15rem;
+}
+
+.nav-btn--get-started:hover .tron-hover-rotate1 {
+  opacity: 1;
+}
+
+.btn-base--tron-radiall {
+    opacity: 0;
+    pointer-events: none;
+    opacity: 1;
+    border-radius: 2rem;
+    align-items: flex-start;
+    width: calc(100% + 6px);
+    height: calc(100% + 10px);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 195px 126px;
+    animation: 4s linear infinite fadeInOut;
+    display: block;
+    position: absolute;
+    inset: -146px;
+}

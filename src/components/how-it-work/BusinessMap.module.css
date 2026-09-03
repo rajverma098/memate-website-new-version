@@ -1,0 +1,370 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+}
+
+/* .scene {
+  position: relative;
+  overflow: visible;
+} */
+
+/* .withBackground {
+  background:
+    radial-gradient(
+      circle at 30% 48%,
+      rgba(164, 125, 91, 0.38),
+      transparent 48%
+    ),
+    radial-gradient(
+      circle at 78% 55%,
+      rgba(38, 105, 120, 0.28),
+      transparent 45%
+    ),
+    linear-gradient(
+      110deg,
+      #302b27 0%,
+      #3c3734 38%,
+      #25363b 72%,
+      #1d3339 100%
+    );
+
+  border-radius: 0;
+} */
+
+.canvas {
+  position: relative;
+
+  transform-style: preserve-3d;
+
+  overflow: visible;
+}
+
+.connectionLayer {
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  
+
+  overflow: visible;
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+.connection {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-width: 1.25;
+  stroke-dasharray: 4 5;
+  stroke-dashoffset: 0;
+  animation: moveDash var(--line-duration, 1.5s) linear infinite;
+}
+
+/* @keyframes moveDash {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -18;
+  }
+} */
+
+
+.nodeWrapper {
+  position: absolute;
+
+  z-index: 10;
+
+  cursor: pointer;
+
+  transition:
+    z-index 0s linear,
+    transform 0.2s ease;
+}
+
+.nodeWrapper:hover {
+  z-index: 100;
+}
+
+
+.nodeBox {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 0 15px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px dashed var(--node-color);
+
+  border-radius: 11px;
+
+  box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.13);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+
+.nodeWrapper:hover .nodeBox {
+  transform: scale(1.025);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.2);
+}
+
+
+.nodeIcon {
+  width: 22px;
+  min-width: 22px;
+
+  height: 22px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 19px;
+
+  line-height: 1;
+
+  opacity: 0.95;
+}
+
+
+.nodeTitle {
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1;
+
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  letter-spacing: -0.15px;
+}
+
+
+.tooltip {
+  position: absolute;
+
+  z-index: 500;
+
+  box-sizing: border-box;
+
+  padding: 12px 14px 13px;
+
+  background: #ffffff;
+
+  border-radius: 7px;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.19);
+
+  color: #333;
+
+  pointer-events: none;
+
+  animation:
+    tooltipIn 0.18s
+    cubic-bezier(0.2, 0.8, 0.2, 1)
+    both;
+}
+
+/* =========================================================
+   TOOLTIP POSITIONS
+========================================================= */
+
+.tooltip-right {
+  left: calc(100% + 10px);
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.tooltip-left {
+  right: calc(100% + 10px);
+
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.tooltip-top {
+  left: 50%;
+
+  bottom: calc(100% + 10px);
+
+  transform: translateX(-50%);
+}
+
+.tooltip-bottom {
+  left: 50%;
+
+  top: calc(100% + 10px);
+
+  transform: translateX(-50%);
+}
+
+/* =========================================================
+   TOOLTIP ARROW
+========================================================= */
+
+.tooltip-right::before,
+.tooltip-left::before,
+.tooltip-top::before,
+.tooltip-bottom::before {
+  content: "";
+
+  position: absolute;
+
+  width: 9px;
+  height: 9px;
+
+  background: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+/* right */
+
+.tooltip-right::before {
+  left: -4px;
+
+  top: 50%;
+
+  margin-top: -4px;
+}
+
+/* left */
+
+.tooltip-left::before {
+  right: -4px;
+
+  top: 50%;
+
+  margin-top: -4px;
+}
+
+/* top */
+
+.tooltip-top::before {
+  left: 50%;
+
+  bottom: -4px;
+
+  margin-left: -4px;
+}
+
+/* bottom */
+
+.tooltip-bottom::before {
+  left: 50%;
+
+  top: -4px;
+
+  margin-left: -4px;
+}
+
+/* =========================================================
+   TOOLTIP TEXT
+========================================================= */
+
+.tooltipTitle {
+  position: relative;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  line-height: 1.15;
+
+  margin-bottom: 4px;
+}
+
+.tooltipText {
+  position: relative;
+
+  color: #3e3e3e;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  font-size: 12px;
+
+  line-height: 1.15;
+
+  font-weight: 400;
+}
+
+/* =========================================================
+   TOOLTIP ANIMATION
+========================================================= */
+
+@keyframes tooltipIn {
+  from {
+    opacity: 0;
+
+    scale: 0.96;
+  }
+
+  to {
+    opacity: 1;
+
+    scale: 1;
+  }
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+  .scene {
+    overflow-x: auto;
+
+    overflow-y: visible;
+
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .scene {
+    overflow-x: auto;
+  }
+}

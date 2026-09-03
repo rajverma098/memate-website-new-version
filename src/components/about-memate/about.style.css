@@ -1,0 +1,164 @@
+.weightAndFamily{
+    font-family: 'sequel_sans_bold_disp' !important;
+}
+.aboutgradient {
+    color: rgba(0, 0, 0, 0);
+    text-align: center;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+    letter-spacing: -2.16px;
+    -webkit-background-clip: text;
+    margin-top: 12px;
+    padding-bottom: 27px;
+    padding-right: 0;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.aboutSwitchingSection01
+{
+    width: 1200px;
+    margin: 16px auto;
+}
+.aboutSwitchingSection01 h2 {
+    color: #29292b;
+    text-align: center;
+    letter-spacing: -1.44px;
+    font-family: 'sequel_sans';
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    margin: 100px 0 50px;
+}
+.aboutSwitchingSection01 .m8InSection01 {
+    border: 3px solid rgba(0, 0, 0, 0);
+    border-color: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+    background: #fff padding-box padding-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 16px 22px 88px 16px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0px 8px 10px 48px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, .2);
+}
+.aboutSwitchingSection01 .m8InSection01:before {
+    content: "";
+    z-index: -1;
+    background: linear-gradient(to top, #ffb258 14%, #24b3f8 109%);
+    position: absolute;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border-radius: 16px 22px 88px 16px;
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexRight {
+    background: radial-gradient(1656.37% 105.8% at 0 15.21%, #1ab2ff 0%, #ffb258 100%), #f7f9fc;
+    border-radius: 16px 22px 88px 16px;
+    width: 537px;
+    height: 413px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexRight img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 16px 22px 88px 16px;
+ 
+  }
+
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft h3 {
+    color: #29292B;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+    font-family: "sequel_sans";
+     margin-top: 16px;
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft strong {
+    color: #29292B;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+     font-family: 'sequel_sans_roman_head' !important;
+   
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft ul {
+   margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   
+   
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft ul li {
+    color: #888E9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+    font-family: 'sequel_sans_roman_head' !important;
+   
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft p  {
+  color: #888E9E;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+    padding: 5px 0;
+    font-family: 'sequel_sans_roman_head' !important;
+    width: 395px;
+}
+@media screen and (max-width: 767px) {
+    div#aboutPage {
+        padding: 0 15px;
+    }
+
+.aboutSwitchingSection01 .m8InSection01 {
+    height: 100%;
+    padding: 17px 17px 17px 27px;
+    display: block;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(149, 157, 165, .2);
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexRight {
+    width: auto;
+    height: auto;
+    margin: 23px 0;
+    display: flex;
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft p {
+    width: auto;
+}
+.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft ul li br,.aboutSwitchingSection01 .m8InSection01 .m8InFlexLeft strong br {
+    display: none;
+}
+.aboutSwitchingSection01 {
+    width: 100%;
+    margin: 16px auto;
+}
+.about-module-scss-module__2F245W__teamflexWrap .about-module-scss-module__2F245W__imageGrid {
+    text-align: center;
+    border-radius: 30px;
+    width: 283px;
+    height: 545px;
+    background-position: center !important;
+    background-size: cover !important;
+}
+}
+

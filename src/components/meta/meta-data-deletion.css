@@ -1,0 +1,263 @@
+  .meta-data-deletion * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .meta-data-deletion {
+     font-family: 'sequel_sans' !important;
+      background: #f4f7fb;
+      color: #222;
+      line-height: 1.6;
+      padding: 0px 20px;
+    }
+.meta-data-deletion {
+    background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/nextstep-shadow.png) 50%/contain no-repeat;
+}
+    .meta-data-deletion .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .meta-data-deletion .card {
+      background: #ffffff00;
+      border-radius: 20px;
+      overflow: hidden;
+
+    }
+
+.meta-data-deletion .hero {
+    color: #000;
+    background: #f7f8fa;
+    padding: 32px 40px;
+    text-align: center;
+}
+
+   .meta-data-deletion .hero h1 {
+    margin-bottom: 15px;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .2px;
+    color: #29292b;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 40px;
+    font-family: sequel_sans_semi_bold_disp !important;
+}
+    .meta-data-deletion .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .meta-data-deletion .content {
+      padding: 50px 0px 0;
+    }
+
+    .meta-data-deletion .intro {
+    color: #555;
+    font-size: 21px;
+    text-align: center;
+    width: 62%;
+    margin: 0 auto 40px;
+}
+.meta-data-deletion .timeline p,.meta-data-deletion .timeline p span {
+    font-size: 16px;
+    font-weight: 400 !important;
+      font-family: sequel_sans_semi_bold_disp !important;
+}
+
+    .meta-data-deletion .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+      margin-bottom: 35px;
+    }
+
+    .meta-data-deletion .box {
+      background: #f9fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 30px;
+      transition: 0.3s ease;
+    }
+
+    .meta-data-deletion .box:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .meta-data-deletion .box h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .meta-data-deletion .box p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .meta-data-deletion .email-box,
+    .meta-data-deletion .subject-box,
+    .meta-data-deletion .step-box {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 12px;
+      margin-top: 15px;
+    }
+
+ .meta-data-deletion .email-box a {
+    color: #1ab2ff;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+    .meta-data-deletion .email-box a:hover {
+      text-decoration: underline;
+    }
+
+    .meta-data-deletion ul {
+      list-style: none;
+    }
+
+    .meta-data-deletion ul li {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 45px;
+    }
+
+  .meta-data-deletion ul li:before {
+    content: "";
+    background: linear-gradient(43deg, #1ab2ffb5 33.15%, #ffb258e0 62%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 22px;
+    left: 18px;
+}
+
+  .meta-data-deletion .timeline {
+    background: #ededed;
+    border: 1px solid #f3f3f3;
+    border-radius: 16px;
+    margin-bottom: 35px;
+    padding: 30px;
+}
+
+    .meta-data-deletion .timeline h3 {
+      margin-bottom: 15px;
+      font-size: 24px;
+    }
+
+    .meta-data-deletion .timeline span {
+      color: #1ab2ff;
+      font-weight: bold;
+    }
+
+    .meta-data-deletion .facebook-box {
+         background: #ededed;
+    border: 1px solid #f3f3f3;
+      padding: 35px;
+      border-radius: 16px;
+      margin-bottom: 35px;
+    }
+
+    .meta-data-deletion .facebook-box p {
+        font-size: 16px;
+    font-weight: 400 !important;
+      font-family: sequel_sans_semi_bold_disp !important;
+    }
+
+    .meta-data-deletion .facebook-box h2 {
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+   .meta-data-deletion .step-box {
+    color: #374151;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+ .meta-data-deletion .contact {
+    color: #fff;
+    text-align: center;
+    background: #ececee;
+    border-radius: 16px;
+    padding: 40px;
+}
+ .meta-data-deletion .contact p {
+    font-size: 16px;
+    font-weight: 400 !important;
+      font-family: sequel_sans_semi_bold_disp !important;
+}
+ .meta-data-deletion p {
+    font-size: 16px;
+    font-weight: 400 !important;
+      font-family: sequel_sans_semi_bold_disp !important;
+}
+
+ .meta-data-deletion .contact h2 {
+    margin-bottom: 15px;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .2px;
+    color: #29292b;
+    text-align: center;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 40px;
+    font-family: sequel_sans_semi_bold_disp !important;
+}
+
+    .meta-data-deletion .contact p {
+      color: #000;
+      margin-bottom: 25px;
+    }
+
+  .meta-data-deletion .contact a {
+    color: #111827;
+    background: #fff;
+    border-radius: 10px;
+    padding: 14px 28px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all .3s;
+    display: inline-block;
+}
+    .meta-data-deletion .contact a:hover {
+      background: #f3f4f6;
+    }
+
+    @media(max-width: 768px) {
+      .meta-data-deletion .hero {
+        padding: 40px 25px;
+      }
+
+      .meta-data-deletion .hero h1 {
+        font-size: 30px;
+      }
+
+      .meta-data-deletion .content {
+        padding: 30px 20px;
+      }
+
+      .meta-data-deletion .box,
+      .meta-data-deletion .timeline,
+      .meta-data-deletion .facebook-box,
+      .meta-data-deletion .contact {
+        padding: 25px;
+      }
+    }

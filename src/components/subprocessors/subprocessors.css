@@ -1,0 +1,127 @@
+.SubPageWrap {
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 81px;
+}
+.SubPageHead {
+    text-align: center;
+    padding: 55px 0;
+}
+.SubPageHead h1{
+   font-family: 'sequel_sansbook_head' !important;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    text-align: center;
+    color: rgba(41, 41, 43, 1);
+}
+.SubPageHead span {
+    letter-spacing: -.48px;
+    text-align: center;
+    color: #757b8a;
+    font-size: 18px;
+    font-weight: 360;
+    line-height: 24px;
+    font-family: 'sequel_sans_roman_head' !important;
+    margin: 7px 0 17px;
+    display: inline-block;
+}
+.SubPageHead p{
+    color: rgba(117, 123, 138, 1);
+    font-family: 'sequel_sans_roman_head' !important;
+    font-weight: 360;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.48px;
+    text-align: center;
+}
+
+
+.SubPageWrap .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.SubPageWrap .services-table {
+    border-collapse: collapse;
+    border: 0px solid #e5e7eb;
+    width: 100%;
+}
+
+.SubPageWrap .services-table thead {
+    background-color: #ffffff00;
+}
+.SubPageWrap .services-table td,.SubPageWrap .services-table th
+ {
+ padding: 19px 10px;
+  text-align: left;
+  font-size: 14px;
+  border-bottom: 1px solid rgba(234, 236, 240, 1)
+}
+.SubPageWrap .services-table td {
+     font-family: 'sequel_sansbook_head' !important;
+    font-weight: 405;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);
+}
+.SubPageWrap .services-table td a {
+     color: rgba(81, 162, 255, 1);
+}
+.SubPageWrap .services-table tr:nth-child(even) {
+background: rgba(249, 250, 251, 1);
+}
+.SubPageWrap .services-table th {
+    color: rgba(117, 123, 138, 1);
+    font-family: 'sequel_sans' !important;
+    font-weight: 415;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.SubPageWrap .services-table tbody tr:hover {
+  background-color: #f3f4f6;
+}
+
+.SubPageWrap .services-table a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.SubPageWrap .services-table a:hover {
+  text-decoration: underline;
+}
+
+
+
+ @media screen and (max-width: 767px) {
+.SubPageWrap {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.SubPageHead p {
+    color: rgb(117, 123, 138);
+    letter-spacing: -0.48px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 360;
+    line-height: 140%;
+    font-family: sequel_sans_roman_head !important;
+}
+.SubPageHead p {
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 20px;
+}
+.SubPageWrap .services-table td,.SubPageWrap .services-table th {
+    white-space: nowrap;
+    padding: 16px 27px;
+}
+ }

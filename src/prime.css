@@ -1,0 +1,47 @@
+.gradientHeading {
+     font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-size: 194px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 178px;
+    text-align: center;
+}
+.gradiientColor{
+    -webkit-text-fill-color: #0000;
+    background: linear-gradient(90deg, #1ab2ff 10.15%, #ffb258 69%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.minHeightBenifit {
+    min-height: 124px;
+}
+.grdientWidt1198 {
+    width: 1198px;
+}
+@media screen and (max-width: 767px) {
+    .minHeightBenifit {
+    min-height: auto;
+}
+.sales-heading.client-heading-ServiceM8 {
+    width: auto !important;
+    margin-bottom: 13px;
+}
+    .one-application-wrappers {
+    width: 1200px;
+    }
+    .gradientHeading {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    .smart-investment-bannerF {
+    font-size: 72px !important;
+    line-height: 64px!important;
+}
+    .gradientHeading.header-text {
+        font-size: 42px;
+        letter-spacing: 1px;
+        line-height: 44px;
+        font-weight: 100;
+    }
+
+}

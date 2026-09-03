@@ -1,0 +1,215 @@
+.gridButtonStyle {
+    grid-template-columns: auto auto;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    display: grid;
+}
+.topSpaceGap .gridButtonStyle {
+    gap: 16px !important;
+    margin-top: 20px;
+}
+.zeroOfferBut button.tron-button-in {
+    background: transparent;
+    border: 1px solid #fff;
+}
+#request-btn-pricing.lightColorIngradient button.tron-button-light-in span {
+    color: #1d1d1f !important;
+}
+.lightColorIngradient button.tron-button-light-in {
+    border-color: #fff;
+}
+    .tron-button-in {
+      position: relative;
+      min-width: 221px;
+      background: #1d1d1f;
+      color: #ffffff;
+       padding: 4px 19px;
+      display: flex;
+      border: 1px solid #1d1d1f;
+      border-radius: 25px;
+      align-items: center;
+      justify-content: center;
+      height: 52px;
+    }
+
+    .tron-button span {
+      z-index: 5;
+      white-space: nowrap;
+      pointer-events: none;
+      font-size: 18px;
+      font-weight: 400;
+      position: relative;
+      font-family: 'sequel_sans' !important;
+      color: #fff;
+    }
+
+    .tron-button .tron-border {
+      position: absolute;
+      left: -2px;
+      top: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      overflow: visible;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .tron-button .tron-border rect {
+      fill: none;
+      stroke: url(#tron-gradient-dark);
+      stroke-width: 4;
+      vector-effect: non-scaling-stroke;
+    }
+    .tron-button:hover .tron-border {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .tron-button:hover .gradient-animation-dark {
+      animation-play-state: running;
+    }
+    .gradient-animation-dark {
+      animation: gradient-rotate-dark 5s linear infinite;
+      animation-play-state: paused;
+      transform-origin: 109px 26px;
+    }
+
+    @keyframes gradient-rotate-dark {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+.gridButtonStyle.alignLeft {
+    justify-content: flex-start !important;
+    gap:0px;
+}
+ 
+    .tron-button-light-in {
+      position: relative;
+      min-width: 192px;
+      height: 52px;
+       padding: 4px 30px;
+    border: 1px solid #1d1d1f;
+    border-radius: 25px;
+      background: #ffffff;
+      color: #1d1d1f;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .hide {
+      display: none !important;
+    }
+    .tron-button-light span {
+      z-index: 5;
+      white-space: nowrap;
+      pointer-events: none;
+      font-size: 18px;
+      font-weight: 400;
+      position: relative;
+      font-family: 'sequel_sans' !important;
+      color: #1d1d1f;
+    }
+
+    .tron-button-light .tron-border-light {
+      position: absolute;
+      inset: -2px;
+      left: -2px;
+      top: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      overflow: visible;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .tron-button-light .tron-border-light rect {
+      fill: none;
+      stroke: url(#tron-gradient-light);
+      stroke-width: 4;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .tron-button-light:hover .tron-border-light {
+      opacity: 1;
+      transform: scale(1);
+    }
+    .tron-button-light:hover .gradient-animation-light {
+      animation-play-state: running;
+    }
+    .gradient-animation-light {
+      animation: gradient-rotate-light 5s linear infinite;
+      animation-play-state: paused;
+      transform-origin: 109px 26px;
+    }
+
+    @keyframes gradient-rotate-light {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+.tron-button-light-in span,
+.tron-button-in span {
+  opacity: 1;
+  transition: opacity 0.4s linear;
+}
+
+.tron-button-light-in:hover span,
+.tron-button-in:hover span {
+  opacity: 0.9;
+}
+
+.spaceButtonGap {
+    margin-top: 21px;
+}
+.spaceButtonGap .tron-button-light-in {
+    border: 1px solid #fff;
+}
+.spaceButtonGap .tron-button-light-in span {
+    color: #1f1f1f;
+}
+
+  @media screen and (max-width: 767px) {
+.gridButtonStyle.alignLeft {
+    gap: 0;
+    justify-content: center !important;
+}
+.gridButtonStyle {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    display: grid;
+}
+.gridButtonStyle  a {
+    margin: 0 auto;
+}
+.spaceButtonGap {
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+  }
+
+
+.btnFormNewDesign ,.btnFormNewDesign1{
+  border: 0;
+  background: transparent;
+}
+.btnFormNewDesign .tron-button-in  {
+    background: hsl(0, 0%, 99%);
+    border: 1px solid #fff;
+    color: #000;
+}
+.btnFormNewDesign .tron-button-in span {
+    color: #000;
+}

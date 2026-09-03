@@ -1,0 +1,98 @@
+.otherSroriesSlider{
+    width: 100%;
+    margin: 0 auto;
+}
+.otherSroriesSlider .head{
+  width: 1200px;
+  margin: 0 auto;
+}
+.otherSroriesSlider .head h2{
+    font-family: 'sequel_sans' !important;
+    font-weight: 415;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: -1.44px;
+    text-align: center;
+    color: rgba(41, 41, 43, 1);
+}
+.otherSroriesSlider .card-content a{
+   font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-weight: 425;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: rgba(41, 41, 43, 1);
+    margin-top: 10px;
+    display: inline-block;
+}
+.otherSroriesSlider .card-content h3 {
+    font-family: 'sequel_sans_roman_head' !important;
+    font-weight: 360;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+.otherSroriesSlider .card {
+    background: rgba(247, 248, 250, 1);
+    border-radius: 16px;
+    margin: 3px 9px;
+    padding: 19px 28px;
+    height: 340px;
+}
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+    align-items: stretch;
+    height: 100%;
+}
+.otherSroriesSlider .slick-slide.slick-active.slick-center.slick-current .card{
+      height: 383px;
+     position: relative;
+}
+.otherSroriesSlider .slick-slide.slick-active.slick-center.slick-current .card{
+    padding: 25px 28px;
+    background: #fff;
+}
+.otherSroriesSlider .slick-slide {
+    padding: 28px 0;
+}
+.otherSroriesSlider .slick-slide.slick-active.slick-center.slick-current .card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #24B3F8 0%, #FFB258 100%);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.otherSroriesSlider .slick-slide.slick-active.slick-center.slick-current .card::before {
+  opacity: 1;
+}
+
+.slick-slide.slick-active.slick-center.slick-current .card {
+  box-shadow:
+    0px 8px 8px -4px rgba(16, 24, 40, 0.03),
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
+.otherSroriesSlider .head{
+  width: 100%;
+  margin: 0 auto;
+}
+.otherSroriesSlider .head h2 {
+    letter-spacing: 0;
+    font-size: 36px;
+}
+}

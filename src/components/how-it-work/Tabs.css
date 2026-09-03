@@ -1,0 +1,131 @@
+.tabs {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.tabs-header {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    cursor: pointer;
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 13px 24px;
+    font-size: 18px;
+    transition: all .3s;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    margin: 0 10px;
+    font-family: 'sequel_sans' !important;
+    min-width: 157px;
+    font-weight: 400;
+}
+.tabs-content {
+    text-align: center;
+    padding: 42px 0px;
+}
+.workTabsWrapper {
+    padding-top: 50px;
+    position: relative;
+}
+
+.business-diagram {
+  position: relative;
+}
+
+.business-card {
+  filter: drop-shadow(0 6px 6px rgba(0, 0, 0, 0.1));
+}
+
+.tab-button:hover {
+ color: #29292B;
+  border: 1px solid #fff;
+  font-weight: 600;
+  background: #fff;
+}
+
+.tab-button.active {
+  color: #29292B;
+  border: 1px solid #fff;
+  font-weight: 600;
+  background: #fff;
+}
+
+.animated-dash {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  stroke-dashoffset: 0;
+  animation: dashMove 1.5s linear infinite;
+}
+/* 
+@keyframes dashMove {
+  to {
+    stroke-dashoffset: -8;
+  }
+} */
+
+
+.animated-dash {
+  fill: none !important;
+}
+
+/* .how-it-works-wrapper:not(.is-in-view) .animated-dash {
+  animation-play-state: paused;
+} */
+
+html.is-safari .business-card {
+  filter: none;
+}
+
+html.is-safari .animated-dash {
+  animation: none;
+}
+
+.diagram-tooltip {
+  position: absolute;
+  z-index: 2;
+  width: 190px;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  transform: translateY(-100%);
+  pointer-events: none;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  font-family: inter, sans-serif;
+  text-align: left;
+}
+
+.diagram-tooltip__title {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.diagram-tooltip__description {
+  color: #29292b;
+  font-size: 13px;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.diagram-loading {
+  min-height: 500px;
+  display: grid;
+  place-items: center;
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-dash {
+    animation: none;
+  }
+}

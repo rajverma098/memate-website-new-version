@@ -1,0 +1,351 @@
+.proVinylHeader {
+    width: 1200px;
+    margin: 58px auto 56px;
+}
+.proVinylHeader .subHeading {
+    font-weight: 420;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.proVinylHeader h1 {
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .2px;
+    color: #29292b;
+    text-align: center;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    margin: 14px 0 30px;
+}
+.videoGrayBackground {
+    background: #f7f8fa;
+    border-radius: 30px;
+    padding: 50px 69px;
+}
+.weblinkList {
+    text-align: center;
+}
+
+.weblinkList ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255, 255, 255, 1);
+    padding: 26px 204px;
+    border-radius: 49px;
+}
+
+.weblinkList ul li, .weblinkList ul li a {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: 420;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #29292b;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+
+}
+.weblinkList ul li svg {
+    margin-right: 7px;
+}
+.flexboxitems {
+    display: grid;
+    grid-template-columns: 1.9fr 2fr;
+    gap: 23px;
+    align-items: start;
+    margin: 25px 0 0;
+}
+.flexboxitems h2 {
+    -webkit-text-fill-color: transparent;
+    letter-spacing: .2px;
+    color: #29292b;
+    text-align: left;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 40px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    margin: 0;
+}
+.flexboxitems p {
+    color: #3f3f3f;
+    letter-spacing: -.38px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 355;
+    line-height: 20px;
+    font-family: sequel_sansbook_head !important;
+    margin-bottom: 10PX;
+
+}
+.flexContentWrapper{
+  width: 1060px;
+  margin: 0 auto;
+}
+.iconsWrap {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 16px;
+}
+.iconsWrap .iconsItem p {
+    margin: 0;
+    padding: 0;
+}
+.flexitem h3 {
+    font-size: 32px;
+    font-family: sequel_sans_semi_bold_disp !important;
+    color: #29292b;
+}
+.iconsItem {
+    width: 100px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    text-align: center;
+}
+.iconsWrap .iconsItem p {
+    font-size: 16px;
+    letter-spacing: -0.5%;
+}
+.iconsItem.color1 {
+    background: rgba(255, 242, 241, 1);
+}
+.iconsWrap .iconsItem.color1 p {
+    color: rgba(162, 102, 98, 1);
+}
+.iconsItem.color2 {
+    background: rgba(240, 249, 255, 1);
+}
+.iconsWrap .iconsItem.color2 p {
+    color: rgba(2, 132, 199, 1);
+}
+.iconsItem.color3 {
+    background: rgba(253, 242, 248, 1);
+}
+.iconsWrap .iconsItem.color3 p {
+    color: rgba(219, 39, 119, 1);
+}
+.iconsItem.color4 {
+    background: rgba(255, 251, 235, 1);
+}
+.iconsWrap .iconsItem.color4 p {
+    color: rgba(217, 119, 6, 1);
+}
+.iconsItem.color5 {
+    background: rgba(240, 253, 250, 1);
+}
+.iconsWrap .iconsItem.color5 p {
+    color: rgba(13, 148, 136, 1);
+}
+.iconsItem.color6 {
+    background: rgba(239, 246, 255, 1);
+}
+.iconsWrap .iconsItem.color6 p {
+    color: rgba(37, 99, 235, 1);
+}
+.iconsItem.color7 {
+    background: rgba(254, 242, 242, 1);
+}
+.iconsWrap .iconsItem.color7 p {
+    color: rgba(220, 38, 38, 1);
+}
+.imageToImage {
+    position: relative;
+}
+.imageToImage .pvOverly {
+    position: absolute;
+    bottom: 0;
+    left: -92px;
+    width: 350px;
+}
+.flexboxitems ul {
+    margin-left: 19px;
+    margin-bottom: 23px;
+}
+.flexboxitems ul li {
+    color: #3f3f3f;
+    letter-spacing: -.38px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 355;
+    line-height: 20px;
+    font-family: sequel_sansbook_head !important;
+}
+.pvOutCome {
+    background: #f7f8fa;
+    border-radius: 30px;
+    margin-bottom: 45px;
+    padding: 38px 18px;
+}
+.pvOutCome h2 {
+    background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-text-fill-color: transparent;
+    color: #29292b;
+    letter-spacing: .2px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 68px;
+    font-family: sequel_sans_semi_bold_disp !important;
+}
+.pvOutComeFlex {
+    gap: 30px;
+    padding: 0 78px;
+}
+.pvOutComeFlex .LeftItem {
+    padding-right: 94px;
+}
+.pvOutComeFlex .LeftItem a {
+    color: rgba(41, 41, 43, 1);
+    width: 228px;
+    height: 74px;
+    border: 1px solid rgba(41, 41, 43, 1);
+    font-size: 18px;
+    font-family: sequel_sans_semi_bold_disp !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 54px;
+}
+
+
+
+/* Camera Fix Specific Styles */
+.camraFixSubHeading .headPara {
+    font-weight: 420;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0%;
+    text-align: center;
+    width: 776px;
+    margin: 0 auto;
+    
+}
+.OutComeCameraFix {
+    margin-top: 50px;
+}
+.outcomeCameraFix a {
+    margin-top: 30px;
+}
+
+
+@media only screen 
+and (min-width: 768px) 
+and (max-width: 1366px) {
+.proVinylHeader h1 {
+    font-size: 55px;
+    line-height: 69px;
+}
+.slider-container {
+    max-width: 1120px !important;
+    margin: 0 auto;
+}
+}
+
+
+@media screen and (max-width: 600px) {
+ .proVinylHeader {
+    width: 100%;
+    margin: 36px auto 35px;
+}
+.proVinylHeader h1 {
+    font-size: 31px;
+    line-height: 37px;
+    margin-bottom: 2px;
+}
+.videoGrayBackground {
+    padding: 14px 10px;
+}
+.weblinkList ul {
+    background: #fff;
+    border-radius: 49px;
+    justify-content: start;
+    align-items: center;
+    padding: 12px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+.weblinkList ul li, .weblinkList ul li a {
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 30px;
+}
+.flexboxitems {
+    margin: 16px 0 0;
+    display: block;
+}
+.flexboxitems h2 {
+    letter-spacing: 0;
+    font-size: 23px;
+    line-height: 29px;
+}
+.flexitem h3 {
+    font-size: 23px;
+}
+.iconsWrap {
+    margin-bottom: 20px;
+}
+.flexContentWrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+.imageToImage .pvOverly {
+    width: 191px;
+    bottom: 0;
+    left: -15px;
+}
+.pvOutCome h2 {
+    letter-spacing: 0px;
+    font-size: 42px;
+    line-height: 42px;
+}
+.pvOutComeFlex {
+    gap: 30px;
+    padding: 0 16px;
+}
+.pvOutComeFlex .LeftItem {
+    padding-right: 0;
+}
+.pvOutComeFlex .LeftItem a {
+    height: 60px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.camraFixSubHeading .headPara {
+    letter-spacing: 0%;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 27px;
+    font-family: 'sequel_sansbook_head' !important;
+}
+}
+
+
+

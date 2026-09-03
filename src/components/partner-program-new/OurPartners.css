@@ -1,0 +1,211 @@
+.partners-section {
+  width: 100%;
+  padding: 20px 0 70px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.partners-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.partners-heading {
+ text-align: center;
+    color: #29292b;
+    margin: 0 0 41px;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'sequel_sans' !important;
+}
+.partners-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 28px;
+  flex-wrap: wrap;
+}
+.partner-tab {
+    cursor: pointer;
+    color: #757B8A;
+    background: #F7F8FA;
+    border: 0;
+    border-radius: 30px;
+    outline: none;
+    padding: 12px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all .25s;
+    font-family: 'sequel_sans_roman_head' !important;
+}
+.partner-tab:hover {
+  background: #e9eaed;
+  color: #29292B;
+}
+.partner-tab.active {
+    color: #fff;
+    background: #29292B;
+}
+.partners-slider-wrapper {
+  width: calc(100% + 100px);
+  margin-left: -50px;
+  margin-top: 36px;
+}
+.partners-slider-wrapper .slick-list {
+  overflow: visible;
+}
+.partners-slider-wrapper .slick-track {
+  display: flex;
+}
+.partner-slide {
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.partner-card {
+  background: #fff;
+  border-radius: 21px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  min-height: 260px;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+.partner-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.15);
+}
+.partner-image {
+    height: 200px;
+    position: relative;
+    /* overflow: hidden; */
+}
+.partner-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100% !important;
+    transition: transform .5s;
+    display: block;
+    object-fit: cover;
+}
+.discount-badge {
+  animation:
+    discountFloat 2s ease-in-out infinite,
+    discountGlow 2s ease-in-out infinite;
+}
+.discount-badge strong {
+  animation: discountNumber 1.5s ease-in-out infinite;
+}
+@keyframes discountFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+@keyframes discountNumber {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+}
+@keyframes discountGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0px transparent);
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(0, 204, 101, 0.45));
+  }
+}
+
+.partner-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.05) 20%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
+}
+.partner-image h3 {
+    color: #fff;
+    max-width: 190px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 120%;
+    position: absolute;
+    bottom: 14px;
+    left: 18px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.discount-badge {
+    color: #fff;
+    /* background: linear-gradient(circle at 70% 20%, #fff 0, #FF7803 9%, #E9C695 51%, #1AB2FF 100%); */
+     background: linear-gradient(140deg, #FF7803 9%, #E9C695 51%, #1AB2FF 100%);
+    border: 2px solid #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 74px;
+    height: 74px;
+    display: flex;
+    position: absolute;
+    bottom: -37px;
+    right: 23px;
+    box-shadow: 0 2px 8px #0000002e;
+    z-index: 9;
+}
+.discount-badge strong {
+    font-size: 28px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+.discount-badge span {
+    display: grid;
+    align-items: center;
+    margin-left: 4px;
+}
+.discount-badge span em {
+    color: #fff;
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    font-family: Inter, sans-serif !important;
+    line-height: 9px;
+}
+.partner-content {
+    padding: 15px 18px;
+}
+.partner-logo {
+    margin-bottom: 11px;
+}
+.partner-content h4 {
+    color: #344054;
+    align-items: center;
+    line-height: 120%;
+    font-size: 18px;
+    display: flex;
+    font-weight: 100;
+    font-family: 'sequel_sans' !important;
+}
+.partner-content p {
+  color: #757B8A;
+  font-size: 13px;
+  line-height: 24px;
+  font-family: 'sequel_sans_roman_head' !important;
+}
+.slick-slide img {
+    display: block;
+    height: 50px;
+}

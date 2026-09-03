@@ -1,0 +1,87 @@
+.deleteRequestMain {
+    margin: 0 auto;
+    box-shadow: 0px 0px 18px #ccc;
+    padding: 26px 56px;
+    border-radius: 16px;
+}
+.deleteRequestMain .phoneInput.PhoneInput, textarea {
+    border: 1px solid #d0d5dd;
+    border: 1px solid var(--Border,#d0d5dd);
+    border-radius: 4px;
+    border-radius: var(--radius-xs,4px);
+    color: var(--Gray-400,#98a2b3);
+    letter-spacing: -.08px;
+    background: #fff;
+    width: 100%;
+    margin-top: 6px;
+    padding: 0 14px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 310;
+    line-height: 24px;
+    font-family: 'sequel_sans_roman_body' !important;
+}
+.deleteRequestMain .phoneInput.PhoneInput input {
+    border: 0;
+    margin: 0;
+}
+.deleteRequestMain .PhoneInputCountry {
+    border-right: 1px solid #ccc;
+    padding-right: 8px;
+}
+
+.deleteRequestMain .PhoneInputInput,
+.deleteRequestMain .PhoneInputInput:focus,
+.deleteRequestMain .PhoneInputInput:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.deleteRequestMain .phoneInput .PhoneInputInput,
+.deleteRequestMain .phoneInput .PhoneInputInput:focus,
+.deleteRequestMain .phoneInput .PhoneInputInput:focus-visible {
+  outline: none !important;
+  box-shadow: none !important;
+}
+.deleteRequestMain .PhoneInputInput:focus-visible {
+  outline: 2px solid #000;
+}
+.deleteRequestMain h1.deleteRequestHeading {
+    text-align: center;
+}
+.deleteRequestMain .darkbuttonStyle {
+    height: 44px;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    width: 142.154px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    background: #29292b;
+    border-radius: 48px;
+    color: var(--Gray-700, #fff);
+    line-height: 20px;
+}
+.deleteRequestMain .OrSeprate {
+    color: #475467;
+    letter-spacing: 0;
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: 22px;
+    font-family: 'sequel_sans_medium_body' !important;
+    text-align: center;
+}
+.deleteRequestMain .error-message.redmessage {
+    font-size: 11px;
+    color: red;
+    font-weight: 400;
+}
+.deleteRequestWrapper {
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

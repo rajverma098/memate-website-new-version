@@ -1,0 +1,86 @@
+.macbook-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.macbook-frame {
+  position: relative;
+}
+.macbook-image {
+  width: 100%;
+  display: block;
+  z-index: 3;
+  position: relative;
+}
+.macbook-screen {
+    border-radius: 0;
+    width: 387px;
+    height: 242px;
+    position: absolute;
+    top: 3.8%;
+    left: 15.6%;
+    overflow: hidden;
+}
+.carousel-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.carousel-track {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.7s ease;
+}
+.carousel-slide {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+.macbook-screen {
+    border-radius: 0;
+    width: 387px;
+    height: 242px;
+    position: absolute;
+    top: 3.8%;
+    left: 15.6%;
+    overflow: hidden;
+}
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+.carousel-dots .dot {
+  width: 10px;
+  height: 10px;
+  background: rgba(168, 168, 168, 0.4);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.carousel-dots .dot.active {
+  background: rgba(141, 141, 141, 0.9);
+  transform: scale(1.2);
+}
+
+.carousel-containerr {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 11px;
+  left: 83px;
+  gap: 20px;
+  /* position: relative; */
+}
+img.img1, img.img2, img.img3 {
+  height: 100%;
+  width: 82.5%;
+  /* position: absolute; */
+  /* top: 0px; */
+}

@@ -1,0 +1,71 @@
+.requestsendModel {
+    .p-dialog-header {
+        h1 {
+            color: #29292B;
+            text-align: center;
+            font-size: 42px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+        }
+    }
+
+    }
+
+
+    .requestsendForm1{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        label{
+font-style: normal;
+font-weight: 315;
+font-size: 10px;
+line-height: 16px;
+letter-spacing: 0.01em;
+color: #475467;
+flex: none;
+order: 0;
+flex-grow: 0;
+
+        font-family: 'sequel_sans_medium_body' !important;
+        }
+        .marginbotton{
+            margin-bottom: 8px;
+           
+        }    
+        input{
+           box-sizing: border-box;
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 10.14286px 10px;
+gap: 5.71px;
+background: #FFFFFF;
+border: 1px solid #D0D5DD !important;
+border-radius: 2.85714px;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+font-family: 'sequel_sans' !important;
+font-style: normal;
+font-weight: 310;
+font-size: 12px;
+line-height: 17px;
+letter-spacing: -0.005em;
+color: #98A2B3;
+margin: 0!important;
+width: 99%;
+    font-family: 'sequel_sans_roman_body' !important;
+    :focus-visible{
+         outline: -webkit-focus-ring-color auto 1px !important;
+    }
+    @media screen and (max-width: 767px) {
+        width: 100%;
+    }
+        }
+        .input2{
+            color: #1D2939;
+            font-family: 'sequel_sans_roman_body' !important;
+        }
+    }

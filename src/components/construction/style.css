@@ -1,0 +1,30 @@
+.industry-page-parent {
+    margin: 0 auto;
+    width: 1200px;
+  }
+  .singleHeadWrapper{
+      margin: 0 auto;
+      width: 1000px;
+      text-align: center;
+  }
+  .singleHeadWrapper h4 {
+      color: #29292b;
+      text-align: center;
+      letter-spacing: -1.44px;
+      padding-top: 32px;
+      font-family: 'sequel_sans';
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 415;
+      line-height: 60px;
+  }
+  .singleHeadWrapper p{
+    margin-top: 34px;
+      color: #29292b;
+      letter-spacing: -.48px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 360;
+      line-height: 24px;
+      font-family: 'sequel_sans_roman_head' !important;
+  }

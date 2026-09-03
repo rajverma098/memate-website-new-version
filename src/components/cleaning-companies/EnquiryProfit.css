@@ -1,0 +1,266 @@
+.enquiry-profit {
+  width: 100%;
+  background: #ffffff;
+ 
+  padding: 70px 0 80px;
+  
+}
+.enquiry-profit__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.enquiry-profit {
+  overflow: hidden;
+}
+
+.enquiry-profit__slider-wrapper {
+  width: calc(100% + ((100vw - 1200px) / 2));
+  margin-left: max(30px, calc((100vw - 1200px) / 2 + 0px));
+  overflow: hidden;
+}
+
+.enquiry-profit__slider {
+  width: 100%;
+}
+
+.enquiry-profit__slide {
+  padding-right: 20px;
+}
+
+.profit-card {
+  width: 320px;
+}
+.enquiry-profit__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.enquiry-profit__heading {
+    color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 46px;
+    font-family: 'sequel_sans' !important;
+  font-weight: 100;
+    line-height: 120%;
+}
+.enquiry-profit__heading span {
+    color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 46px;
+     font-family: 'sequel_sans_bold_disp' !important;
+  font-weight: 100;
+    line-height: 120%;
+}
+.enquiry-profit__arrows {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.enquiry-profit__arrow {
+  width: 40px;
+    height: 40px;
+  padding: 0;
+  border: 1px solid #9ca7b5;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #718096;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+.enquiry-profit__arrow:hover {
+  background: #f4f7f9;
+  color: #101827;
+  border-color: #101827;
+}
+.enquiry-profit__arrow:active {
+  transform: scale(0.92);
+}
+.enquiry-profit__arrow--active {
+  color: #101827;
+  border-color: #657180;
+}
+.enquiry-profit__slider-wrapper {
+  /* width: calc(100% + 350px);
+  margin-left: 350px; */
+  overflow: hidden;
+}
+.enquiry-profit__slider {
+  width: 100%;
+}
+.enquiry-profit__slider .slick-list {
+  overflow: visible;
+}
+.enquiry-profit__slider .slick-track {
+  display: flex;
+   padding-right: 40vw;
+}
+.enquiry-profit__slide {
+  height: auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.enquiry-profit__slide > div {
+  height: 100%;
+}
+.profit-card {
+  position: relative;
+  height: 100%;
+  min-height: 245px;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #101827;
+}
+.profit-card__top {
+    align-items: flex-start;
+    min-height: 62px;
+    display: flex;
+    position: relative;
+    gap: 20px;
+    margin-bottom: 24px;
+}
+.profit-card__title h3 {
+  margin: 0;
+  font-family: 'sequel_sans_bold_disp' !important;
+  color: #101828;
+  font-size: 32px;
+  line-height: 1.08;
+  font-weight: 700;
+  letter-spacing: -0.65px;
+}
+.profit-card__number {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #6d7480;
+  font-size: 8px;
+  line-height: 1;
+  font-weight: 600;
+}
+.profit-card__number {
+    color: #757B8A;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-family: 'sequel_sans_bold_disp' !important;
+}
+.profit-card__description {
+    color: #757b8a;
+    font-family: Inter, sans-serif !important;
+    font-size: 18px;
+    line-height: 130%;
+    font-weight: 400;
+}
+.profit-card__divider {
+    background: #101828;
+    width: 100%;
+    height: 1px;
+    margin: 17px 0;
+}
+.profit-card__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.profit-card__label {
+    color: #101828;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+     font-family: 'sequel_sans_bold_head' !important;
+}
+.profit-card__value {
+  color: #101828;
+  font-size: 18px;
+  line-height: 150%;
+  font-weight: 500;
+  font-family: 'sequel_sans_roman_head' !important;
+}
+.enquiry-profit__slider .slick-slide {
+  height: auto;
+}
+.enquiry-profit__slider .slick-slide > div {
+  height: 100%;
+}
+@media (max-width: 1200px) {
+  .enquiry-profit__container {
+    width: min(1100px, calc(100% - 50px));
+  }
+  .enquiry-profit__heading {
+    font-size: 29px;
+  }
+  .profit-card__title h3 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 900px) {
+  .enquiry-profit {
+    padding: 55px 0 65px;
+  }
+  .enquiry-profit__container {
+    width: calc(100% - 40px);
+  }
+  .enquiry-profit__header {
+    margin-bottom: 32px;
+  }
+  .enquiry-profit__slider-wrapper {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+  }
+  .enquiry-profit__slide {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 600px) {
+  .profit-card {
+    width: 89%;
+    margin: 0 auto;
+}
+.enquiry-profit {
+    padding: 18px 0 8px;
+}
+ .enquiry-profit__container {
+    width: 100%;
+}
+  .enquiry-profit__heading {
+    font-size: 27px;
+    letter-spacing: -1px;
+  }
+  .enquiry-profit__header {
+    margin-bottom: 28px;
+  }
+.enquiry-profit__slider-wrapper {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 6px;
+}
+  .enquiry-profit__slide {
+    padding: 0 8px;
+  }
+  .profit-card {
+    min-height: 225px;
+  }
+  .profit-card__title h3 {
+    font-size: 20px;
+  }
+ .profit-card__description {
+    max-width: 100%;
+    font-size: 15px;
+}
+}

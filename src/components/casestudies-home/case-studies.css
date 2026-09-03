@@ -1,0 +1,129 @@
+.CaseStudiesSection {
+    width: 1040px;
+    margin: 65px auto 0;
+}
+
+.CaseStudiesItem .imageBox {
+    border-radius: 30px;
+    width: 340px;
+    height: 604px;
+    position: relative;
+}
+.CaseStudiesItem .imageBox img {
+    object-fit: cover;
+    /* border-radius: 30px; */
+}
+.CaseStudiesItem .imageBox .overlyBox {
+    position: absolute;
+    bottom: 0;
+    margin: 27px 25px;
+}
+.desktopVersionVideo:hover .overlyBoxText {
+    display: none;
+}
+.desktopVersionVideo .flextPopupVideo {
+    display: none;
+}
+.desktopVersionVideo:hover .flextPopupVideo {
+    display: block;
+}
+.CaseStudiesItem .imageBox .overlyBox p{
+    color: #fff;
+    text-align: left;
+    font-family: 'sequel_sans' !important;
+    font-weight: 415;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0px;
+
+}
+.CaseStudiesSection h5 {
+    color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 100;
+    line-height: 120%;
+    font-family: 'sequel_sans' !important;
+}
+.CaseStudiesSection h5 span {
+   color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 64px;
+     font-family: 'sequel_sans_bold_disp' !important;
+    font-weight: 100;
+    line-height: 120%;
+}
+ .CaseStudiesItem .imageBox .overlyBox span {
+    color: #fff;
+    text-align: left;
+    font-family: 'sequel_sansbook_head' !important;
+    font-weight: 355;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0px;
+
+}
+.CaseStudiesItem .flextTextVideo span {
+    font-family: 'sequel_sans_bold_head' !important;
+}
+.CaseStudiesItem .imageBox .overlyBox span em {
+    font-style: normal;
+    display: block;
+    font-family: 'sequel_sansbook_head' !important;
+    font-weight: 355;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+.CaseStudiesItem .imageBox .overlyBox .flextText {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-top: 16px;
+}
+.CaseStudiesItem .imageBox .overlyBox .flextText img{
+        width: auto;
+}
+.CaseStudiesGrid {
+    margin-top: 42px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 33px;
+}
+.CaseStudiesItem .flextPopupVideo {
+    right: 0;
+}
+.CaseStudiesItem .flextTextVideo {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    padding: 2px;
+    cursor: pointer;
+}
+.CaseStudiesItem .flextTextVideo span {
+    font-size: 16px;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    margin-right: 16px;
+}
+.CaseStudiesItem .imageBox video{
+    border-radius: 30px;
+}
+
+
+.MobileVersionVideo{
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+.desktopVersionVideo {
+    display: none;
+}
+.MobileVersionVideo{
+    display: block;
+}
+}

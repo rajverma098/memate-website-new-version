@@ -1,0 +1,16 @@
+import * as React from "react";
+const PlayIconStoke = (props) => (
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" rx="16" fill="url(#paint0_radial_10033_393391)"/>
+<path d="M15.9989 4.57129C9.69679 4.57129 4.57031 9.69825 4.57031 15.9999C4.57031 22.3015 9.69679 27.4284 15.9989 27.4284C22.301 27.4284 27.4275 22.3015 27.4275 15.9999C27.4275 9.69825 22.301 4.57129 15.9989 4.57129ZM20.5422 16.4003L13.8756 20.686C13.7988 20.7355 13.7093 20.7619 13.6179 20.7618C13.5398 20.7618 13.4608 20.7422 13.3901 20.7037C13.3149 20.6628 13.2521 20.6023 13.2084 20.5288C13.1647 20.4552 13.1417 20.3712 13.1417 20.2856V11.7141C13.1417 11.5398 13.2366 11.3798 13.3901 11.2961C13.5408 11.2133 13.7296 11.2184 13.8756 11.3137L20.5422 15.5995C20.678 15.6869 20.7608 15.838 20.7608 15.9999C20.7608 16.1617 20.678 16.3128 20.5422 16.4003Z" fill="white"/>
+<defs>
+<radialGradient id="paint0_radial_10033_393391" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(3.71429 16) scale(25.1429 325.579)">
+<stop offset="0.00154351" stopColor="#1AB3FF"/>
+<stop offset="1" stopColor="#FFB258"/>
+</radialGradient>
+</defs>
+</svg>
+
+
+);
+export default PlayIconStoke;

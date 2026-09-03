@@ -1,0 +1,333 @@
+/* New Changes Design */
+.NextHeaderWrap{
+  
+}
+.NextHeaderWrap h1{
+  color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+    font-family: 'sequel_sans' !important;
+}
+
+.NextHeaderWrap h2{
+      color: transparent;
+    text-align: center;
+    background: linear-gradient(90deg, #1ab2ff 33.15%, #ffb258 62%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 12px;
+    letter-spacing: -1px;
+    padding-right: 0;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 124px;
+    letter-spacing: -2.16px;
+    padding-bottom: 27px;
+}
+.NextHeaderWrap p{
+    text-align: center;
+    font-family: 'sequel_sans_roman_head' !important;
+    color: #757B8A;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px;
+    letter-spacing: -.48px;
+}
+.NextHeaderWrapper{
+    border-radius: 30px;
+    background: #F7F8FA;
+    padding: 48px;
+    margin-top: 71px;
+}
+.industryNewHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.industryNewHead .LeftSide {
+    width: 57%;
+}
+.industryNewHead .LeftSide .leftSpan {
+    color: #29292B;
+    font-size: 32px;
+     font-family: "sequel_sans";
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px; 
+}
+.industryNewHead .LeftSide h4 {
+    color: #29292B;
+    font-family: "sequel_sans_semi_bold_disp";
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 80px; 
+    letter-spacing: -2.16px;
+}
+.industryNewHead .LeftSide p {
+    font-family: 'sequel_sans_roman_head' !important;
+    color: #29292B;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 24px; 
+    letter-spacing: -0.48px;
+}
+.industryNewHead .RightSide {
+    width: 44%;
+    text-align: right;
+}
+.dubleButtonLeft {
+    display: flex;
+    margin-top: 32px;
+}
+.dubleButtonLeft .request-btn {
+    margin-right: 30px;
+    width: 168px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .NextHeaderWrap {
+    padding: 62.5px 0;
+}
+.NextHeaderWrap h1 {
+        font-size: 24px !important;
+        line-height: 32px !important;
+}
+.NextHeaderWrap h2 {
+    font-size: 53px;
+    line-height: 46px;
+    letter-spacing: 0;
+    padding-bottom: 12px;
+}
+.NextHeaderWrapper {
+    margin-top: -8px;
+    padding: 48px;
+}
+.industryNewHead .LeftSide span {
+    font-size: 22px;
+    line-height: 21px;
+    text-align: center;
+}
+.industryNewHead .LeftSide h4 {
+    letter-spacing: 0;
+    font-size: 42px;
+    line-height: 53px;
+    margin-bottom: 27px;
+    text-align: center;
+}
+.industryNewHead .LeftSide {
+    width: 100%;
+    text-align: center;
+}
+.dubleButtonLeft {
+    text-align: center;
+    margin-top: 32px;
+    display: grid;
+    justify-content: center;
+}
+.industryNewHead {
+    justify-content: space-between;
+    align-items: center;
+    display: block;
+}
+.dubleButtonLeft .request-btn {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+.singleHeadWrapper h4 {
+    letter-spacing: 0;
+    padding-top: 0px;
+    font-size: 39px;
+    line-height: 53px;
+}
+.singleHeadWrapper {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.industryNewHead .RightSide {
+    text-align: center;
+    width: 100%;
+}
+.industryNewHead .LeftSide p {
+    text-align: center;
+}
+}
+
+
+
+
+
+
+
+
+
+
+.electronic-header-wrapper {
+  width: 100%;
+  border-radius: 30px;
+  background: rgb(255,178,88);
+  background: linear-gradient(339deg, rgba(255,178,88,1) 22%, rgba(26,178,255,1) 89%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: -17px;
+  max-width: 1200px;
+  padding: 62px 46px 69.5px 45px;
+  height: auto;
+  position: relative;
+}
+/* .electronic-header-wrapper::before {
+  background: url('https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/electronic-img.png');
+  background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    content: "";
+    width: 339px;
+    height: 583px;
+    right: 78px;
+    bottom: 0;
+} */
+ .electronicImage{
+  position: absolute;
+  width: 590px;
+  height: 583px;
+  right: 78px;
+  bottom: 0;
+ }
+
+h1.electronic-top-heading {
+  color: #fff;
+  font-family: 'sequel_sans_semi_bold_disp' !important;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  letter-spacing: 0px;
+}
+
+.electronic-middle-heading {
+  margin-top: 7px;
+  color: #fff;
+  font-family: "sequel_sans_heavy_disp", sans-serif !important;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Inter;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 72px; 
+  letter-spacing: 0px;
+}
+
+.electronic-heading-content {
+  margin-top: 23px;
+  max-width: 578px;
+  width: 100%;
+  color: #fff;
+  font-family: "sequel_sans_roman_head" !important;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: 140%;
+}
+
+.electronic-heading-button {
+  margin-top: 24px;
+  border-radius: 60px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  text-align: center;
+  -webkit-text-strokeWidth: 0.2907530963420868;
+  -webkit-text-stroke-color: #fff;
+  font-family: "sequel_sans";
+  padding: 0px 0px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 100;
+  line-height: normal;
+  width: 170px;
+  height: 53px;
+}
+.industry-bussinees-content-wd {
+  max-width: 1030px !important;
+  padding-bottom: 20px !important;
+}
+@media screen and (max-width: 767px) {
+  .electronic-page-parent {
+    width: 100%;
+    padding: 0 15px;
+}
+.electronic-header-wrapper {
+  padding: 32px 33px 43px 18px;
+  max-width: 100%;
+  margin-top: 0;
+  text-align: center;
+  text-align: left;
+}
+.electronic-middle-heading {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+p.electronic-middle-heading br {
+  display: none;
+}
+.electronic-bussiness-management-wrapper {
+  padding-top: 15px;
+}
+.electronic-heading-content {
+  margin-top: 0;
+}
+.electronic-header-wrapper::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: inline-block;
+  opacity: 0;
+}
+.electronic-heading-button {
+  margin-top: 15px;
+}
+.electronic-bussiness-management-heading {
+  font-size: 28px;
+}
+.electronicImage{
+  position: absolute;
+  width: 430px;
+  height: 583px;
+  right: -2px;
+  bottom: 0;
+  height: auto;
+  width: 140px;
+}
+/* .financial_bgContentWrap__Wo16C .financial_flexImageBox__HDMxN .financial_spaceImgTop__Uodmh {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+} */
+.industry-bussinees-content-wd {
+  max-width: 1030px !important;
+  padding-bottom: 0px !important;
+}
+.industry-bussiness-management-heading {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+}
