@@ -177,6 +177,9 @@ export async function GET() {
     <loc>https://memate.com.au/resources</loc>
   </url>
   <url>
+    <loc>https://memate.com.au/cleaning-companies</loc>
+  </url>
+  <url>
     <loc>https://memate.com.au/supplier-database/the-grace-hotel-sydney</loc>
   </url>
   <url>

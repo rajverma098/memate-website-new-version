@@ -89,6 +89,23 @@ const steps = [
     label: "Margin:",
     value: "64% · Revenue $480 · Cost $173",
   },
+  
+{
+    number: "06",
+    icon: CreateSendQuotes,
+    title: (
+      <>
+        Create
+        <br />
+        & Send Quotes
+      </>
+    ),
+    description:
+      "Build professional quotes in minutes — fixed price, hourly or recurring. Clients approve with one click.",
+    label: "Quote sent:",
+    value: "$480 · Awaiting approval",
+  },
+ 
 ];
 
 export default function EnquiryProfit() {
@@ -99,7 +116,7 @@ const settings = {
   arrows: false,
   infinite: true,
   speed: 600,
-  slidesToShow: 5,
+  slidesToShow: 6,
   slidesToScroll: 2,
   variableWidth: false,
   centerMode: false,
