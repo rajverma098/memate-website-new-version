@@ -1,7 +1,9 @@
+"use client";
+
 import React, { useEffect, useRef } from "react";
 import Header from "../components/header";
 import HeaderRunYourBusiness from "../components/header2";
-import HeaderNewBusiness  from "../components/header3";
+import HeaderNewBusiness from "../components/header3";
 import Footer from "../components/footer";
 import "./style.css";
 import "../App.css";
@@ -10,132 +12,202 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { usePathname } from "next/navigation";
 gsap.registerPlugin(ScrollTrigger);
-
 const Layout = ({ children }) => {
   const stickySectionRef = useRef(null);
   const buttonRef = useRef(null);
-  const intervalRef = useRef(null);
   const pathname = usePathname();
   const isSitemapPage = pathname === "/sitemap";
   const isrunyourbusinessPage = pathname === "/legalvision";
   const isNewBusinessPage = pathname === "/granthelp";
-  const isCalculatorPage = pathname === "/business-valuation-calculator";
-
+  const isCalculatorPage =
+    pathname === "/business-valuation-calculator";
   useEffect(() => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
   }, [pathname]);
 
   useEffect(() => {
-    let animationInstances = [];
-    const initTimeout = setTimeout(() => {
-      if (stickySectionRef.current) {
-        gsap.set(stickySectionRef.current, { opacity: 0 });
-        const stickyAnimation = gsap.to(stickySectionRef.current, {
-          opacity: 1,
-          scrollTrigger: {
-            trigger: ".apply-container",
-            start: "bottom 62%",
-            end: "bottom 20%",
-            scrub: 0.5,
-            markers: false,
-            invalidateOnRefresh: true,
-          },
+    const stickySection = stickySectionRef.current;
+    if (!stickySection) return;
+    const applyContainer =
+      document.querySelector(".apply-container");
+    const applyContent =
+      stickySection.querySelector(".apply-content");
+    if (!applyContainer || !applyContent) return;
+    const ctx = gsap.context(() => {
+      const updateLayout = () => {
+        const vh = window.innerHeight;
+        const vw = window.innerWidth;
+        let stickyTop;
+        if (vw <= 480) {
+          // Mobile
+          stickyTop = vh * 0.52;
+        } else if (vw <= 768) {
+          // Tablet
+          stickyTop = vh * 0.50;
+        } else if (vw <= 1200) {
+          // Laptop
+          stickyTop = vh * 0.48;
+        } else {
+          // Desktop
+          stickyTop = vh * 0.30;
+        }
+
+        const contentHeight =
+          applyContent.offsetHeight;
+        const bottomSpace = 20;
+        const sectionHeight =
+          stickyTop +
+          contentHeight / 2 +
+          bottomSpace;
+        gsap.set(stickySection, {
+          height: sectionHeight,
+          minHeight: 0,
         });
-        animationInstances.push(stickyAnimation);
-      }
+        gsap.set(applyContent, {
+          position: "sticky",
+          top: stickyTop,
+          yPercent: -30,
+        });
+      };
+
+      gsap.set(stickySection, {
+        autoAlpha: 0,
+      });
+
+
+      gsap.set(buttonRef.current, {
+        scale: 1,
+      });
+
+      updateLayout();
+
+      gsap.fromTo(
+        stickySection,
+        {
+          autoAlpha: 0,
+        },
+        {
+          autoAlpha: 1,
+
+          ease: "none",
+
+          scrollTrigger: {
+            trigger: applyContainer,
+            start: "bottom 70%",
+            end: "bottom 30%",
+            scrub: 0.5,
+            invalidateOnRefresh: true,
+            markers: false,
+          },
+        }
+      );
 
       if (buttonRef.current) {
-        const tl = gsap.timeline({
-          repeat: 0,
-          scrollTrigger: {
-            trigger: buttonRef.current,
-            start: "top center",
-            toggleActions: "play none none none",
-            once: true,
+        gsap.fromTo(
+          buttonRef.current,
+          {
+            scale: 0.95,
           },
-        });
-
-        tl.to(buttonRef.current, {
-          scale: 1.1,
-          duration: 0.5,
-          ease: "power2.out",
-        });
-
-        animationInstances.push(tl);
+          {
+            scale: 1,
+            duration: 0.5,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: stickySection,
+              start: "top 75%",
+              end: "top 50%",
+              scrub: true,
+              invalidateOnRefresh: true,
+            },
+          }
+        );
       }
-      // console.log("ANIMATION INSTANCES", animationInstances);
-    }, 100);
 
-    let refreshCount = 0;
-    const MAX_REFRESHES = 1;
-
-    intervalRef.current = setInterval(() => {
-      if (document.readyState === "complete" && ScrollTrigger) {
-        try {
+      let resizeTimer;
+      const handleResize = () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+          updateLayout();
           ScrollTrigger.refresh();
+        }, 150);
+      };
 
-          if (typeof window !== "undefined" && window.AOS) {
-            window.AOS.refresh();
-          }
+      window.addEventListener(
+        "resize",
+        handleResize
+      );
 
-          refreshCount++;
+      const handleLoad = () => {
+        updateLayout();
 
-          if (refreshCount >= MAX_REFRESHES) {
-            clearInterval(intervalRef.current);
-          }
-        } catch (e) {
-          console.warn("ScrollTrigger refresh error:", e);
-          clearInterval(intervalRef.current);
-        }
-      }
-    }, 5000);
+        ScrollTrigger.refresh();
+      };
+
+      window.addEventListener(
+        "load",
+        handleLoad
+      );
+
+      requestAnimationFrame(() => {
+        updateLayout();
+
+        ScrollTrigger.refresh();
+      });
+
+      return () => {
+        clearTimeout(resizeTimer);
+        window.removeEventListener(
+          "resize",
+          handleResize
+        );
+        window.removeEventListener(
+          "load",
+          handleLoad
+        );
+      };
+    });
 
     return () => {
-      clearTimeout(initTimeout);
-      clearInterval(intervalRef.current);
-
-      try {
-        ScrollTrigger.getAll().forEach((instance) => instance.kill());
-        animationInstances.forEach((animation) => {
-          if (animation && animation.kill) animation.kill();
-        });
-      } catch (e) {
-        console.warn("Error cleaning up GSAP animations:", e);
-      }
-
-      window.scrollTo(0, 0);
+      ctx.revert();
     };
   }, [pathname]);
 
   return (
     <>
-     {isrunyourbusinessPage ? (
-    <HeaderRunYourBusiness />
-  ) : isNewBusinessPage ? (
-    <HeaderNewBusiness />
-  ) : (
-    <Header />
-  )}
+      {isrunyourbusinessPage ? (
+        <HeaderRunYourBusiness />
+      ) : isNewBusinessPage ? (
+        <HeaderNewBusiness />
+      ) : (
+        <Header />
+      )}
       <div className="apply-container">
         <div className="children-wrapper children-wrapper-main">
-          <div className="children">{children}</div>
+          <div className="children">
+            {children}
+          </div>
         </div>
       </div>
-      {!isSitemapPage && !isrunyourbusinessPage && !isNewBusinessPage && !isCalculatorPage && (
-        <div
-          ref={stickySectionRef}
-          className="sticky-section-switch"
-          style={{ opacity: 0 }}
-        >
-          <div className="apply-content">
-            <div className="get-started-wrapper">
-              <div className="intro-sticky">
-                <NextStep text="Book a Demo" ref={buttonRef} />
+      {!isSitemapPage &&
+        !isrunyourbusinessPage &&
+        !isNewBusinessPage &&
+        !isCalculatorPage && (
+          <div
+            ref={stickySectionRef}
+            className="sticky-section-switch">
+            <div className="apply-content">
+              <div className="get-started-wrapper">
+                <div className="intro-sticky">
+                  <NextStep text="Book a Demo" ref={buttonRef}/>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
       <Footer />
     </>
   );

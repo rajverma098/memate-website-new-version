@@ -495,9 +495,9 @@
     max-width: 100%;
     padding: 0 0px !important;
   }
-  .sliderTabWrapper .slick-track {
-    margin-left: 58px !important;
-  }
+.sliderTabWrapper .slick-track {
+    margin-left: 0px !important;
+}
   .main-footer {
     width: 98% !important;
     max-width: 98% !important;

@@ -6,8 +6,9 @@ import InfiniteImageScroll from "./InfiniteImageScroll";
 import CleaningBusinessList from "./CleaningBusinessList";
 import AutomotiveQuesitonAndAns from "./AutomotiveQuesitonAndAns";
 import CaseStudiesHome from "../../components/casestudies-home";
-import EnquiryProfit from "./EnquiryProfit";
-import BusinessFeatures from "./BusinessFeatures";
+// import EnquiryProfit from "./EnquiryProfit";
+import AppleFactsSlider from "./AppleFactsSlider";
+import BusinessFeaturesSlider from "./BusinessFeaturesSlider";
 import LayerAnimation from "./LayerAnimation";
 import "./cleaning-business.css";
 import LessBusyness from "@/page-components/landing-page/less-busyness";
@@ -202,14 +203,16 @@ const CleaningBusinessComponent = () => {
     </div>
    <InfiniteImageScroll />
    <div className="EnquiryProfitWrap">
-   <EnquiryProfit />
+    
+   <AppleFactsSlider />
+   {/* <EnquiryProfit /> */}
    </div>
 
       </div>
       <LessBusyness /> 
         <FindOneApplication /> 
       <div className="BusinessFeaturesWrap">
-          <BusinessFeatures /> 
+          <BusinessFeaturesSlider /> 
         </div>
         <CleaningBusinessList />
       <div className="AustralianBusinessesWrap">

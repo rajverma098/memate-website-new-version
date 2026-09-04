@@ -20,12 +20,12 @@
     z-index: 1;
 }
 .first-News {
-    display: flex;
     flex-direction: column;
-    height: 261px;
     justify-content: space-between;
+    width: 178px;
+    height: 261px;
     padding: 17px 15px 15px;
-    width: 199px;
+    display: flex;
 }
   .commingSoonLogo{
     width: 385px;

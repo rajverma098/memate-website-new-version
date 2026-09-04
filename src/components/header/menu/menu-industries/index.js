@@ -17,7 +17,7 @@ const MenuIndustry = () => {
     <div className="menu-feature-wrapper-industries">
       <div className="menu-feature-wrapper-upper">
         <div className="menu-feature-management">
-          <p className="menu-feature-text">INDUSTRIES</p>
+          <p className="menu-feature-text">Our software is best for…</p>
 
           <div
             className="menu-management-features">

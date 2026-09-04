@@ -459,22 +459,20 @@ button.border-gradient::after {
   padding-top: 30px;
 }
 .header-menu-header-div-menu-component {
-  padding-top: 35px;
-  max-width: 800px;
-  width: 100%;
+    width: 100%;
+    max-width: 642px;
+    padding-top: 35px;
 }
 .header-menu-item {
-  display: flex;
-  width: 216px;
-  padding: 11px 14px 10px 9px;
-  /* background: linear-gradient(to top, #ffb258 14%, #24b3f8 109%); */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  border-radius: 12px;
-  justify-content: space-between;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 12px;
+    justify-content: space-between;
+    width: 266px;
+    padding: 11px 14px 10px 9px;
+    display: flex;
 }
-
 .header-menu-item-desc {
   display: flex;
   justify-content: space-between;
@@ -570,10 +568,10 @@ button.border-gradient::after {
   justify-content: center;
 }
 .header-menu-item-unselected {
-  display: flex;
-  width: 216px;
-  padding: 11px 14px 10px 9px;
-  justify-content: space-between;
+    justify-content: space-between;
+    width: 266px;
+    padding: 11px 14px 10px 9px;
+    display: flex;
 }
 
 .header-menu-item-name-unselected {
@@ -589,8 +587,8 @@ button.border-gradient::after {
 }
 
 .header-menu-icon-wrapper {
-  display: flex;
-  /* gap: 14px; */
+    display: flex;
+    white-space: nowrap;
 }
 .header-menu-icon-wrapper img {
   width: 16px;
