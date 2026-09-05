@@ -58,7 +58,7 @@ const Layout = ({ children }) => {
 
         const contentHeight =
           applyContent.offsetHeight;
-        const bottomSpace = 20;
+        const bottomSpace = 10;
         const sectionHeight =
           stickyTop +
           contentHeight / 2 +
@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
         gsap.set(applyContent, {
           position: "sticky",
           top: stickyTop,
-          yPercent: -30,
+          yPercent: -20,
         });
       };
 
@@ -97,7 +97,7 @@ const Layout = ({ children }) => {
 
           scrollTrigger: {
             trigger: applyContainer,
-            start: "bottom 70%",
+            start: "bottom 80%",
             end: "bottom 30%",
             scrub: 0.5,
             invalidateOnRefresh: true,
@@ -118,7 +118,7 @@ const Layout = ({ children }) => {
             ease: "power2.out",
             scrollTrigger: {
               trigger: stickySection,
-              start: "top 75%",
+              start: "top 85%",
               end: "top 50%",
               scrub: true,
               invalidateOnRefresh: true,
