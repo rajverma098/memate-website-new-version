@@ -469,7 +469,7 @@ button.border-gradient::after {
     background-size: contain;
     border-radius: 12px;
     justify-content: space-between;
-    width: 266px;
+    width: 216px;
     padding: 11px 14px 10px 9px;
     display: flex;
 }
@@ -569,7 +569,7 @@ button.border-gradient::after {
 }
 .header-menu-item-unselected {
     justify-content: space-between;
-    width: 266px;
+    width: 216px;
     padding: 11px 14px 10px 9px;
     display: flex;
 }

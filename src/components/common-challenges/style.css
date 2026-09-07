@@ -172,7 +172,7 @@ html.is-safari .phone-frame:before {
     letter-spacing: -2.16px;
     font-family: 'sequel_sans_semi_bold_disp' !important;
     margin-top: 15px;
-    margin-bottom: 6px;
+    margin-bottom: 26px;
 }
 .challenges-text p{
 color: #757B8A;
@@ -344,7 +344,30 @@ p.card-text {
     gap: 83px;
 }
 
-
+.business-benefits {
+   max-width: 1024px;
+   margin: 0 auto;
+}
+.business-benefits__container {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  align-items: center;
+}
+.business-benefit {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+.business-benefit__text {
+  color: #29292B !important;
+  text-align: left !important;
+  font-size: 22px!important;
+  line-height: 120%!important;
+  font-family: 'sequel_sans' !important;
+}
 .countingWrapper span span {
     font-size: 16px;
     color: #29292b;
@@ -599,6 +622,13 @@ p.graph-business {
   top: 135px;
 }
 @media screen and (max-width: 767px) {
+  .business-benefits__container {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    column-gap: 10px;
+    margin: 0 auto;
+    display: grid;
+}
   .dashboard-wrapper {
     padding: 0px 1px !important;
 }
@@ -724,12 +754,12 @@ p.graph-business {
   height: auto;
 }
 .challenges-text h3 {
-    font-size: 19px;
-    margin-bottom: 15px;
-    line-height: 23px;
     letter-spacing: 0;
+    margin-bottom: 15px;
+    font-size: 28px;
     font-weight: 100;
-    font-family: 'sequel_sans' !important;
+    line-height: 33px;
+    font-family: sequel_sans !important;
 }
 .gain-time p, .gain-time p span {
   font-size: 22px;

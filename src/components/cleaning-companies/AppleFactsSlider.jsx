@@ -14,13 +14,13 @@ const cards = [
     icon: CaptureRequests,
     title: (
       <>
-        Capture
+       Capture 
         <br />
         Requests
       </>
     ),
     description:
-      "New leads, client enquiries and repeat bookings land in one organised inbox. Nothing falls through the cracks.",
+      "Capture new leads, customer enquiries and repeat bookings in one organised place. Keep every request visible, track follow-ups and move prospects smoothly through your sales process without searching through emails or messages. ",
     label: "New request:",
     value: "Residential - End-of-Lease · 3 bed",
   },
@@ -36,7 +36,7 @@ const cards = [
       </>
     ),
     description:
-      "Build professional quotes in minutes — fixed price, hourly or recurring. Clients approve with one click.",
+      "Create professional quotes quickly with meMate using pre-configured products and services. Set fixed, hourly or recurring pricing, build accurate budgets, and send quotes to customers for easy approval—all in one place. ",
     label: "Quote sent:",
     value: "$480 · Awaiting approval",
   },
@@ -46,13 +46,13 @@ const cards = [
     icon: ManageJobsTeams,
     title: (
       <>
-        Manage Jobs
+        Manage Cleaning 
         <br />
-        & Teams
+       Jobs and Teams
       </>
     ),
     description:
-      "Schedule jobs, assign cleaners, track who's on-site and get real-time progress updates — no more calls to check in.",
+      "Manage cleaning jobs and teams with meMate. Schedule jobs, assign cleaners, track timesheets and monitor progress from one organised system.",
     label: "In progress:",
     value: "3 Cleaners · On-site 45 min",
   },
@@ -62,13 +62,13 @@ const cards = [
     icon: RaiseInvoicesIcon,
     title: (
       <>
-        Raise
+        Create Invoices 
         <br />
-        Invoices
+        and Track Payments 
       </>
     ),
     description:
-      "One click turns a completed job into a professional invoice. Send it instantly, get paid faster — with automatic reminders.",
+      "meMate connects quotes, jobs and customer details, while payment tracking and reminders help your team stay on top of outstanding payments. As cleaning business invoicing software, meMate keeps billing connected to your workflow so you can invoice faster and manage payments more efficiently.",
     label: "Paid:",
     value: "✓ $480 · 2 hrs after sending",
   },
@@ -78,13 +78,13 @@ const cards = [
     icon: SeeRealProfitabilityIcon,
     title: (
       <>
-        See Real
+       See Real 
         <br />
         Profitability
       </>
     ),
     description:
-      "Add expenses, labour and contractor costs per job. Know your true margin — per job, per client, per week — in real time.",
+      "A job may generate a healthy invoice but require more labour hours, contractor payments or other expenses than expected. meMate connects project budgets, expenses, labour and contractor costs so you can monitor operational profitability at project level.",
     label: "Margin:",
     value: "64% · Revenue $480 · Cost $173",
   },

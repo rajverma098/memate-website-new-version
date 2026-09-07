@@ -14,6 +14,7 @@ import ZeroOfferOnboarding from "../../components/zero-offer-onboarding";
 import Layout from "../../layout";
 // import { Helmet } from 'react-helmet-async';
 import LessBusyness from "./less-busyness";
+import LessMoreBusinessGrid from "./LessMoreBusinessGrid";
 import CaseStudiesHome from "../../components/casestudies-home";
 import BrandLogoSlide from "../../components/logopartner";
 import HowItWork from "../../components/how-it-work";
@@ -57,7 +58,8 @@ const LandingPage = ({ postsLatest }) => {
         <Layout>
         
           <BussinessManagement />       
-          <LessBusyness />     
+          <LessBusyness />      
+          <LessMoreBusinessGrid />      
           <FeaturedOn />     
           <FindOneApplication /> 
           <CommonChallenges /> 

@@ -107,16 +107,15 @@
     border: 1px solid #29292b;
     border-radius: 60px;
     flex-shrink: 0;
-    width: 148px;
+    width: 155px;
     height: 39px;
+    margin-bottom: 4px;
     font-size: 15px;
     font-style: normal;
     font-weight: 100;
     line-height: normal;
     font-family: sequel_sans !important;
-    margin-bottom: 4px;
 }
-
 a.menuActive .menu-card-bg,
 .menu-news a:hover .menu-card-bg {
   opacity: 1;

@@ -9,40 +9,40 @@ const AutomotiveQuesitonAndAns = () => {
 
  const questions = [
   {
-    question: "Do I need to be tech savvy to use it?",
+    question: "What is cleaning business software?",
     key: 0,
     answer:
-      "Not at all. meMate is built for people who run businesses, not people who sit in front of a screen all day. It is simple, clean, and focused on giving you everything you actually need — without unnecessary complexity.",
+      "Cleaning business software is a platform that helps cleaning companies manage their day-to-day operations in one place. Depending on the platform, it can support customer management, quoting, scheduling, cleaning jobs, team coordination, timesheets, invoicing, payments and profitability tracking. By connecting these processes, businesses can reduce manual administration and gain better visibility over their work.",
   },
   {
-    question: "How long does setup take?",
+    question: "What features should I look for in cleaning management software?",
     key: 1,
     answer:
-      "Most businesses are fully up and running within a few days to a week. New businesses can start instantly, and our team is with you every step of the way in real time, so you are never left figuring things out alone.",
+      "Look for cleaning management software that supports the key stages of your workflow, including customer management, quoting, job scheduling, team and contractor management, timesheets, expense tracking, invoicing, payment follow-ups and reporting. Connecting these processes in one system can reduce duplicate data entry and make it easier to manage cleaning jobs from enquiry through to payment.",
   },
   {
-    question: "Does it work on mobile?",
+    question: "Can cleaning company software help manage cleaning jobs and teams?",
     key: 2,
     answer:
-      "Yes. meMate is designed to work across desktop, tablet, and mobile. Management teams can run the business from desktop and tablet, while contractors and employees can use the mobile version to communicate, manage jobs, and track shifts.",
+      "Yes. Cleaning company software can help managers schedule jobs, assign cleaners, track work and monitor job progress. For businesses working with employees or contractors, connected jobs and team management can make it easier to see who is responsible for each job, track time and keep everyone aligned.",
   },
   {
-    question: "Does it integrate with Xero or MYOB?",
+    question: "Does cleaning business software include invoicing and payment management?",
     key: 3,
     answer:
-      "Absolutely. meMate lets you send invoices and bills directly to Xero or MYOB with one click, helping your bookkeeper and accountant get the information they need without unnecessary double handling.",
+      "Many cleaning business software platforms include invoicing and payment management features. Cleaning business invoicing software can help businesses create invoices using existing customer, quote or job information, track outstanding payments and send reminders. This can reduce repetitive administration and help teams stay on top of accounts receivable.",
   },
   {
-    question: "What happens after my 14 day trial?",
+    question: "Is software for cleaning companies suitable for small businesses?",
     key: 4,
     answer:
-      "After your 14-day trial, meMate is just $98 a month with no lock-in contract. You can cancel anytime. Most customers see the value within the first few days, but if you need more time, simply let us know.",
+      "Yes. Software for cleaning companies can be useful for small businesses as well as growing and larger cleaning teams. Bringing customer information, quotes, jobs, schedules, expenses and invoices into one system can help smaller businesses reduce reliance on spreadsheets, emails and separate messaging tools as they grow.",
   },
   {
-    question: "Is there a real person I can call for support?",
+    question: "How can cleaning business management software improve profitability?",
     key: 5,
     answer:
-      "Yes. You can speak with a real person based right here in Sydney, with dedicated support for your account from day one.",
+      "Cleaning business management software can give businesses a clearer view of revenue, labour, contractor costs, expenses and project budgets. By connecting these figures to individual jobs or projects, cleaning businesses can compare actual costs with budgets, identify where costs are increasing and make more informed decisions about pricing and profitability.",
   },
 ];
 

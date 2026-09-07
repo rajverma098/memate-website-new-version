@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import ScrollAnimation from "./ScrollAnimation";
 import MobileScrollSection from "./MobileScrollSection";
 import DashboardStats from "./DashboardStats";
+import DesignCheckGreen from "../../svg/DesignCheckGreen";
+
 
 const OVERCOME_IMAGE =
   "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/slider/streamline-img24-min.jpg";
@@ -42,6 +44,27 @@ export default function CommonChallengesSection() {
             Track, analyze, and manage all your business activities in one clear,
             organized place.
           </p>
+          <div className="business-benefits">
+      <div className="business-benefits__container">
+          <div className="business-benefit">
+            <span className="business-benefit__check"><DesignCheckGreen /></span>
+            <p className="business-benefit__text">Ideal for small businesses replacing spreadsheets</p>
+          </div>
+          <div className="business-benefit">
+            <span className="business-benefit__check"><DesignCheckGreen /></span>
+            <p className="business-benefit__text">Powerful enough for growing teams and multi-project operations</p>
+          </div>
+          <div className="business-benefit">
+            <span className="business-benefit__check"><DesignCheckGreen /></span>
+            <p className="business-benefit__text">Flexible workflows that adapt as your company evolves</p>
+          </div>
+          
+      </div>
+      <p>
+            If you’re looking for small business management software that’s easy to adopt and ready to scale, MeMate delivers the balance of simplicity and capability your business needs.
+          </p>
+    </div>
+          
         </div>
         <div className="streamlineimggrid streamlineimggrid12">
           <ScrollAnimation />
