@@ -124,7 +124,7 @@ const CleaningBusinessComponent = () => {
             ))}
           </div>
   <div className='topSpaceGap'>
-         <DarkMemateBlackBut
+         {/* <DarkMemateBlackBut
       link1="https://app.memate.com.au/onboarding"
       link2="https://app.memate.com.au/requestdemo"
       className="alignLeft"
@@ -133,7 +133,24 @@ const CleaningBusinessComponent = () => {
       buttonTextlight="Request a Demo"
       showButton1={true}
       showButton2={true}
-    />
+    /> */}
+  <DarkMemateBlackBut
+  link1="https://app.memate.com.au/onboarding"
+  link2="https://app.memate.com.au/requestdemo"
+  className="alignLeft"
+  target="_blank"
+  buttonTextdark="Start Free Trial"
+  buttonTextlight="Request a Demo"
+  showButton1={true}
+  showButton2={true}
+  onDemoClick={() => {
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag("event", "conversion", {
+        send_to: "AW-17393005307/mnpWCKa316AbEPvl0OVA",
+      });
+    }
+  }}
+/>
        </div>
        </div>
       <div className="rightLayoutLayers ">

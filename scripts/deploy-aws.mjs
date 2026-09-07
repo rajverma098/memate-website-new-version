@@ -190,7 +190,7 @@ console.log("\n3/4 Running remote deploy...");
 if (dryRun) {
   console.log("[dry-run] Remote script:\n", remoteScript);
 } else {
-  execSync(`${sshBase} 'bash -s'`, {
+  execSync(`${sshBase} "bash -s"`, {
     input: remoteScript,
     stdio: ["pipe", "inherit", "inherit"],
   });
