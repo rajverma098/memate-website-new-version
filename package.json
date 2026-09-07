@@ -5,8 +5,12 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build:standalone": "next build",
+    "package:aws": "node scripts/package-aws.mjs",
     "start": "next start",
-    "lint": "next lint"
+    "start:standalone": "node scripts/start-standalone.mjs",
+    "lint": "next lint",
+    "deploy:aws": "node scripts/deploy-aws.mjs"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

@@ -20,6 +20,11 @@
 # production
 /build
 /memateNextJS-Updated.zip
+deploy/aws/bundle/
+deploy/aws/*.zip
+deploy/aws/deploy.config.local.json
+deploy/aws/*.ppk
+deploy/aws/*.pem
 # misc
 .DS_Store
 *.pem
