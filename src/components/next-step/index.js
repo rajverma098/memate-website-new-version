@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import DesignCheckGreen from "../../svg/DesignCheckGreen";
 import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 const NextStep = (props) => {
@@ -18,6 +19,22 @@ const NextStep = (props) => {
          Strong systems, documented history and operational traceability increase buyer confidence and long-term valuation.
         </span>
       </div>
+         <div className="nextSupport">
+             <div className="nextSupport__container">
+             <div className="nextSupportflex">
+                 <span><DesignCheckGreen /></span>
+                 <p>No long-term contracts</p>
+              </div>
+             <div className="nextSupportflex">
+                 <span><DesignCheckGreen /></span>
+                 <p>Easy onboarding</p>
+              </div>
+             <div className="nextSupportflex">
+                 <span><DesignCheckGreen /></span>
+                 <p>Local support</p>
+              </div>  
+      </div>
+    </div>
        <DarkMemateBlackBut
       link1="https://app.memate.com.au/requestdemo"
       link2="https://app.memate.com.au/onboarding"

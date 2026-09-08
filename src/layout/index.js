@@ -44,10 +44,10 @@ const Layout = ({ children }) => {
         let stickyTop;
         if (vw <= 480) {
           // Mobile
-          stickyTop = vh * 0.52;
+          stickyTop = vh * 0.20;
         } else if (vw <= 768) {
           // Tablet
-          stickyTop = vh * 0.50;
+          stickyTop = vh * 0.40;
         } else if (vw <= 1200) {
           // Laptop
           stickyTop = vh * 0.48;

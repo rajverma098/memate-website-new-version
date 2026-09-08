@@ -123,6 +123,10 @@
 .desktopVersionVideo {
     display: none;
 }
+.CaseStudiesSection h5 ,.CaseStudiesSection h5 span{
+    font-size: 32px;
+    font-weight: 400 !important;
+}
 .MobileVersionVideo{
     display: block;
 }

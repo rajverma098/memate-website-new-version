@@ -20,6 +20,27 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+.nextSupport__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 7px;
+    max-width: 720px;
+    margin: 0 auto 22px;
+    display: grid;
+}
+.nextSupportflex {
+    align-items: flex-start;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+}
+.nextSupportflex p {
+    color: #29292b !important;
+    text-align: left !important;
+    font-family: sequel_sans !important;
+    font-size: 18px !important;
+    line-height: 120% !important;
+}
 /* .nextStepWrapper button {
   border-radius: 60px;
   background: #29292b;
@@ -112,6 +133,13 @@
   margin-bottom: 14px;
 }
 @media screen and (max-width: 767px) {
+  .nextSupportflex p {
+    font-size: 13px !important;
+}
+.nextSupport__container {
+    max-width: 100%;
+    margin: 0 auto 6px;
+}
 .nextStepWrapper {
     margin-top: 27px;
     margin-bottom: 15px;

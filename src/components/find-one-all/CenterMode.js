@@ -47,8 +47,8 @@ const tabs = [
       image: InvoicingImage, 
       iconIamgeActive: <QuoteActive alt="Quote active icon" />, 
       iconIamge: <Quote alt="Quote icon" />, 
-      head: 'Quoting & Invoicing', 
-      para: 'Create invoices, receive payments, and set reminders. Send quotes for customers to accept and follow up effortlessly.', 
+      head: 'Quotes, Invoices & Expenses', 
+      para: 'Create professional quotes, convert them into invoices, track expenses, and stay on top of cash flow with ease.', 
       link: '/features/invoicing-software' 
     },
     { 
@@ -65,8 +65,8 @@ const tabs = [
       image: ManagementImage,
       iconIamgeActive: <ManagementActive alt="Management active icon" />, 
       iconIamge: <Management alt="Management icon" />, 
-      head: 'Management', 
-      para: 'See every ongoing project on one screen with exceptional clarity and functionality', 
+      head: 'Project & Job Management', 
+      para: 'Track every job from start to finish. Assign tasks, monitor progress, manage timelines, and keep teams aligned in one central workspace.', 
       link: '/features/task-management-software' 
     },
     { 
@@ -74,8 +74,8 @@ const tabs = [
       image: ReportingImage,
       iconIamgeActive: <ReportingActive alt="Reporting active icon" />, 
       iconIamge: <Reporting alt="Reporting icon" />, 
-      head: 'Reporting', 
-      para: 'Real-time profitability, goals, and statistics. Multiple, yet simple business overviews with detailed accounting insights.', 
+      head: 'Reporting & Business Insights', 
+      para: 'Access real-time reports on performance, revenue, costs, and profitability to guide smarter business decisions.', 
       link: '/features/business-reporting-tools' 
     },
     { 
@@ -83,8 +83,8 @@ const tabs = [
        image: CommunicationImage,
       iconIamgeActive: <CommunicationActive alt="Communication active icon" />, 
       iconIamge: <Communication alt="Communication icon" />, 
-      head: 'Communication', 
-      para: 'Communicate with your team and clients in just a few clicks. Send notifications via SMS, provide quotes, or update project status with ease.', 
+      head: 'CRM & Client Management', 
+      para: 'Store customer details, manage leads, track communications, and maintain long-term client relationships without switching systems.', 
       link: '/features/team-communication-tools' 
     },
     { 
@@ -101,8 +101,8 @@ const tabs = [
       image: SchedulingImage,
       iconIamgeActive: <SchedulingActive alt="Scheduling active icon" />, 
       iconIamge: <Scheduling alt="Scheduling icon" />, 
-      head: 'Scheduling & Work Management', 
-      para: 'Workforce management, timesheets, and job approvals—everything you need to efficiently manage your team.', 
+      head: 'Team Scheduling & Time Tracking', 
+      para: 'Plan workloads, track hours, and manage productivity across teams — whether in the office or on the field.', 
       link: '/features/job-management-software' 
     },
     { 

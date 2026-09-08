@@ -15,18 +15,15 @@ const MeMateFeatureStreamline = () => {
           <div className="stream-line">
             <div className="main-operation shadowRightline shadowLeftline">
               <div className="operation-left">
-                <p className="all-text">All-in-one</p>
-                <div className="smallH2Heading">Streamline</div>
-                <div className="mediumHeadText">operations</div>
+                <p className="all-text">No Onboarding Fees</p>
+                <div className="smallH2Heading">Implementation</div>
+                <div className="mediumHeadText">and Training</div>
 
                 <div className="operation-desp">
-                  <p>
-                    Our software provides robust workflows, ensuring managers
-                    follow firm guidelines. It guarantees every project is
-                    transparent and accountable, and all business activities are
-                    accurately reflected in the system, keeping everything
-                    secure.
-                  </p>
+                  <ul>
+                    <li>Subscription includes 1-to-1 onboarding, email support, and help guides.</li>
+                    <li>Go-live within 1-3 days, with a 14-day free trial available to evaluate the platform before committing.</li>
+                  </ul>
                 </div>
              
              

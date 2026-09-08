@@ -4,6 +4,22 @@
     justify-content: center;
     margin-top: 80px;
 }
+.operation-desp ul li {
+    color: #757b8a;
+    letter-spacing: -.72px;
+    text-align: left;
+    max-width: 450px;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    font-family: sequel_sans_roman_head !important;
+}
+.operation-desp ul {
+    margin-bottom: 29px;
+    margin-left: 15px;
+}
 .features-section {
     width: 1200px;
 }
@@ -207,6 +223,13 @@ button.get-started-btn {
 
 } */
 @media screen and (max-width: 767px) {
+    .operation-desp ul li {
+    letter-spacing: 0px;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 25px;
+}
     .memate .mainHeadingH2 {
         font-size: 28px;
         line-height: 28px;

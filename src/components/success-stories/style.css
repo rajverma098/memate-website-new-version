@@ -295,7 +295,8 @@ p.owners-disp {
     line-height: 26px;
 }
 .intro-sticky {
-  height: 500px;
+    height: 500px;
+    margin-top: 150px !important;
 }
 .apply-content {
   margin-top: 0px;

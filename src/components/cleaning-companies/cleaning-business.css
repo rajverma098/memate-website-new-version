@@ -608,7 +608,7 @@
     text-align: center;
     width: 1200px;
     margin: 0 auto;
-    padding: 100px 0;
+    padding: 0px 0 100px;
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/gradient02.png);
     background-position: center;
     background-repeat: no-repeat;

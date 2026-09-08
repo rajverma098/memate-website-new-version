@@ -62,7 +62,7 @@ const LandingPage = ({ postsLatest }) => {
           <LessMoreBusinessGrid />      
           <FeaturedOn />     
           <FindOneApplication /> 
-          <CommonChallenges /> 
+          <CommonChallenges />  
           <HowItWork />
           <div className="bgshadowwrapper salesFeatureBg">
            <HomePageFeatuchers /> 

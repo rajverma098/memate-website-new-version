@@ -45,20 +45,19 @@ export default function CommonChallengesSection() {
             organized place.
           </p>
           <div className="business-benefits">
-      <div className="business-benefits__container">
-          <div className="business-benefit">
+             <div className="business-benefits__container">
+             <div className="business-benefit">
             <span className="business-benefit__check"><DesignCheckGreen /></span>
-            <p className="business-benefit__text">Ideal for small businesses replacing spreadsheets</p>
-          </div>
+             <p className="business-benefit__text">Ideal for small businesses replacing spreadsheets</p>
+           </div>
           <div className="business-benefit">
             <span className="business-benefit__check"><DesignCheckGreen /></span>
             <p className="business-benefit__text">Powerful enough for growing teams and multi-project operations</p>
-          </div>
-          <div className="business-benefit">
+           </div>
+           <div className="business-benefit">
             <span className="business-benefit__check"><DesignCheckGreen /></span>
             <p className="business-benefit__text">Flexible workflows that adapt as your company evolves</p>
-          </div>
-          
+           </div>  
       </div>
       <p>
             If you’re looking for small business management software that’s easy to adopt and ready to scale, MeMate delivers the balance of simplicity and capability your business needs.
