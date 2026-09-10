@@ -105,9 +105,8 @@ const CleaningBusinessComponent = () => {
       <div className="leftLayoutLayers">
         <div className="cleaninTop">
           <span><em></em>Software for Cleaning Business</span>
-          <h1>Your competitors are still<br></br> texting. <b>That's your <br></br>advantage.</b></h1>
-          <h5>Enquiries, quotes, jobs, internal chats and invoices.</h5>
-          <p>meMate tracks it all properly, so nothing gets lost in<br></br> unread messages or forgotten.</p>
+          <h1><b>You finally found it.</b> The cleaning business software you actually want to use.</h1>
+         <p><b>Enquiries, quotes, jobs schedules, invoices and <br></br>everything in between.</b> meMate tracks it all<br></br> properly, so nothing gets forgotten or lost amongst<br></br> unread messages.</p>
         </div>
      
          <div className="advantage-features">

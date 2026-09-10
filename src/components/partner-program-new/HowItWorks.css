@@ -29,7 +29,6 @@
 }
 .step-number {
     color: #fff;
-    background: linear-gradient(135deg, #1ab2ff 0%, #ffb258 100%);
     border-radius: 14.44px;
     justify-content: center;
     align-items: center;
@@ -37,8 +36,10 @@
     height: 86.61px;
     margin: 0 auto 24px;
     font-size: 34px;
-    font-weight: 500;
+    font-weight: 800;
     display: flex;
+    background: linear-gradient(
+314deg, #ff7803 21.699%, #e9c695 52.754%, #1ab2ff 88.077%);
 }
 .step-description {
   color: #29292B;

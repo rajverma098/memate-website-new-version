@@ -60,7 +60,7 @@ const Header = () => {
     },
     {
       id: 2,
-      label: <Link href="/industries">Build For</Link>,
+      label: <Link href="/industries">Made For</Link>,
       selectedIcon: menuImages.industrySelected,
       // unselectedIcon: menuImages.industryUnSelected,
       unselectedIcon: <Industrymain />,

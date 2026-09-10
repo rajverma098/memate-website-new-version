@@ -93,7 +93,7 @@
     width: 100%;
 }
 .gradient-line {
-    background: linear-gradient(90deg, #1ab2ff 0%, #ffb258 100%);
+    background: radial-gradient(86.65% 735.3% at 18.02% 11.54%, #1AB3FF 0.15%, #E9C695 35.1%, #FFB258 64.9%, #FF7803 100%) ;
     border-radius: 50px;
     max-width: 1200px;
     height: 6px;

@@ -23,12 +23,13 @@
     border-radius: 100%;
     margin-right: 8px;
 }
-.cleaningBusinessWrap .cleaninTop h1{
-  color: #101828;
-  font-size: 52px;
-  font-family: 'sequel_sans' !important;
-  font-weight: 100;
-  margin: 8px 0 30px;
+.cleaningBusinessWrap .cleaninTop h1 {
+    color: #101828;
+    margin: 8px 0 20px;
+    font-size: 48px;
+    font-weight: 100;
+    font-family: 'sequel_sans' !important;
+    line-height: 114%;
 }
 .cleaningBusinessWrap .cleaninTop h1 b{
   font-weight: 600;
@@ -629,12 +630,12 @@
 }
 .cleaningBusinessListWrap .ListWrap span{
     color: #101828;
-    letter-spacing: -1.3px;
+    letter-spacing: 0px;
     margin: 0;
-    font-size: 64px;
+    font-size: 40px;
      font-family: 'sequel_sans_bold_disp' !important;
   font-weight: 100;
-    line-height: 120%;
+    line-height: 80px;
 }
 .cleaningBusinessListWrap .ListWrap:nth-child(2) {
     margin: 100px 0;

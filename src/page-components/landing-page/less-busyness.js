@@ -108,11 +108,9 @@ const LessBusyness = () => {
           <div className={style.lessContainers}>
             <h3>More Business - Less Busyness</h3>
              <p>
-              You can send a quote in just a few clicks, convert it into a
-              project, and assign team members instantly.
-              <br />
-              Project timelines, expenses, client chats, invoices - it’s all
-              right here.
+             You can send a quote in just a few clicks, convert it into a  <br />project, and assign team members instantly. Project timelines,  <br />expenses, client chats, invoices - it’s all right here.
+             
+        
             </p>
 
             <div className={style.videoWrapper}>
