@@ -1,14 +1,16 @@
 'use client'
 import React from 'react'
 import Layout from '../../layout';
-import PartnerProgramComponent from '../../components/partner-program';
+import PartnerProgramComponentNew from '../../components/partner-program';
 import AppWrapper from '../../components/AppWrapper';
-const PartnerProgramPage = () => {
+import SmoothScroll from "./SmoothScroll";
+const PartnerProgramPageNew = () => {
   return (
     <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
-        <PartnerProgramComponent/>
+         <SmoothScroll/>  
+        <PartnerProgramComponentNew/> 
         </div>
     </Layout>
     </AppWrapper>
@@ -16,4 +18,4 @@ const PartnerProgramPage = () => {
 }
 
 
-export default PartnerProgramPage;
+export default PartnerProgramPageNew;

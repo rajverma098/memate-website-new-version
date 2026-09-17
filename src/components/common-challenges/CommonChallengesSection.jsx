@@ -66,7 +66,7 @@ export default function CommonChallengesSection() {
           
         </div>
         <div className="streamlineimggrid streamlineimggrid12">
-          <ScrollAnimation />
+          <ScrollAnimation /> 
           <MobileScrollSection />
           <div className="gridboxstreamline item3">
             <DashboardStats visible={inView} />

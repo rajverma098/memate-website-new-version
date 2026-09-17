@@ -30,7 +30,7 @@
           font-style: normal;
           font-weight: 415;
           line-height: 60px;
-          letter-spacing: -1.44px;
+          letter-spacing: 0;
           font-family: sequel_sans !important;
         }
         .legalvisionSectionBanner h1 {
@@ -59,7 +59,7 @@
           font-style: normal;
           font-weight: 100;
           line-height: 32px;
-          letter-spacing: -0.72px;
+          letter-spacing:0px;
           display: inline-block;
           width: 100%;
         }
@@ -75,7 +75,7 @@
           font-style: normal;
           font-weight: 100;
           line-height: 32px;
-          letter-spacing: -0.72px;
+          letter-spacing:0px;
         }
         .downClickButton {
           display: inline-block;
@@ -101,14 +101,14 @@
           font-style: normal;
           font-weight: 100;
           line-height: 32px;
-          letter-spacing: -0.72px;
+          letter-spacing:0px;
           font-family: sequel_sans_roman_head !important;
           list-style: none;
         }
         .legalvision-flex .legalvision-gridR p {
           color: #29292b;
           text-align: center;
-          letter-spacing: -0.72px;
+          letter-spacing:0px;
           max-width: 613px;
           margin: 0 auto 20px;
           padding-top: 9px;
@@ -126,7 +126,7 @@
           font-style: normal;
           font-weight: 100;
           line-height: 32px;
-          letter-spacing: -0.72px;
+          letter-spacing:0px;
           font-family: sequel_sans_roman_head !important;
         }
         .legalvision-flex .legalvision-gridR h3 {

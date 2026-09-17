@@ -267,7 +267,7 @@ display: inline-block;
   font-style: normal;
   font-weight: 360;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
   font-family: 'sequel_sans_roman_head' !important;
   margin-bottom: 16px;
 }

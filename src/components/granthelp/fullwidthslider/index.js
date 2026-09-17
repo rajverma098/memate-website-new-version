@@ -168,7 +168,7 @@ const WhyBusinessesChooseUs = () => {
             font-style: normal;
             font-weight: 415;
             line-height: 60px;
-            letter-spacing: -1.44px;
+            letter-spacing: 0;
             font-family: sequel_sans !important;
         }
 
@@ -179,7 +179,7 @@ const WhyBusinessesChooseUs = () => {
     font-style: normal;
     font-weight: 360;
     line-height: 32px;
-    letter-spacing: -.72px;
+    letter-spacing: 0;
     font-family: sequel_sans_roman_head !important;
     max-width: 690px;
     margin-top: 17px;
@@ -230,12 +230,12 @@ const WhyBusinessesChooseUs = () => {
           font-weight: 360;
           line-height: 40px;
            width: 380px;
-          letter-spacing: -.72px;
+          letter-spacing: 0;
           font-family: "sequel_sans_bold_head"!important;
       }
        .fullWidthChSection .card-subtitle {
               color: #ccd1df;
-            letter-spacing: -.72px;
+            letter-spacing: 0;
             width: 316px;
             margin: 0 0 6px;
             font-size: 18px;
@@ -254,7 +254,7 @@ const WhyBusinessesChooseUs = () => {
           font-style: normal;
           font-weight: 360;
           line-height: 20px;
-          letter-spacing: -.72px;
+          letter-spacing: 0;
           font-family: 'sequel_sans_medium_head' !important;
         }
         .fullWidthChSection .arrow {

@@ -52,7 +52,7 @@
 .how-it-works-header h2 {
     color: #fff;
     text-align: center;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-size: 48px;
     font-style: normal;
     font-weight: 415;
@@ -143,7 +143,7 @@
 }
 
 
-/* .animated-dash {
+.animated-dash {
   stroke-dasharray: 4 4;
   animation: dash-flow 1s linear infinite;
 }
@@ -152,4 +152,4 @@
   to {
     stroke-dashoffset: -8;
   }
-} */
+}

@@ -2,7 +2,7 @@
 .m8compaireSwitchingSection01 h2 {
     color: #29292b;
     text-align: center;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-family: 'sequel_sans';
     font-size: 48px;
     font-style: normal;
@@ -220,7 +220,7 @@ tr.tabsTableWrapButton span.lightLOgo img {
     font-style: normal;
     font-weight: 100;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-family: "sequel_sans" !important;
 }
 .gradient-text-animate {
@@ -785,7 +785,7 @@ object-fit: cover;
 .businesses-mode span {
     color: #757b8a;
     text-align: center;
-    letter-spacing: -.72px;
+    letter-spacing: 0;
     font-family: Sequel Sans;
     font-size: 24px;
     font-style: normal;

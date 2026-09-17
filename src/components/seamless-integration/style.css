@@ -10,7 +10,7 @@
 }
 .introTextTop h4 {
     color: #29292b;
-    letter-spacing: -.72px;
+    letter-spacing: 0;
     margin-top: 15px;
     margin-bottom: 16px;
     font-size: 30px;
@@ -30,7 +30,7 @@
 }
 .introTextTop p {
     color: #757b8a;
-    letter-spacing: -.72px;
+    letter-spacing: 0;
     margin-bottom: 16px;
     font-size: 24px;
     font-style: normal;
@@ -387,7 +387,7 @@ and (max-width: 1366px){
     font-style: normal;
     font-weight: 360;
     line-height: 32px; 
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     max-width: 943px;
     margin: auto;
 }

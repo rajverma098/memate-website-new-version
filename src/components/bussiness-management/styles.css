@@ -51,7 +51,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 50px;
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
 }
 /* .big-img-macMain {
   width: 993px;
@@ -67,7 +67,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 60px; 
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
 }
 .image-wrapper img {
     width: 100%;
@@ -79,7 +79,7 @@
 .homePageNewContent p {
     color: #757b8a;
     text-align: center;
-    letter-spacing: -.72px;
+    letter-spacing: 0;
     max-width: 1022px;
     margin: 0 auto -2px;
     padding-top: 15px;
@@ -192,24 +192,22 @@
 .businesses-mode span {
   color: #757B8A;
   text-align: center;
-  font-family: "Sequel Sans";
   font-size: 24px;
   font-style: normal;
-  font-weight: 100;
-  line-height: 32px; 
-  letter-spacing: -0.72px;
-  font-family: "sequel_sans_roman_head" !important;
+  font-weight: 360;
+  letter-spacing:0px;
+  line-height: 130%;
+font-family: 'Inter' !important;
 }
 .CaseStudiesSection .section-heading p {
     color: #757b8a;
     text-align: center;
-    letter-spacing: -.72px;
-    font-family: Sequel Sans;
+    letter-spacing: 0;
     font-size: 24px;
     font-style: normal;
     font-weight: 100;
-    line-height: 32px;
-    font-family: sequel_sans_roman_head !important;
+    line-height: 130%;
+    font-family: 'Inter' !important;
 }
 .dflexbannerbtn .btn-base--black2 {
     z-index: 10;

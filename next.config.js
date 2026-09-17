@@ -35,6 +35,7 @@ const ContentSecurityPolicy = `
   blob:
   https://res.cloudinary.com
   https://memate-website.s3.ap-southeast-2.amazonaws.com
+  https://memate.s3.amazonaws.com
   https://www.google-analytics.com
   https://www.googletagmanager.com
   https://www.jotform.com

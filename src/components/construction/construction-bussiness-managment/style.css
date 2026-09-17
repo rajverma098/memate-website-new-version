@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 415;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
 }
 .contractionSpaceBox ,#contractionSpaceBox{
     padding: 56px !important;

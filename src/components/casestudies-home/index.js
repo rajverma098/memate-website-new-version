@@ -92,8 +92,8 @@ const handleMouseLeave = (index) => {
     <div className="CaseStudiesSection">
       <div className="section-heading">
         <div className="simpleH2Heading sequel_sans">
-        <h5>Hundreds of Australian Businesses <span>Already Made the Switch</span></h5>
-         <p>See how they use it to run their business every single day.</p>
+        <h5>Case studies </h5>
+         {/* <p>See how they use it to run their business every single day.</p> */}
         </div>
       </div>
 

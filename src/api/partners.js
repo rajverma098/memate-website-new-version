@@ -1,15 +1,15 @@
-export const Partners = async () => {
+const PARTNERS_API_URL =
+  "https://app.memate.com.au/api/v1/partners/public/catalog/";
+
+export const partnersData = async () => {
   try {
-    const response = await fetch(
-      "https://app.memate.com.au/api/v1/partners/public/catalog/",
-      {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
-        cache: "no-store",
-      }
-    );
+    const response = await fetch(PARTNERS_API_URL, {
+      method: "GET",
+      headers: {
+        Accept: "application/json",
+      },
+      cache: "no-store",
+    });
 
     if (!response.ok) {
       const errorText = await response.text();
@@ -19,16 +19,24 @@ export const Partners = async () => {
         errorText
       );
 
-      return [];
+      throw new Error(
+        `Failed to load partners. HTTP ${response.status}`
+      );
     }
 
     const result = await response.json();
 
-    console.log("Partners API result:", result);
 
-    return Array.isArray(result?.data) ? result.data : [];
+    if (!Array.isArray(result)) {
+      console.error("Unexpected partners API response:", result);
+
+      throw new Error("Invalid partners API response.");
+    }
+
+    return result;
   } catch (error) {
     console.error("Error fetching partners:", error);
-    return [];
+
+    throw error;
   }
 };

@@ -20,7 +20,7 @@
     font-style: normal;
     font-weight: 360;
     line-height: 32px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     font-family: 'sequel_sans_roman_head' !important;
 }
 .sales-heading-salesF {
@@ -37,7 +37,7 @@
     font-style: normal;
     font-weight: 415;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-family: 'sequel_sans' !important;
 }
 .sales-description-salesF {

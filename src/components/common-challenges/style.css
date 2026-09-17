@@ -180,9 +180,9 @@ text-align: center;
 font-size: 24px;
 font-style: normal;
 font-weight: 360;
-line-height: 32px; 
-letter-spacing: -0.72px;
- font-family: 'sequel_sans_roman_head' !important;
+letter-spacing:0px;
+line-height: 130%;
+font-family: 'Inter' !important;
  margin-bottom: 50px;
 }
 .project-profitability-space {
@@ -315,7 +315,7 @@ p.card-text {
     font-style: normal;
     font-weight: 360;
     line-height: 32px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     font-family: "sequel_sans_roman_head" !important;
 }
  .gridboxstreamline.item2 h4 {
@@ -327,7 +327,7 @@ p.card-text {
     font-style: normal;
     font-weight: 360;
     line-height: 32px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     font-family: "sequel_sans_roman_head" !important;
 }
 .countingWrapper {
@@ -367,6 +367,7 @@ p.card-text {
   font-size: 22px!important;
   line-height: 120%!important;
   font-family: 'sequel_sans' !important;
+  letter-spacing: 0 !important;
 }
 .countingWrapper span span {
     font-size: 16px;

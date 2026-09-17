@@ -60,7 +60,7 @@ p.all-text {
     font-style: normal;
     font-weight: 410;
     line-height: 100%;
-    letter-spacing: -0.21px;
+    letter-spacing: 0;
     font-family: 'sequel_sansbook_head' !important;
     margin-bottom: 50px;
 }

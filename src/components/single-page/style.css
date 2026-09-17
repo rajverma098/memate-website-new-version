@@ -328,7 +328,7 @@
     font-weight: 360;
     font-size: 19px;
     line-height: 27px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     font-family: 'sequel_sans_roman_head' !important;
     margin-top: 15px;
 }
@@ -644,7 +644,7 @@ padding: 0;
     font-style: normal;
     font-weight: 415;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
 }
 .singlePageDate {
     margin-top: 24px;
@@ -926,7 +926,7 @@ display: none;
   font-size: 48px;
   font-style: normal;
   line-height: 60px;
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
   font-family: 'sequel_sans' !important;
   font-weight: 100;
   margin-top: 24px;

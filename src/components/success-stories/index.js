@@ -21,7 +21,7 @@ const SuccessStories = () => {
         data-aos-once="false"
         data-aos-anchor-placement="top-bottom">
           <div className="SStoriesHead sequel_sans">Success Stories</div>
-          <p>Here are a few stories from Australian companies using meMate<br /> and how it has worked for them.</p>
+          <p>Here are a few stories from Australian companies using meMate <br /> and how it has worked for them.</p>
           <div className="request-btn request-btn-center" data-aos="fade-up"
           data-aos-offset="50"
           data-aos-delay="50"

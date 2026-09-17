@@ -12,7 +12,7 @@
     font-weight: 415;
     font-size: 48px;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     text-align: center;
     font-family: 'sequel_sans' !important;
     color: rgba(41, 41, 43, 1);
@@ -21,15 +21,15 @@
     text-align: center;
 }
 .ArticleHome .section-header p {
-    letter-spacing: -.72px;
+    letter-spacing: -0.5px;
     text-align: center;
     color: #888e9e;
     margin: 0;
     font-size: 24px;
     font-weight: 360;
-    line-height: 32px;
     display: inline-block;
-    font-family: 'sequel_sans_roman_head' !important;
+    line-height: 130%;
+font-family: 'Inter' !important;
     max-width: 100%;
 }
 .sliderSectionShadowl {
@@ -166,7 +166,7 @@
     font-weight: 360;
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
 }
 .softwareWrp ul li {
   display: block !important;
@@ -203,7 +203,7 @@
     font-weight: 360;
     font-size: 24px;
     line-height: 32px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
 }
 
 .softwareWrp li span {

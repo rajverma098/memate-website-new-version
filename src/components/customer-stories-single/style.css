@@ -307,7 +307,7 @@
   font-style: normal;
   font-weight: 360;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
 }
 
 .imageOverlyText .customerstoriesDetails .date-heading-title a {
@@ -316,7 +316,7 @@
   font-style: normal;
   font-weight: 415;
   line-height: 60px;
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
   font-family: 'sequel_sans' !important;
 }
 
@@ -404,7 +404,7 @@
   font-style: normal;
   font-weight: 360;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
   font-family: 'sequel_sans_roman_head' !important;
 }
 
@@ -449,7 +449,7 @@
   font-style: normal;
   font-weight: 360;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
   font-family: 'sequel_sans_roman_head' !important;
 }
 
@@ -632,7 +632,7 @@ font-family: 'sequel_sans' !important;
  font-style: normal;
  font-weight: 415;
  line-height: 60px;
- letter-spacing: -1.44px;
+ letter-spacing: 0;
 
 }
 .customerstoriespage .small-heading {
@@ -863,7 +863,7 @@ width: 100%;
  font-style: normal;
  font-weight: 360;
  line-height: 32px;
- letter-spacing: -0.72px;
+ letter-spacing:0px;
  font-family: "sequel_sans_roman_head" !important;
 }
 .customerstoriesDetails .date-heading-title {
@@ -916,7 +916,7 @@ font-size:14px;
  font-style: normal;
  font-weight: 415;
  line-height: 60px;
- letter-spacing: -1.44px;
+ letter-spacing: 0;
  font-family: 'sequel_sans' !important;
 }
 

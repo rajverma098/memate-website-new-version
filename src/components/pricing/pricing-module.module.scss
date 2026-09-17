@@ -85,7 +85,7 @@
           font-style: normal;
           font-weight: 420;
           line-height: 60px;
-          letter-spacing: -1.44px;
+          letter-spacing: 0;
           font-family: 'sequel_sans_semi_bold_disp' !important;
            @media screen and (max-width: 767px) {
             font-size: 27px;
@@ -101,7 +101,7 @@
       font-style: normal;
       font-weight: 360;
       line-height: 32px; 
-      letter-spacing: -0.72px;
+      letter-spacing:0px;
       padding-bottom: 10px;
       padding-top: 10px;
         @media screen and (max-width: 767px) {
@@ -341,7 +341,7 @@ span {
       font-style: normal;
       font-weight: 370;
       line-height: 32px; 
-      letter-spacing: -0.72px;
+      letter-spacing:0px;
       margin: 0;
       padding: 0;
     }
@@ -363,7 +363,7 @@ span {
       font-size: 18px;
       font-style: normal;
       font-weight: 370;
-      letter-spacing: -.48px;
+      letter-spacing: 0;
       line-height: 24px;
       padding-bottom: 10px;    
       text-align: left;
@@ -525,7 +525,7 @@ span {
     font-style: normal;
     font-weight: 415;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-family: 'sequel_sans' !important;
   }
   p{
@@ -535,7 +535,7 @@ span {
     font-style: normal;
     font-weight: 360;
     line-height: 32px; 
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     font-family: 'sequel_sans_roman_head' !important;
     width: 750px;
     margin: 0 auto;

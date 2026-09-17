@@ -170,13 +170,13 @@
   font-style: normal;
   font-weight: 415;
   line-height: 60px; 
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
 } */
 .sab-heading .h2HeadingHome span.shadow {
 z-index: 1;
 color: #5ff91d;
 text-align: center;
-letter-spacing: -1.44px;
+letter-spacing: 0;
 /* text-shadow: 0 0 10px #5ff91d66; */
 font-size: 48px;
 font-weight: 415;
@@ -258,7 +258,7 @@ font-family: 'sequel_sans'!important;
   font-style: normal;
   font-weight: 415;
   line-height: 60px; 
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
 }
 
 .sab-heading {
@@ -271,7 +271,7 @@ font-family: 'sequel_sans'!important;
     font-style: normal;
     font-weight: 100;
     line-height: 80px;
-    letter-spacing: -1.16px;
+    letter-spacing: 0;
     padding: 0 0 13px;
     display: block;
     text-align: center;
@@ -286,7 +286,7 @@ font-family: 'sequel_sans'!important;
   font-style: normal;
   font-weight: 100;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing: 0;
   margin: 0 auto 17px;
   text-align: center;
 }

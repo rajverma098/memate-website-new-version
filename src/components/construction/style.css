@@ -10,7 +10,7 @@
   .singleHeadWrapper h4 {
       color: #29292b;
       text-align: center;
-      letter-spacing: -1.44px;
+      letter-spacing: 0;
       padding-top: 32px;
       font-family: 'sequel_sans';
       font-size: 48px;
@@ -21,7 +21,7 @@
   .singleHeadWrapper p{
     margin-top: 34px;
       color: #29292b;
-      letter-spacing: -.48px;
+      letter-spacing: 0;
       font-size: 18px;
       font-style: normal;
       font-weight: 360;

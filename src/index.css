@@ -257,7 +257,7 @@ blockquote.blockquoteLayout {
     font-style: normal;
     font-weight: 100;
     line-height: 32px;
-    letter-spacing: -.72px;
+    letter-spacing: 0;
     font-family: 'sequel_sans_roman_head'!important;
    padding-bottom: 10px;
     display: inline-block;

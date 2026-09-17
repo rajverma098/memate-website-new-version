@@ -42,18 +42,18 @@ body {
   font-style: normal;
   font-weight: 370;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
   font-family: 'sequel_sans_semi_bold_head' !important;
 }
 
 .question-answer-ans-infoF p {
-  color: #29292B;
+  color: #757b8a;
   font-size: 16px;
   font-style: normal;
-  font-weight: 355;
-  line-height: 20px;
-  letter-spacing: -0.38px;
-  font-family: 'sequel_sansbook_head' !important;
+  font-weight: 360;
+  letter-spacing: 0;
+  line-height: 130%;
+font-family: 'Inter' !important;
   padding-right: 49px;
 }
 .question-answer-ans-infoF {
@@ -224,7 +224,7 @@ padding-right:0px;
   font-style: normal;
   font-weight: 370;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
   font-family: 'sequel_sans_semi_bold_head' !important;
 }
 .sales-component-featureF span {
@@ -409,7 +409,7 @@ padding-right:0px;
     font-style: normal;
     font-weight: 360;
     line-height: 32px;
-    letter-spacing: -0.72px;
+    letter-spacing:0px;
     font-family: 'sequel_sans_roman_head' !important;
 }
 .sales-heading-salesF {
@@ -426,7 +426,7 @@ padding-right:0px;
     font-style: normal;
     font-weight: 415;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-family: 'sequel_sans' !important;
 }
 .sales-description-salesF {
@@ -699,13 +699,23 @@ white-space: normal;
 }
 .sales-component-contentF span {
 text-align: center;
-font-family: 'sequel_sans_roman_head' !important;
+line-height: 130%;
+font-family: 'Inter' !important;
 color: #757B8A;
 font-size:18px;
 font-style: normal;
 font-weight: 360;
-line-height: 24px;
-letter-spacing: -0.48px;
+letter-spacing: 0;
+}
+.sales-component-contentF span b{
+text-align: center;
+line-height: 130%;
+font-family: 'Inter' !important;
+color: #000000;
+font-size:18px;
+font-style: normal;
+font-weight: 360;
+letter-spacing: 0;
 }
 @media screen and (max-width: 767px) {
 .sales-headingF {
@@ -1564,7 +1574,7 @@ body::-webkit-scrollbar-thumb ,
     font-style: normal;
     font-weight: 415;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
     font-family: 'sequel_sans' !important;
 }
 .tos-list {
@@ -1814,7 +1824,7 @@ display: inline-block;
   font-style: normal;
   font-weight: 360;
   line-height: 32px;
-  letter-spacing: -0.72px;
+  letter-spacing:0px;
   font-family: 'sequel_sans_roman_head' !important;
   margin-bottom: 16px;
 }

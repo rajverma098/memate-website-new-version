@@ -116,21 +116,20 @@
   font-style: normal;
   font-weight: 415;
   line-height: 60px; 
-  letter-spacing: -1.44px;
+  letter-spacing: 0;
  font-family: 'sequel_sans' !important;
 }
-
 .next-step-data-description {
-  color: #757B8A;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 360;
-  line-height: 32px; 
-  letter-spacing: -0.72px;
-  font-family: 'sequel_sans_roman_head' !important;
-  max-width: 700px;
-  margin-bottom: 14px;
+    color: #757b8a;
+    text-align: center;
+    letter-spacing: 0;
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 130%;
+    font-family: Inter !important;
+    max-width: 1022px;
 }
 @media screen and (max-width: 767px) {
   .nextSupportflex p {

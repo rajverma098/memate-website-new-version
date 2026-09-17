@@ -138,7 +138,7 @@
     margin-bottom: 20px;
     font-size: 48px !important;
     line-height: 60px;
-    letter-spacing: -1.44px;
+    letter-spacing: 0;
 }
 .download-popup p.popup-title {
     color: #fff;
