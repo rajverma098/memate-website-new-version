@@ -547,10 +547,10 @@
 .business-card h3 {
     color: #101828;
     letter-spacing: 0;
-    margin: 24px 0 20px;
+    margin: 20px 0 15px;
     font-size: 28px;
-    font-weight: 700;
-    line-height: 1.08;
+    font-weight: 100;
+    line-height: 120%;
     font-family: sequel_sans_bold_disp !important;
 }
 .business-card p{
@@ -596,12 +596,9 @@
     width: 40px;
     height: 40px;
 }
-  .business-card h3 {
-    font-size: 14px;
+.business-card h3 {
     letter-spacing: 0;
-  }
- .business-card p {
-    font-size: 15px;
+    font-size: 22px;
 }
 }
 
@@ -627,6 +624,26 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
+}
+.wordRotate {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.cleaningBusinessListWrap .ListWrap .colorFirst{
+  color: #FFB200;
+
+}
+.cleaningBusinessListWrap .ListWrap .colorSecond{
+  color: #3072F5;
+
+}
+.cleaningBusinessListWrap .ListWrap .colorThird{
+  color: #2FC800;
+
+}
+.cleaningBusinessListWrap .ListWrap{
+  min-height: 80px;
 }
 .cleaningBusinessListWrap .ListWrap span{
     color: #101828;
@@ -807,12 +824,12 @@
 .businesses-mode span, .CaseStudiesSection .section-heading p {
     color: #757b8a;
     text-align: center;
-    letter-spacing: 0px;
-    font-size: 24px;
+    letter-spacing: 0;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 130%;
-    font-family: 'Inter' !important;
+    font-family: Inter !important;
 }
 .questionAnswerMain .question-answer-ques.selected .question-answer-ques-infoF {
     -webkit-text-fill-color: transparent;
@@ -989,13 +1006,14 @@
     margin-left: 0;
     overflow: hidden;
 }
+
 .how-to-use p {
     font-size: 22px;
 }
 .businesses-mode span, .CaseStudiesSection .section-heading p {
     letter-spacing: 0;
-    font-size: 15px;
-    line-height: 24px;
+    /* font-size: 15px;
+    line-height: 24px; */
 }
 .trustedByCleningWrap .trustedByHead img {
     margin: 0 6px;

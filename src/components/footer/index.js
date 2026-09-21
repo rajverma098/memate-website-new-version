@@ -101,7 +101,7 @@ const Footer = () => {
             </div>
             <div className="links">
               <p className="link-heading">Resources & Tools</p>
-              <div className="page-links" style={{width:"118px"}}>
+              <div className="page-links" style={{width:"159px"}}>
                <Link href="/knowledge-base">Knowledge Base</Link>
                 <Link href="/customer-stories">Customer Stories</Link>
                 <Link href="/supplier-database">Supplier Database</Link>
@@ -110,7 +110,8 @@ const Footer = () => {
                 <Link href="/brand">Brand</Link>
                 <Link href="/sitemap">Sitemap</Link>
                 <Link href="https://app.memate.com.au/requestdemo" target="_blank">Request a Demo</Link>
-                <Link href="/partner-program">Affiliate Program</Link>
+                <Link href="/affiliate-program">Affiliate Program</Link>
+                <Link href="/partner-program">Partner Program</Link>
                 <Link href="https://app.memate.com.au/onboarding" target="_blank">My Account</Link>
               </div>
             </div>

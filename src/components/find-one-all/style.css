@@ -329,33 +329,28 @@ ul.tab-list li p {
   z-index: -1;
   border-radius: 25px;
 }
-
 .oneappwrap .boxCenterMode p svg{
   transform: scale(1.1);
   transition: all 0.3s ease;
 }
-
-
 .oneappwrap {
-    width: 802px;
+    width: 1024px;
     margin: 0 auto;
 }
 .oneappwrap .boxCenterMode {
     text-align: center;
 }
-
-
-
-
 .to-replace-bold-text {
     text-align: center;
 }
-
 .large-image-container {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
+    width: 72% !important;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    display: block !important;
 }
 .one-application-wrappers {
     background: url(https://memate-website.s3.ap-southeast-2.amazonaws.com/group%2Bshadow-min.png);
@@ -489,6 +484,9 @@ and (max-width: 1366px){
 }
 
 @media screen and (max-width: 767px) {
+  .large-image-container {
+    width: 100% !important;
+}
   span.gradientAnimenate {
     font-size: 40px !important;
 }

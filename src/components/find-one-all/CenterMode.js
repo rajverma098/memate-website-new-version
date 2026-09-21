@@ -228,7 +228,7 @@ function  CenterMode() {
   };
 
   const navSettings = {
-    slidesToShow: 5,
+    slidesToShow: 7,
     slidesToScroll: 1,
     asNavFor: nav1,
     dots: false,
@@ -241,7 +241,7 @@ function  CenterMode() {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 5
+          slidesToShow: 7
         }
       },
       {

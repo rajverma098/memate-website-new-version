@@ -2,51 +2,72 @@
 
 import React, { useEffect, useState } from "react";
 
-import SinpleToUseIcon from "../../svg/SinpleToUseIcon";
-import SimplicityAtWorkIcon from "../../svg/SimplicityAtWorkIcon";
-import SimpleToSetUpIcon from "../../svg/SimpleToSetUpIcon";
-
-const listItems = [
-  {
-    before: "Simple to",
-    icon: <SinpleToUseIcon />,
-    after: "use",
-  },
-  {
-    before: "Simplicity at",
-    icon: <SimplicityAtWorkIcon />,
-    after: "work",
-  },
-  {
-    before: "Simple to",
-    icon: <SimpleToSetUpIcon />,
-    after: "set up",
-  },
-];
-
 const CleaningBusinessList = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
+  const words = [
+    {
+      before: "Simple to ",
+      highlight: "use",
+      className: "colorFirst"
+    },
+    {
+      before: "Simplicity at ",
+      highlight: "work",
+      className: "colorSecond"
+    },
+    {
+      before: "Simple to set ",
+      highlight: "up",
+      className: "colorThird"
+    },
+  ];
+
+  const [index, setIndex] = useState(0);
+  const [text, setText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => (prev + 1) % listItems.length);
-    }, 2500);
+    const current = words[index];
+    const fullText = current.before + current.highlight;
 
-    return () => clearInterval(interval);
-  }, []);
+    const speed = isDeleting ? 40 : 80;
 
-  const item = listItems[activeIndex];
+    const timer = setTimeout(() => {
+      if (!isDeleting) {
+        setText(fullText.substring(0, text.length + 1));
+
+        if (text.length + 1 === fullText.length) {
+          setTimeout(() => setIsDeleting(true), 1500);
+        }
+      } else {
+        setText(fullText.substring(0, text.length - 1));
+
+        if (text.length === 0) {
+          setIsDeleting(false);
+          setIndex((prev) => (prev + 1) % words.length);
+        }
+      }
+    }, speed);
+
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, index]);
+
+  const current = words[index];
+
+  const beforeLength = current.before.length;
 
   return (
     <div className="cleaningBusinessListWrap">
-      <div className="ListWrap wordRotate" key={activeIndex}>
-        <span>{item.before}</span>
-
-        <span className="listIcon">
-          {item.icon}
-        </span>
-
-        <span>{item.after}</span>
+      <div className="ListWrap wordRotate">
+        {text.length <= beforeLength ? (
+          <span>{text}</span>
+        ) : (
+          <>
+            <span>{text.substring(0, beforeLength)}</span>
+             <span className={`highlight ${current.className}`}>
+              {text.substring(beforeLength)}
+            </span>
+          </>
+        )}
       </div>
     </div>
   );
