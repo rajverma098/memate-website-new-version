@@ -7,7 +7,7 @@ const AffiliateProgramComponent = () => {
   return (
     <div className="affiliateWrapper">
     <div className="headWrap">
-      <h1 className="smokeyGradient">affiliate program</h1>
+      <h1 className="smokeyGradient">Affiliate Program</h1>
       <p>Unlock new earning opportunities by <br/> partnering with meMate</p>
      <div className="affiliateBtnProps">
        <EmailNow buttonText="Get Started" headingText="Affiliate Enquiry Form" />

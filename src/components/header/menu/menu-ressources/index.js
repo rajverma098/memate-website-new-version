@@ -25,11 +25,22 @@ const MenuRessources = () => {
             <Link href="/business-valuation-calculator" className={` ${pathname === "/business-valuation-calculator" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Business Valuation Calculator</p></Link>
             </div>
           </div>
+           <div className="menu-management-feature">
+            <div className="menu-client-management">
+            <Link href="/affiliate-program" className={` ${pathname === "/affiliate-program" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Affiliate Program</p></Link>
+            </div>
+          </div>
+          <div className="menu-management-feature">
+            <div className="menu-client-management">
+            <Link href="/partner-program" className={` ${pathname === "/partner-program" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Partner Program</p></Link>
+            </div>
+          </div>
           <div className="menu-management-feature">
             <div className="menu-client-management">
             <Link href="/brand" className={` ${pathname === "/brand" ? "navbar-item-active" : ""}`}> <p className="clinet-management-text icon-hide">Brand</p></Link>
             </div>
           </div>
+         
         </div>
         <div className="menu-feature-management">
           <p className="menu-feature-text">Memate wiki</p>

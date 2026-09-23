@@ -154,7 +154,7 @@
 .requestCallback, .requestCallback h1 {
     color: #29292b;
     font-family: sequel_sans!important;
-    font-size: 48px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 415;
     letter-spacing: 0;
@@ -458,7 +458,7 @@ input:focus-visible {
 .requestCallback, .requestCallback h1 {
     color: #29292B;
     text-align: center;
-    font-size: 48px;
+    font-size: 35px;
     font-style: normal;
     font-weight: 415;
     line-height: 60px;

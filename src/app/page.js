@@ -3,13 +3,13 @@ import AppWrapper from '../components/AppWrapper';
 import LandingPage from '../page-components/landing-page';
 
 export const metadata = {
-  title: 'All-in-One Business Management Software for SMEs | meMate',
+  title: 'Business Management Software for Service Businesses | meMate',
   description:
-    'MeMate is business management software for Australian SMEs, managing CRM, project management, quoting, invoicing and workflow automation to improve efficiency.',
+    'Manage enquiries, quotes, projects, jobs, shifts, employees and invoicing — all in one place. Built for Australian businesses. Free onboarding and setup.',
   openGraph: {
-    title: 'All-in-One Business Management Software for SMEs | meMate',
+    title: 'Business Management Software for Service Businesses | meMate',
     description:
-      'MeMate is business management software for Australian SMEs, managing CRM, project management, quoting, invoicing and workflow automation to improve efficiency.',
+      'Manage enquiries, quotes, projects, jobs, shifts, employees and invoicing — all in one place. Built for Australian businesses. Free onboarding and setup.',
     url: 'https://memate.com.au/',
   },
   alternates: {
@@ -31,7 +31,7 @@ export default function Home() {
               "@id": "https://memate.com.au/#organization",
               "name": "MeMate",
               "alternateName":
-                "All-in-One Business Management Software for SMEs | meMate",
+                "Business Management Software for Service Businesses | meMate",
               "url": "https://memate.com.au/",
               "logo":
                 "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",

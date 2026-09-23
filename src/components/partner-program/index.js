@@ -147,7 +147,7 @@ const PartnerProgramComponentNew = () => {
     <b>Become a Partner</b>
     <h4 className="smokeyGradient">Ready to be listed?</h4>
        <DarkMemateBlackBut
-      link1="https://app.memate.com.au/requestdemo"
+      link1=""
       target="_blank"
       buttonTextdark="Apply to Become a meMate Partner"
       showButton1={true}
@@ -159,7 +159,7 @@ const PartnerProgramComponentNew = () => {
     <div className="rightItemText">
      <b>Not a service provider?</b>
      <p>If you'd like to earn a commission by referring businesses to meMate, that's our Affiliate Program — and it works differently.</p>
-     <a href="#">Learn about the Affiliate Program <ArrowRight size={16} strokeWidth={1.6} /></a>
+     <a href="/affiliate-program">Learn about the Affiliate Program <ArrowRight size={16} strokeWidth={1.6} /></a>
     </div>
     </div>
    </div>
