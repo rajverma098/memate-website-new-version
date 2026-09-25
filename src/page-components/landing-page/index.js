@@ -53,10 +53,11 @@ const LandingPage = ({ postsLatest }) => {
     }, []);
   return (
     <>
+      
       {/* <AppWrapper> */}
         <SmoothScroll/> 
         <Layout>
-        
+      
           <BussinessManagement />       
           <LessBusyness />      
           <LessMoreBusinessGrid />      

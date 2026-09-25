@@ -1,5 +1,7 @@
-User-Agent: *
+User-agent: *
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
 
 Sitemap: https://memate.com.au/sitemap.xml

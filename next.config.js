@@ -25,6 +25,7 @@ const ContentSecurityPolicy = `
     https://www.googletagmanager.com
     https://www.google-analytics.com
     https://snap.licdn.com
+    https://www.redditstatic.com
     https://www.clarity.ms;
     
     style-src 'self' 'unsafe-inline' https://cdn.jotfor.ms;
@@ -44,6 +45,7 @@ const ContentSecurityPolicy = `
   https://www.google.co.in
   https://www.googleadservices.com
   https://px.ads.linkedin.com
+  https://alb.reddit.com
   https://www.clarity.ms
   https://*.clarity.ms
   https://c.clarity.ms
@@ -89,6 +91,8 @@ const ContentSecurityPolicy = `
     https://ddwl4m2hdecbv.cloudfront.net
     https://aplo-evnt.com
     https://graph.facebook.com
+    https://alb.reddit.com
+    https://pixel-config.reddit.com
     https://connect.facebook.net
     https://ad.doubleclick.net
     https://stats.g.doubleclick.net

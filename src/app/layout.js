@@ -91,9 +91,144 @@ export default function RootLayout({ children }) {
     })
   }}
 />
+<script
+  id="ld-memate"
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://memate.com.au/#organization",
+          "name": "MeMate",
+          "url": "https://memate.com.au/",
+          "description": "MeMate is a business management software platform designed for small and medium-sized businesses, helping them manage clients, sales, projects, jobs, scheduling, quoting, invoicing, employees, contractors, time tracking, reporting and business operations.",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://memate.com.au/#logo",
+            "url": "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg"
+          },
+          "brand": {
+            "@id": "https://memate.com.au/#brand"
+          }
+        },
 
+        {
+          "@type": "Brand",
+          "@id": "https://memate.com.au/#brand",
+          "name": "MeMate",
+          "url": "https://memate.com.au/",
+          "logo": {
+            "@id": "https://memate.com.au/#logo"
+          }
+        },
 
-<Script
+        {
+          "@type": [
+            "SoftwareApplication",
+            "WebApplication"
+          ],
+          "@id": "https://memate.com.au/#software",
+          "name": "MeMate",
+          "url": "https://memate.com.au/",
+          "description": "MeMate is an all-in-one business management software platform that helps small and medium-sized businesses manage clients, sales, projects, jobs, scheduling, quoting, invoicing, employees, contractors, time tracking, reporting and business operations.",
+          "applicationCategory": "BusinessApplication",
+          "applicationSubCategory": "Business Management Software",
+          "operatingSystem": "Web",
+          "browserRequirements": "Requires a modern web browser and an internet connection.",
+          "inLanguage": "en-AU",
+
+          "brand": {
+            "@id": "https://memate.com.au/#brand"
+          },
+
+          "publisher": {
+            "@id": "https://memate.com.au/#organization"
+          },
+
+          "featureList": [
+            "Client Management",
+            "Supplier Management",
+            "Sales Pipeline",
+            "Project Management",
+            "Team Communication",
+            "Scheduling",
+            "Quoting",
+            "Invoicing",
+            "Statistics and Reports",
+            "Profitability and Budgeting",
+            "Employee Management",
+            "Contractor Management",
+            "Job Management",
+            "Time Tracking",
+            "Job Approval",
+            "Multi Location Management",
+            "Internal Chat",
+            "Timesheets",
+            "Task Management",
+            "Calendar",
+            "Business Calculators"
+          ],
+
+          "softwareHelp": {
+            "@type": "CreativeWork",
+            "url": "https://memate.com.au/faqs"
+          },
+
+          "downloadUrl": [
+            "https://apps.apple.com/app/memate/id1563935364",
+            "https://play.google.com/store/apps/details?id=com.memate"
+          ],
+
+          "audience": {
+            "@type": "BusinessAudience",
+            "audienceType": "Small and medium-sized businesses"
+          },
+
+          "mainEntityOfPage": {
+            "@id": "https://memate.com.au/#webpage"
+          }
+        },
+
+        {
+          "@type": "WebSite",
+          "@id": "https://memate.com.au/#website",
+          "url": "https://memate.com.au/",
+          "name": "MeMate",
+          "description": "MeMate business management software for small and medium-sized businesses.",
+          "publisher": {
+            "@id": "https://memate.com.au/#organization"
+          },
+          "inLanguage": "en-AU"
+        },
+
+        {
+          "@type": "WebPage",
+          "@id": "https://memate.com.au/#webpage",
+          "url": "https://memate.com.au/",
+          "name": "MeMate | Business Management Software",
+          "description": "MeMate is business management software for managing clients, sales, projects, jobs, scheduling, quoting, invoicing, employees, time tracking, reporting and business operations.",
+          "isPartOf": {
+            "@id": "https://memate.com.au/#website"
+          },
+          "about": {
+            "@id": "https://memate.com.au/#software"
+          },
+          "mainEntity": {
+            "@id": "https://memate.com.au/#software"
+          },
+          "publisher": {
+            "@id": "https://memate.com.au/#organization"
+          },
+          "inLanguage": "en-AU"
+        }
+      ]
+    })
+  }}
+/>
+
+{/* <Script
   id="ld-softwareapp"
   type="application/ld+json"
   strategy="afterInteractive"
@@ -162,7 +297,7 @@ export default function RootLayout({ children }) {
       }
     })
   }}
-/>
+/> */}
 
 <Script
   id="apollo-tracker"
@@ -209,6 +344,35 @@ export default function RootLayout({ children }) {
             }("7N850H5EPDN1");
           `}
         </Script> */}
+
+
+ <Script
+          id="reddit-pixel"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              !function(w,d){
+                if(!w.rdt){
+                  var p=w.rdt=function(){
+                    p.sendEvent
+                      ? p.sendEvent.apply(p,arguments)
+                      : p.callQueue.push(arguments)
+                  };
+                  p.callQueue=[];
+                  var t=d.createElement("script");
+                  t.src="https://www.redditstatic.com/ads/pixel.js";
+                  t.async=!0;
+                  var s=d.getElementsByTagName("script")[0];
+                  s.parentNode.insertBefore(t,s);
+                }
+              }(window,document);
+
+              rdt('init', 'a2_jpx3dxhj64dw');
+              rdt('track', 'PageVisit');
+            `,
+          }}
+        />
+
   <Script id="facebook-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s)
