@@ -186,7 +186,7 @@ const PricingLightTable = () => {
                 <img src={pricingTah} alt="pricingTah" />
               </sup>
             </td>
-            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
             <td>
               <img src={checkIcon} alt="checkIcon" />
             </td>
@@ -235,7 +235,7 @@ const PricingLightTable = () => {
                 <img src={pricingTah} alt="pricingTah" />
               </sup>
             </td>
-            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
             <td>
               <img src={checkIcon} alt="checkIcon" />
             </td>
@@ -267,7 +267,7 @@ const PricingLightTable = () => {
                 <img src={pricingTah} alt="pricingTah" />
               </sup>
             </td>
-            <td>-</td>
+            <td><img src={checkIcon} alt="checkIcon" /></td>
             <td>
               <img src={checkIcon} alt="checkIcon" />
             </td>
