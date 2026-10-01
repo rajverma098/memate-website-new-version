@@ -9,6 +9,7 @@ import AutomotiveSVG from "../../../../svg/AutomotiveSVG";
 import StartupsSVG from "../../../../svg/StartupsSVG";
 import ConstructionSVG from "../../../../svg/ConstructionSVG";
 import CleaningCompaniesIcon from "../../../../svg/CleaningCompaniesIcon";
+import Removalists from "../../../../svg/Removalists";
 
 
 const MenuIndustry = () => {
@@ -24,6 +25,13 @@ const MenuIndustry = () => {
             <div className="menu-client-management">
               <CleaningCompaniesIcon/>
               <Link href="/cleaning-companies" className={` ${pathname === "/cleaning-companies" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon021">Cleaning Companies</p></Link>
+            </div>
+          </div>
+          <div
+            className="menu-management-features">
+            <div className="menu-client-management">
+              <Removalists/>
+              <Link href="/removalists" className={` ${pathname === "/removalists" ? "navbar-item-active" : ""}`}><p className="clinet-management-text bgicons icon021">Removalists</p></Link>
             </div>
           </div>
           <div

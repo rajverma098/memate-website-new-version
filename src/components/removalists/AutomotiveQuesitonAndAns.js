@@ -9,40 +9,40 @@ const AutomotiveQuesitonAndAns = () => {
 
  const questions = [
   {
-    question: "Do I need to be tech savvy to use it?",
+    question: "What is removalist software?",
     key: 0,
     answer:
-      "Not at all. It's built for people who run businesses, not people who sit in front of a screen all day. Simple, clean, and everything you actually need — nothing you don't.",
+      "Removalist software is a business management solution that helps moving companies manage customer enquiries, quotes, jobs, schedules, teams, invoices and payments from one central platform. It can replace disconnected spreadsheets, emails and separate tools with a more organised workflow.",
   },
   {
-    question: "How long does setup take?",
+    question: "How can removalist software help manage quotes and enquiries?",
     key: 1,
     answer:
-      "Most businesses are fully up and running within a few days to a week. New businesses can start instantly. And our team is with you every step of the way in real time — you're never figuring it out alone.",
+      "Removalist software can help removalist businesses capture and organise customer enquiries, manage follow-ups and create professional quotes using predefined services and pricing. With meMate, approved quotes can move into the project workflow, helping reduce duplicate data entry and keeping customer and job information connected.",
   },
   {
-    question: "Does it work on mobile?",
+    question: "Can removalist software help with job scheduling and team management?",
     key: 2,
     answer:
-      "Yes — and we built it smart. Your management team gets a full desktop and tablet version to run the business. Your contractors and employees get a mobile version to communicate, manage jobs and track shifts. Everyone has exactly what they need.",
+      "Yes. Removalist software can help businesses schedule jobs, assign employees or contractors, manage workloads and track job progress. meMate provides scheduling, time tracking, and employee and contractor management features to help coordinate office and field teams.",
   },
   {
-    question: "Does it integrate with Xero or MYOB?",
+    question: "Does removalist software include invoicing and payment tracking?",
     key: 3,
     answer:
-      "Absolutely. Send invoices and bills directly to Xero or MYOB with one click — so your bookkeeper and accountant always have what they need, without double handling.",
+      "Many modern removalist software platforms connect quoting, job management and invoicing to reduce repetitive administration. With meMate, approved quotes can be converted into invoices, while businesses can record payments and follow up on outstanding invoices from one system.",
   },
   {
-    question: "What happens after my 14 day trial?",
+    question: "Can removalist software help track the profitability of each moving job?",
     key: 4,
     answer:
-      "Just $98 a month — no lock-in, cancel anytime. Most of our customers see the value within the first few days. But if you need more time, just let us know.",
+      "Yes. Profitability features can help removalist businesses compare project revenue with labour, contractor, expense and other job-related costs. meMate provides budgeting, expense tracking and project profitability visibility, helping businesses understand the financial performance of individual jobs.",
   },
   {
-    question: "Is there a real person I can call for support?",
+    question: "Is meMate suitable for small and growing removalist businesses?",
     key: 5,
     answer:
-      "Yes — a real person, based right here in Sydney, dedicated to your account from day one.",
+      "Yes. meMate is designed for small and medium-sized businesses and provides tools for managing enquiries, quotes, projects, scheduling, employees, contractors, invoicing and reporting in one system. It can help growing removalist businesses bring more of their day-to-day operations into a single platform.",
   },
 ];
 

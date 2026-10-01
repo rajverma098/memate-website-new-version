@@ -187,7 +187,7 @@
     color: #29292B;
 }
 .how-to-use {
-    margin-top: 38px;
+    margin-top: 14px;
 }
 .businesses-mode span {
   color: #757B8A;
@@ -306,6 +306,24 @@ font-family: 'Inter' !important;
 
 
 
+@media screen and (max-width: 1550px) {
+.home-platform h1 {
+    max-width: 546px;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.how-to-use p {
+    font-size: 22px;
+    line-height: 27px;
+}
+.macBook-image {
+    text-align: center;
+    width: 718px;
+    margin: 0 auto;
+}
+}
 @media screen and (max-width: 767px) {
   .homePageNewContent {
     text-align: center;

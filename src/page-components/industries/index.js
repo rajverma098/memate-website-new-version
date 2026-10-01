@@ -9,7 +9,7 @@ const IndustriesPage = () => {
       <AppWrapper>
         <Layout>
           <div className="bgshadowwrapper">
-            <IndustriesComponent />
+            <IndustriesComponent /> 
           </div>
         </Layout>
       </AppWrapper>

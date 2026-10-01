@@ -64,7 +64,7 @@ const LandingPage = ({ postsLatest }) => {
           <FeaturedOn />      
           <FindOneApplication /> 
           <CommonChallenges />  
-          <HowItWork /> 
+          <HowItWork />   
           <div className="bgshadowwrapper salesFeatureBg">
            <HomePageFeatuchers /> 
          </div>
@@ -73,7 +73,7 @@ const LandingPage = ({ postsLatest }) => {
           <BrandLogoSlide />    
           <CaseStudiesHome />           
           {/* <SimpleVersatilePowerful /> */}
-          <SuccessStories />    
+          <SuccessStories />     
           <NewsAndUpdate postsLatest={postsLatest} />
            <AutomotiveQuesitonAndAns />  
         </Layout>

@@ -46,32 +46,46 @@
   box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.08), 0px 8px 8px -4px rgba(16, 24, 40, 0.03);
   background: #fff;
 }
-/* #slider-container .slick-active.slick-center.slick-current {
-  width: 429px !important;
-} */
-/* .slider-container .slick-slide {
-  max-width: 363px !important;
-  margin: 0 auto;
-} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .customerstoriesitem .category {
-    color: #888E9E;
+    color: #888e9e;
+    letter-spacing: -.1px;
+    margin-bottom: 3px;
     font-size: 16px;
     font-style: normal;
     font-weight: 360;
     line-height: 140%;
-    letter-spacing: -1px;
-    margin-bottom: 10px;
 }
-
-
 .customerstoriesitem a {
-  color: #29292B;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 360;
-  line-height: 32px; 
-  letter-spacing:0px;
-
+    color: #29292b;
+    letter-spacing: 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    font-family: sequel_sans !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .success-stories1 .slick-track {
     display: flex;
@@ -89,40 +103,39 @@
     height: 100% !important;
 }
 .customerstoriesitem {
-    padding: 24px;
     padding: var(--spacing-3xl, 24px);
-    border-radius: 0px 0px 30px 30px;
-    background: #F7F8FA;
     text-align: left;
-    min-height: 180px;
+    background: #f7f8fa;
+    border-radius: 0 0 30px 30px;
+    min-height: 156px;
 }
 .slider-item a img {
-    height: 277px;
     object-fit: cover;
+    height: 196px;
 }
+
 .slick-slide.slick-active.slick-center.slick-current img {
-    height: 315px;
     object-fit: cover;
+    height: 244px;
+    transition: height 1s ease-in-out;
 }
 .slider-item img {
   width: 100%;
-  height: 196px;
   object-fit: cover;
   border-radius: 30px 30px 0px 0px ;
 
 }
-
 .slider-item {
-  padding: 0 16px;
-  opacity: .6;
-  pointer-events: none;
+    opacity: .6;
+    pointer-events: none;
+    padding: 0 24px;
 }
 #slider-container .slick-active.slick-center.slick-current .slider-item{
   opacity: 1;
   pointer-events: visible ;
 }
 .bottom-management {
-  margin-top: 78px;
+  margin-top: 50px;
 }
 
 .bottom-management .SStoriesHead {
@@ -141,10 +154,10 @@ letter-spacing: -1.44px;
     font-size: 24px;
     font-style: normal;
     font-weight: 360;
-    letter-spacing:0px;
-   line-height: 130%;
-   font-family: 'Inter' !important;
-    max-width: 1022px;
+    line-height: 32px;
+    letter-spacing: -0.72px;
+    font-family: 'sequel_sans_roman_head' !important;
+    max-width: 690px;
     margin-top: 17px;
     margin-bottom: 46px;
 }
@@ -251,26 +264,9 @@ p.owners-disp {
   -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
   scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
-@media screen and (max-width: 1440px) {
-.customerstoriesitem {
-    padding: 24px;
-    padding: var(--spacing-3xl, 22px);
-    border-radius: 0px 0px 30px 30px;
-    background: #F7F8FA;
-    text-align: left;
-    min-height: 142px;
-}
-.slick-slide.slick-active.slick-center.slick-current .customerstoriesitem {
-    padding: 12px 22px;
-    min-height: 156px;
-}
-.slider-item a img {
-    height: 196px;
-    object-fit: cover;
-}
-.slick-slide.slick-active.slick-center.slick-current img {
-    height: 214px;
-    object-fit: cover;
+@media screen and (max-width: 1450px) {
+.slider-item {
+    padding: 0 11px;
 }
 }
 @media screen and (max-width: 767px) {
@@ -317,8 +313,7 @@ p.owners-disp {
     line-height: 26px;
 }
 .intro-sticky {
-    height: 500px;
-    margin-top: 150px !important;
+  height: 500px;
 }
 .apply-content {
   margin-top: 0px;
@@ -330,24 +325,18 @@ p.owners-disp {
   max-width: 320px;
 }
 .slider-item a img {
-    object-fit: cover;
-    height: 99px;
+  height: 66px;
+  object-fit: cover;
 }
 .slick-slide.slick-active.slick-center.slick-current .customerstoriesitem {
-    min-height: auto;
-    padding: 12px 22px;
+  border-radius: 0px 0px 15px 15px;
 }
 .slider-item img {
   border-radius: 15px 15px 0px 0px;
 }
 .slick-slide.slick-active.slick-center.slick-current img {
-    object-fit: cover;
-    height: 151px;
-}
-.customerstoriesitem .category {
-    letter-spacing: 0;
-    margin-bottom: 0;
-    font-size: 16px;
+  height: 92px;
+  object-fit: cover;
 }
 .customerstoriesitem {
   min-height: 104px;

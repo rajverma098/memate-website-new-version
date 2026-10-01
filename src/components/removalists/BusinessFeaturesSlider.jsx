@@ -7,21 +7,21 @@ import {ArrowLeft,ArrowRight} from "lucide-react";
 const features = [
   {
     image:
-      "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaning-featucher-slider-img01.jpg",
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists01List.jpg",
     title: (
       <>
-        Never Miss <br /> a Request
+        Never Miss <br /> a Request 
       </>
     ),
     description:
-      "Every enquiry captured and tracked from the moment it comes in.",
+      "Every moving enquiry captured and tracked from the moment it comes in.",
   },
   {
     image:
-      "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaning-featucher-slider-img02.jpg",
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists02List.jpg",
     title: (
       <>
-        Quote Faster, <br /> Win More Jobs
+        Quote Faster, <br /> Win More Jobs 
       </>
     ),
     description:
@@ -29,49 +29,39 @@ const features = [
   },
   {
     image:
-      "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaning-featucher-slider-img03.jpg",
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists03List.jpg",
     title: (
       <>
-       Every Job <br /> On Track
+       Every Move <br />  On Track
       </>
     ),
     description:
-      "Manage every project from start to finish without lifting a phone call.",
+      "Manage every job from pickup to drop-off without lifting a phone call.",
   },
   {
     image:
-      "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaning-featucher-slider-img04.jpg",
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists04List.jpg",
      title: (
       <>
-        Your Team,<br /> Always Aligned
+        Your Crew, <br />  Always Aligned
       </>
     ),
     description:
-      "Assign jobs, track progress and communicate — all in one place.",
+      "Assign jobs, track progress and communicate with your removalists — all in one place.",
   },
   {
     image:
-      "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaning-featucher-slider-img05.jpg",
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists05List.jpg",
     title: "Run Your Business",
      title: (
       <>
-        See Your Whole <br /> Business At a Glance
+        See Your Whole <br /> Business At a Glance 
       </>
     ),
     description:
       "Real time visibility across every job, quote and payment. Always.",
   },
-  {
-    image:
-      "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaning-featucher-slider-img03.jpg",
-    title: (
-      <>
-       Every Job <br /> On Track
-      </>
-    ),
-    description:
-      "Manage every project from start to finish without lifting a phone call.",
-  },
+ 
 ];
 
 

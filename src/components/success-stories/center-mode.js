@@ -15,22 +15,40 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const SliderStories = () => {
     const settings = {
         className: "center",
+        stagePadding: "0px",
         centerMode: true,
         focusOnSelect: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: "350px",
         dots: false,
-        autoplay: false,
+        autoplay: true,
         slidesToScroll: 1,
         slidesToShow: 3,
         speed: 500,
       
         responsive: [
-          {
-            breakpoint: 1200,
+           {
+            breakpoint: 3000,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 3,
+               centerPadding: "150px",
+            }
+          },
+           {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+               centerPadding: "150px",
+            }
+          },
+          {
+            breakpoint: 1450,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+               centerPadding: "150px",
             }
           },
           {

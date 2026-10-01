@@ -4,16 +4,16 @@ import Image from "next/image";
 import "./InfiniteImageScroll.css";
 
 const images = [
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists01.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists02.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists03.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists04.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists05.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists06.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists07.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists08.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists09.jpg",
-  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalists10.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite01.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite02.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite03.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite04.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite05.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite06.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite07.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite08.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite09.jpg",
+  "https://memate-website.s3.ap-southeast-2.amazonaws.com/removalistsListInfinite10.jpeg",
 ];
 
 function ImageCard({ src, className = "" }) {

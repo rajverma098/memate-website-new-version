@@ -143,13 +143,33 @@
 }
 
 
+
+
 .animated-dash {
+  fill: none;
   stroke-dasharray: 4 4;
-  animation: dash-flow 1s linear infinite;
+  stroke-dashoffset: 0;
+  animation: dash-flow 0.8s linear infinite;
+  -webkit-animation: dash-flow 0.8s linear infinite;
+  will-change: stroke-dashoffset;
+}
+
+@-webkit-keyframes dash-flow {
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    stroke-dashoffset: -8;
+  }
 }
 
 @keyframes dash-flow {
-  to {
-    stroke-dashoffset: -8;
+  0% {
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+   stroke-dashoffset: -8;
   }
 }

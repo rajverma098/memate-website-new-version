@@ -25,9 +25,9 @@ const steps = [
       </>
     ),
     description:
-      "New leads, client enquiries and repeat bookings land in one organised inbox. Nothing falls through the cracks.",
+      "New leads, moving enquiries and repeat bookings land in one organised inbox. Nothing falls through the cracks.",
     label: "New request:",
-    value: "Residential - End-of-Lease · 3 bed",
+    value: "House Move · 3 Bed · Surry Hills to Manly",
   },
   {
     number: "02",
@@ -40,24 +40,24 @@ const steps = [
       </>
     ),
     description:
-      "Build professional quotes in minutes — fixed price, hourly or recurring. Clients approve with one click.",
+      "Build professional quotes in minutes — fixed price or hourly. Include travel, labour and packing costs. Clients approve with one click.",
     label: "Quote sent:",
-    value: "$480 · Awaiting approval",
+    value: "$1,200 · Awaiting approval",
   },
   {
     number: "03",
     icon: ManageJobsTeams,
     title: (
       <>
-        Manage Jobs
+        Manage Moves
         <br />
-        & Teams
+        & Crews
       </>
     ),
     description:
-      "Schedule jobs, assign cleaners, track who's on-site and get real-time progress updates — no more calls to check in.",
+      "Schedule jobs, assign removalists, track who's on-site and get real-time progress updates — no more calls to check in.",
     label: "In progress:",
-    value: "3 Cleaners · On-site 45 min",
+    value: "2 Removalists · On-site 1 hr 20 min",
   },
   {
     number: "04",
@@ -70,42 +70,25 @@ const steps = [
       </>
     ),
     description:
-      "One click turns a completed job into a professional invoice. Send it instantly, get paid faster — with automatic reminders.",
+      "One click turns a completed move into a professional invoice. Send it instantly, get paid faster — with automatic reminders.",
     label: "Paid:",
-    value: "✓ $480 · 2 hrs after sending",
+    value: "$1,200 · 1 hr after sending",
   },
   {
     number: "05",
     icon: SeeRealProfitabilityIcon,
     title: (
       <>
-        See Real 
+        See Real
         <br />
-       Profitability
+        Profitability
       </>
     ),
     description:
       "Add expenses, labour and contractor costs per job. Know your true margin — per job, per client, per week — in real time.",
     label: "Margin:",
-    value: "64% · Revenue $480 · Cost $173",
+    value: "58% · Revenue $1,200 · Cost $504",
   },
-  
-{
-    number: "06",
-    icon: CreateSendQuotes,
-    title: (
-      <>
-        Create
-        <br />
-        & Send Quotes
-      </>
-    ),
-    description:
-      "Build professional quotes in minutes — fixed price, hourly or recurring. Clients approve with one click.",
-    label: "Quote sent:",
-    value: "$480 · Awaiting approval",
-  },
- 
 ];
 
 export default function EnquiryProfit() {

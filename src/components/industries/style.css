@@ -1,5 +1,85 @@
+.industryNewStyle{
+    width: 1200px;
+    margin: 0 auto;
+}
+.industryNewStyle .headWrapStyle{
+    text-align: center;
+    padding: 44px 0;;
+}
+.industryNewStyle .headWrapStyle b {
+    color: #29292b;
+    letter-spacing: 0;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 60px;
+    font-family: sequel_sans !important;
+    margin-bottom: -15px;
+    display: inline-block;
+}
+.listIndustriesSlider__readMore:hover {
+    width: 148px;
+}
+.industryNewStyle .headWrapStyle h1 {
+    letter-spacing: -6.16px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    font-size: 220px;
+    font-weight: 420;
+    line-height: 200px;
+    font-family: sequel_sans !important;
+}
+.industryNewStyle .headWrapStyle h4 {
+   letter-spacing: 0;
+    color: #29292B;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 40px;
+    font-family: sequel_sans !important;
+}
+.industryNewStyle .headWrapStyle p {
+   letter-spacing: 0;
+    color: #757B8A;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 24px;
+    font-family: "sequel_sans_roman_head" !important;
+    max-width: 750px;
+    margin: 32px auto 0;
+}
+.smokeyGradient {
+    background: linear-gradient(90deg,#1ab2ff,#ffb258,#1ab2ff) 0 0/300%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: 6s ease-in-out infinite smokeMove;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 767px) {
 .mainGridWrap{
 padding: 0px;
 }
+
 }
+
+

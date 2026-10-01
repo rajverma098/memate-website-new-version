@@ -46,60 +46,160 @@ const CaseStudiesHome = () => {
   const pathname = usePathname();
 
   const videoRefs = useRef([]);
+  const mobileVideoRefs = useRef([]);
 
-  // GLOBAL PAGE TOP ON ROUTE CHANGE
+  /*
+   * Scroll to top when route changes
+   */
   useEffect(() => {
     window.scrollTo({
       top: 0,
       left: 0,
-      behavior: "instant",
+      behavior: "auto",
     });
   }, [pathname]);
 
-  // HOVER PLAY
+  /*
+   * Safari video configuration
+   */
+  useEffect(() => {
+    videoRefs.current.forEach((video) => {
+      if (!video) return;
+
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+      video.loop = true;
+    });
+
+    mobileVideoRefs.current.forEach((video) => {
+      if (!video) return;
+
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+      video.loop = true;
+    });
+  }, []);
+
+  /*
+   * DESKTOP - HOVER PLAY
+   */
   const handleMouseEnter = (index) => {
     const video = videoRefs.current[index];
 
-    if (video) {
-      video.play().catch(() => {});
+    if (!video) return;
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.loop = true;
+
+    /*
+     * Reset to beginning without calling video.load().
+     *
+     * Calling load() can cause playback problems in Safari.
+     */
+    try {
+      if (video.readyState >= 1) {
+        video.currentTime = 0;
+      }
+    } catch (error) {
+      // Ignore Safari media errors
+    }
+
+    const playPromise = video.play();
+
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {});
     }
   };
 
-  // HOVER STOP
-const handleMouseLeave = (index) => {
-  const video = videoRefs.current[index];
+  /*
+   * DESKTOP - HOVER STOP
+   */
+  const handleMouseLeave = (index) => {
+    const video = videoRefs.current[index];
 
-  if (video) {
+    if (!video) return;
+
     video.pause();
 
-    // RESET VIDEO
-    video.currentTime = 0;
+    /*
+     * Reset video position.
+     *
+     * DO NOT call video.load().
+     */
+    try {
+      if (video.readyState >= 1) {
+        video.currentTime = 0;
+      }
+    } catch (error) {
+      // Ignore Safari media errors
+    }
+  };
 
-    // FORCE POSTER IMAGE SHOW
-    video.load();
-  }
-};
+  /*
+   * MOBILE VIDEO PLAY
+   */
+  const handleMobileVideoPlay = (index) => {
+    const video = mobileVideoRefs.current[index];
 
-  // PAGE NAVIGATION
+    if (!video) return;
+
+    video.muted = true;
+    video.defaultMuted = true;
+    video.playsInline = true;
+    video.loop = true;
+
+    const playPromise = video.play();
+
+    if (playPromise !== undefined) {
+      playPromise.catch(() => {});
+    }
+  };
+
+  /*
+   * NAVIGATION
+   */
   const handleClick = (slug) => {
-    // OPEN FROM TOP
-    window.scrollTo(0, 0);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
 
     router.push(`/customer-stories/${slug}`);
   };
 
+  /*
+   * KEYBOARD NAVIGATION
+   */
+  const handleKeyDown = (event, slug) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      handleClick(slug);
+    }
+  };
+
   return (
     <div className="CaseStudiesSection">
+
+      {/* SECTION HEADING */}
       <div className="section-heading">
         <div className="simpleH2Heading sequel_sans">
-        <h5>Case studies </h5>
-         {/* <p>See how they use it to run their business every single day.</p> */}
+          <h5>Case studies</h5>
         </div>
       </div>
 
+      {/* CASE STUDIES */}
       <div className="CaseStudiesGrid">
+
         {caseStudies.map((item, index) => (
-          <div className="CaseStudiesItem" key={index}>
+          <div
+            className="CaseStudiesItem"
+            key={item.slug}
+          >
             <div
               className="imageBox"
               role="button"
@@ -110,43 +210,71 @@ const handleMouseLeave = (index) => {
                 cursor: "pointer",
               }}
               onClick={() => handleClick(item.slug)}
-              onKeyDown={(e) => {
-                if (e.key === "Enter" || e.key === " ") {
-                  handleClick(item.slug);
-                }
-              }}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={() => handleMouseLeave(index)}
+              onKeyDown={(event) =>
+                handleKeyDown(event, item.slug)
+              }
+              onMouseEnter={() =>
+                handleMouseEnter(index)
+              }
+              onMouseLeave={() =>
+                handleMouseLeave(index)
+              }
             >
-              {/* DESKTOP VIDEO */}
+
+              {/* ==================================================
+                  DESKTOP VIDEO
+              ================================================== */}
+
               <div className="desktopVersionVideo">
-               <video
-                ref={(el) => (videoRefs.current[index] = el)}
-                width="100%"
-                height="100%"
-                muted
-                loop
-                playsInline
-                preload="none"
-                controls={false}
-                poster={item.poster}
-              >
-                  <source src={item.video} type="video/mp4" />
+
+                <video
+                  ref={(element) => {
+                    videoRefs.current[index] = element;
+                  }}
+                  width="100%"
+                  height="100%"
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  controls={false}
+                  poster={item.poster}
+                  onLoadedMetadata={(event) => {
+                    const video = event.currentTarget;
+
+                    /*
+                     * Safari-safe properties.
+                     */
+                    video.muted = true;
+                    video.defaultMuted = true;
+                    video.playsInline = true;
+                    video.loop = true;
+                  }}
+                >
+                  <source
+                    src={item.video}
+                    type="video/mp4"
+                  />
+
                   Your browser does not support the video tag.
                 </video>
 
                 {/* TEXT OVERLAY */}
                 <div className="overlyBox overlyBoxText">
-                  <p>“{item.title}”</p>
+                  <p>
+                    “{item.title}”
+                  </p>
 
                   <div className="flextText">
                     <span>
-                      <em>{item.name},</em> {item.role}
+                      <em>{item.name},</em>{" "}
+                      {item.role}
                     </span>
 
                     <img
                       src={item.logo}
-                      alt={item.slug}
+                      alt={`${item.name} ${item.role}`}
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -158,11 +286,20 @@ const handleMouseLeave = (index) => {
                     <PlayIconStoke />
                   </div>
                 </div>
+
               </div>
 
-              {/* MOBILE VIDEO */}
+              {/* ==================================================
+                  MOBILE VIDEO
+              ================================================== */}
+
               <div className="MobileVersionVideo">
+
                 <video
+                  ref={(element) => {
+                    mobileVideoRefs.current[index] =
+                      element;
+                  }}
                   width="100%"
                   height="100%"
                   muted
@@ -172,6 +309,42 @@ const handleMouseLeave = (index) => {
                   preload="metadata"
                   controls={false}
                   poster={item.mobilePoster}
+                  onLoadedMetadata={(event) => {
+                    const video = event.currentTarget;
+
+                    video.muted = true;
+                    video.defaultMuted = true;
+                    video.playsInline = true;
+                    video.loop = true;
+
+                    /*
+                     * Safari may block autoplay even when
+                     * muted, so explicitly call play().
+                     */
+                    const playPromise =
+                      video.play();
+
+                    if (
+                      playPromise !== undefined
+                    ) {
+                      playPromise.catch(() => {});
+                    }
+                  }}
+                  onCanPlay={(event) => {
+                    const video =
+                      event.currentTarget;
+
+                    if (video.paused) {
+                      const playPromise =
+                        video.play();
+
+                      if (
+                        playPromise !== undefined
+                      ) {
+                        playPromise.catch(() => {});
+                      }
+                    }
+                  }}
                 >
                   <source
                     src={item.mobileVideo}
@@ -181,16 +354,20 @@ const handleMouseLeave = (index) => {
                   Your browser does not support the video tag.
                 </video>
 
+                {/* PLAY BUTTON */}
                 <div className="overlyBox flextPopupVideo">
                   <div className="flextTextVideo">
                     <span>Play</span>
                     <PlayIconStoke />
                   </div>
                 </div>
+
               </div>
+
             </div>
           </div>
         ))}
+
       </div>
     </div>
   );

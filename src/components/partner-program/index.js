@@ -15,11 +15,21 @@ const PartnerProgramComponentNew = () => {
          <div className="headWrap">
           <h1 className="smokeyGradient">Grow with the businesses already using meMate</h1>
           <p>The meMate Partner Program puts your business in front of thousands of Australian small and medium business owners — directly inside the app they use to run their company every day.</p>
-              <DarkMemateBlackBut
+              {/* <DarkMemateBlackBut
               link1="https://app.memate.com.au/requestdemo"
               target="_blank"
               buttonTextdark="Request a Demo"
-              showButton1={true}/>
+              showButton1={true}/> */}
+               <DarkMemateBlackBut
+              link1=""
+              link2="https://app.memate.com.au/requestdemo"
+              target="_blank"
+              buttonTextdark="Become a partenr"
+              buttonTextlight="Request a Demo"
+              showButton1={true}
+              showButton2={true}
+            
+            />
        </div>
        </div>
        <div className="sectionFlexBoxWrapper">
@@ -146,6 +156,7 @@ const PartnerProgramComponentNew = () => {
    <div className="realyPatnerWrapper">
     <b>Become a Partner</b>
     <h4 className="smokeyGradient">Ready to be listed?</h4>
+    
        <DarkMemateBlackBut
       link1=""
       target="_blank"

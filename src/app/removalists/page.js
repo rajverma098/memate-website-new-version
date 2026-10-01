@@ -4,11 +4,11 @@
 import RemovalistsPage from '../../page-components/removalists';
 
 export const metadata = {
-  title: 'Cleaning Business Software | Manage Jobs & Teams | meMate',
-  description: 'Streamline your cleaning business with meMate, cleaning business software for jobs, scheduling, teams, quotes, and invoicing. Start your free trial today.',
+  title: 'Removalist Software for Enquiries, Quotes & Jobs | meMate',
+  description: 'Manage removalist enquiries, quotes, job scheduling, invoicing, and teams in one place with meMate. Streamline your business and start your free trial today.',
   openGraph: {
-    title: 'Cleaning Business Software | Manage Jobs & Teams | meMate',
-    description: 'Streamline your cleaning business with meMate, cleaning business software for jobs, scheduling, teams, quotes, and invoicing. Start your free trial today.',
+    title: 'Removalist Software for Enquiries, Quotes & Jobs | meMate',
+    description: 'Manage removalist enquiries, quotes, job scheduling, invoicing, and teams in one place with meMate. Streamline your business and start your free trial today.',
   },
   alternates: {
     canonical: 'https://memate.com.au/removalists',

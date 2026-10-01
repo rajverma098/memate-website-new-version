@@ -3,6 +3,7 @@ import './style.css';
 import Iconsdata from "../../assests/icons";
 import React from 'react';
 import Link from 'next/link';
+import ListIndustriesSlider from "./ListIndustriesSlider"
 
 
 const IndustriesComponent = () => {
@@ -54,27 +55,25 @@ const IndustriesComponent = () => {
 
   return (
     <>
-      <div className={style.mainMenuPages}>
-     <div className={`sales-component-wrapper salesfeaturesWrapper ${style.mainHeadTitle}`}>
-         <h1 className="h1tagsseo h1tagsseof fontWeight">Industry-Specific Software Solutions for Every Business | meMate</h1>
-          <h2>industries</h2>
-          <span>
-          Here are meMate’s main features to help you quickly understand if it will be suitable for your<br/> business.
-          </span>
-           <h4 className={style.h4Heading}>Transform Your Industry with meMate’s Business Management Software</h4>
+      <div className={`industryNewStyle ${style.mainMenuPages}`}>
+     <div className="headWrapStyle">
+         <b>Made for</b>
+          <h1 className="smokeyGradient">industries</h1>
+           <h4>One platform, shaped around how your industry works</h4>
+          <p>
+          From trades to creative studios, see how meMate fits the way your business runs: quoting, jobs, invoicing, expenses and team, all in one place.
+          </p>
         </div>
-
-
-
+        <ListIndustriesSlider />
         {featuresData.map((featureCategory, categoryIndex) => (
           <div key={categoryIndex} className={style.mainGridWrap}>
-            <h2 data-aos="fade-up"
+            {/* <h2 data-aos="fade-up"
             data-aos-offset="50"
             data-aos-delay="50"
             data-aos-duration="500"
             data-aos-mirror="true"
             data-aos-once="false"
-            data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2>
+            data-aos-anchor-placement="top-bottom">{featureCategory.category}</h2> */}
             <div className={style.mainGridwtapFlex}>
               {featureCategory.items.map((item, itemIndex) => (
                  <Link data-aos="fade-up"

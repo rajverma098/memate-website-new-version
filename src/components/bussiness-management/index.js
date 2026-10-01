@@ -9,6 +9,7 @@ import Image from "next/image";
 const BussinessManagement = () => {
   return (
     <div className="home-page-content filtercolorbox">
+    <div className="heroBannerHomePage">
       <div className="home-container-wrapper">
         <div
           className="home-page-section"
@@ -57,6 +58,7 @@ const BussinessManagement = () => {
       showButton1={true}
       showButton2={true}
     />
+    </div>
     </div>
   );
 };

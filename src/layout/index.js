@@ -70,7 +70,7 @@ const Layout = ({ children }) => {
         gsap.set(applyContent, {
           position: "sticky",
           top: stickyTop,
-          yPercent: -20,
+          yPercent: -18,
         });
       };
 
