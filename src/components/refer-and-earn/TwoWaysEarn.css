@@ -1,0 +1,150 @@
+.twoWaysWrap {
+    background-color: #fff;
+    justify-content: center;
+    width: 100%;
+    padding: 80px 0px;
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+.tw-container {
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+}
+.tw-card {
+  width: 100%;
+  max-width: 430px;
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.tw-card-left {
+    background-image: linear-gradient(#fff, #fff), radial-gradient(43.74% 561.99% at 27.57% 30.42%, #1ab3ff .15%, #ffb258 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: 1px solid #0000;
+}
+.tw-card-right {
+ background-image: linear-gradient(#fff, #fff), radial-gradient(43.74% 561.99% at 27.57% 30.42%, #1ab3ff .15%, #ffb258 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    border: 1px solid #0000;
+}
+.tw-card-title {
+    color: #29292b;
+    font-size: 32px;
+    line-height: 110%;
+    font-family: sequel_sans_semi_bold_head !important;
+    margin-bottom: 32px;
+}
+.tw-card-text {
+    color: #29292b;
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 140%;
+    font-family: 'sequel_sansbook_head' !important;
+}
+.tw-btn {
+  background-color: #3a3a3a;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: auto; /* Pushes button to the bottom if text lengths differ */
+}
+
+.tw-btn:hover {
+  background-color: #1f2937;
+}
+.tw-center {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tw-center span {
+  display: block;
+}
+.tw-title-blue {
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0;
+    text-align: center;
+    letter-spacing: -2.16px;
+    text-align: center;
+    font-size: 144px;
+    font-weight: 420;
+    line-height: 124px;
+    position: relative;
+    font-family: sequel_sans_semi_bold_disp !important;
+}
+.tw-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tw-lineSmall {
+    border: 1px solid #29292B;
+    width: 20px;
+    height: 1px;
+    margin: 0 25px;
+}
+.tw-title-green ,.tw-title-gold{
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0;
+    text-align: center;
+    letter-spacing: -2.16px;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 420;
+    line-height: 80px;
+    position: relative;
+    font-family: sequel_sans_semi_bold_disp !important;
+}
+
+
+  @media screen and (max-width: 767px) {
+    
+.tw-container {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    gap: 20px;
+}
+.twoWaysWrap {
+    padding: 46px 0;
+}
+.tw-card {
+    max-width: 100%;
+    padding: 24px;
+}
+.tw-title-blue {
+    font-size: 113px;
+    line-height: 88px;
+}
+.tw-title-green, .tw-title-gold {
+    font-size: 53px;
+    line-height: 51px;
+}
+.tw-lineSmall {
+    margin: 11px auto 16px;
+}
+.tw-title {
+    display: grid;
+    text-align: center;
+    gap: 19px;
+}
+
+  }

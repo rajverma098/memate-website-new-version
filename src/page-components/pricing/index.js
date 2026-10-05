@@ -10,7 +10,7 @@ const PricingPage = () => {
     <AppWrapper>
     <Layout>
      <div className="bgshadowwrapper">
-        <PricingComponent/> 
+        <PricingComponent/>   
       </div> 
     </Layout>
     </AppWrapper>

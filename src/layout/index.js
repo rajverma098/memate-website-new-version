@@ -21,6 +21,8 @@ const Layout = ({ children }) => {
   const isNewBusinessPage = pathname === "/granthelp";
   const isCalculatorPage =
     pathname === "/business-valuation-calculator";
+  const referAndEarnPage =
+    pathname === "/refer-and-earn";
   useEffect(() => {
     window.scrollTo({
       top: 0,
@@ -195,7 +197,8 @@ const Layout = ({ children }) => {
       {!isSitemapPage &&
         !isrunyourbusinessPage &&
         !isNewBusinessPage &&
-        !isCalculatorPage && (
+        !isCalculatorPage && 
+        !referAndEarnPage && (
           <div
             ref={stickySectionRef}
             className="sticky-section-switch">

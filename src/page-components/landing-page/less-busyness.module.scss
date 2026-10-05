@@ -74,8 +74,8 @@ height: 810px;
 
 
   .videoOverlyWrap{
-   position: relative;
-    top: 0;
+   position: absolute;
+    top: 75px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -85,16 +85,16 @@ height: 810px;
      @media only screen and (min-width: 1300px) and (max-width: 1800px) {
       top: -15px;
 
-     }
-  //     @media screen and (max-width: 767px) {
-  //     position: relative;
-  //     top: 41px;
-  //     }
-  //     @media only screen and (min-width: 600px) and (max-width: 1024px) {
-  //     position: relative;
-  //     }
+    }
+      @media screen and (max-width: 767px) {
+      position: relative;
+      top: 41px;
+      }
+      @media only screen and (min-width: 600px) and (max-width: 1024px) {
+      position: relative;
+      }
      
-   }
+  }
 .shelfgradient {
     //     padding: 70px 0 318px;
     // position: relative;
@@ -108,7 +108,7 @@ height: 810px;
     // background-size: contain;
     // background-repeat: no-repeat;
     @media screen and (max-width: 767px) {
-        padding: 0px 0 0px;
+        padding: 0px 0 85px;
         background-position: bottom;
         background-size: contain;
     } 
@@ -140,13 +140,13 @@ and (max-width: 1366px) {
     font-family: 'sequel_sans_semi_bold_disp' !important;
     margin-bottom: 0px;
     margin-top: 15px;
-    color: #101828;
+    color: #29292B;
     text-align: center;
-    font-size: 56px;
+    font-size: 72px;
     font-style: normal;
     font-weight: 100;
     line-height: 80px; 
-    letter-spacing: 0px;
+    letter-spacing: -2.16px;
     @media screen and (max-width: 480px) {
         font-size: 22px;
         margin-bottom: 15px;
@@ -159,8 +159,7 @@ and (max-width: 1366px) {
     max-width: 100%;
     text-align: center;
     margin-bottom: 46px;
-    line-height: 130%;
-    font-family: 'Inter' !important;
+    font-family: "sequel_sans_roman_head" !important;
     padding-top: 15px;
     max-width: 1022px;
     margin: 0 auto 49px;
@@ -168,15 +167,12 @@ and (max-width: 1366px) {
     text-align: center;
     font-size: 24px;
     font-style: normal;
-    font-weight: 360;
-    letter-spacing: 0px;
+    font-weight: 100;
+    line-height: 32px; 
+    letter-spacing: -0.72px;
       @media screen and (max-width: 767px) {
-    margin: 0 auto 12px;
+    margin: 0 auto 23px;
     font-size: 20px;
-    padding-top: 0;
-    br{
-      display: none;
-    }
   }
     }
 
@@ -194,7 +190,7 @@ and (max-width: 1366px) {
            @media only screen and (min-width: 1300px) and (max-width: 1800px) {
                  width: 713px;
         height: 409px;
-        margin: 0 auto 0px;
+        margin: 0 auto 182px;
              }
        @media screen and (max-width: 1024px) {
         width: 100%;

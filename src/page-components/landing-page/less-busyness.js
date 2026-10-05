@@ -4,6 +4,7 @@ import "./videostyles.css";
 import "react-responsive-modal/styles.css";
 import { Modal } from "react-responsive-modal";
 import PlayIconVideo from "../../svg/PlayIconVideo";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import PauseIconVideo from "../../svg/PauseIconVideo";
 
 const LessBusyness = () => {
@@ -11,7 +12,7 @@ const LessBusyness = () => {
   const [fromUrlParam, setFromUrlParam] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
   const modalVideoRef = useRef(null);
-  const previewVideoRef = useRef(null);
+
   const onOpenModal = () => {
     setOpen(true);
   };
@@ -33,38 +34,16 @@ const LessBusyness = () => {
     }
   }, []);
 
-  useEffect(() => {
-    const video = previewVideoRef.current;
-    if (!video) return undefined;
-
-    video.pause();
-    video.muted = true;
-    video.playsInline = true;
-    video.setAttribute("playsinline", "");
-    video.setAttribute("webkit-playsinline", "");
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          video.play().catch(() => {});
-        } else {
-          video.pause();
-        }
-      },
-      { threshold: 0.35, rootMargin: "0px" }
-    );
-
-    observer.observe(video);
-    return () => observer.disconnect();
-  }, []);
-
+  // Handle video playback when modal opens
   useEffect(() => {
     if (open && modalVideoRef.current) {
       if (fromUrlParam) {
+        // Unmute and play when opened from URL param
         modalVideoRef.current.muted = false;
         modalVideoRef.current.play();
         setIsPlaying(true);
       } else {
+        // Muted autoplay when opened from home screen button
         modalVideoRef.current.muted = true;
         modalVideoRef.current.play();
         setIsPlaying(true);
@@ -86,10 +65,11 @@ const LessBusyness = () => {
   return (
     <>
       <div className={style.shelfgradientwrap}>
-        {/* <div className={style.videobackground}>
+        <div className={style.videobackground}>
                    <video
                   width="100%"
                   height="100%"
+                  // poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter-memate-bg.jpg"
                   autoPlay
                   muted
                   loop
@@ -97,34 +77,35 @@ const LessBusyness = () => {
                   className={style.reactPlayer}
                 >
                   <source
-                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/video-bg-compressed-main1.mp4"
+                    src="https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/video/video-bg.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
                 </video>
-          </div> */}
+          </div>
 
         <div className={`${style.shelfgradient} ${style.videoOverlyWrap} `}>
           <div className={style.lessContainers}>
             <h3>More Business - Less Busyness</h3>
              <p>
-             You can send a quote in just a few clicks, convert it into a  <br />project, and assign team members instantly. Project timelines,  <br />expenses, client chats, invoices - it’s all right here.
-             
-        
+              You can send a quote in just a few clicks, convert it into a
+              project, and assign team members instantly.
+              <br />
+              Project timelines, expenses, client chats, invoices - it’s all
+              right here.
             </p>
 
             <div className={style.videoWrapper}>
               <div className={style.videoWrapper1}></div>
               <div className={style.videoWrapperv}>
                 <video
-                  ref={previewVideoRef}
                   width="100%"
                   height="100%"
                   poster="https://memate-website.s3.ap-southeast-2.amazonaws.com/videoposter-memate-bg.jpg"
+                  autoPlay
                   muted
                   loop
                   playsInline
-                  preload="none"
                   className={style.reactPlayer}
                 >
                   <source

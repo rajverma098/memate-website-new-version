@@ -47,7 +47,7 @@ const AffiliateProgramComponent = () => {
        <div className="partNerGridItem addMorePartner">
       
       <div className="affiliateBtnProps affiliateBtnPropsC">
-         <EmailNow buttonText="Become a Partner" headingText="Affiliate Enquiry Form" /> 
+         <EmailNow buttonText="Become a Partner" headingText="Affiliate Enquiry Form" />   
     </div> 
        </div>
        </div>

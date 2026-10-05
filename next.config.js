@@ -115,7 +115,10 @@ const ContentSecurityPolicy = `
     https://linkedin.com
     https://www.google.com/recaptcha/
     https://www.gstatic.com/recaptcha/
-    https://www.recaptcha.net/;
+    https://www.recaptcha.net/
+    https://www.facebook.com         
+    https://web.facebook.com          
+    https://connect.facebook.net;
 
   object-src 'none';
 `;

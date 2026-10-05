@@ -1,0 +1,87 @@
+.pricing-hero {
+    text-align: center;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 86px 20px 0;
+    display: flex;
+}
+.pricing-hero .container {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing-hero .title-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 20px; 
+}
+.pricing-hero .title-wrapper h1 {
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -5.12px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 182.76px;
+    font-weight: 400;
+    line-height: 219.14px;
+    position: relative;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.pricing-hero .hero-image {
+    z-index: 10;
+    width: 320px;
+    height: auto;
+    position: absolute;
+    top: -131px;
+    right: -137px;
+}
+.pricing-hero .hero-subtitle {
+    letter-spacing: 0px;
+    text-align: center;
+    color: #29292b;
+    margin-bottom: 24px;
+    font-size: 48px;
+    font-weight: 415;
+    line-height: 60px;
+    font-family: sequel_sans !important;
+}
+.pricing-hero .hero-description {
+    color: #757b8a;
+    letter-spacing: 0;
+    max-width: 900px;
+    margin: 0 0 19px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Inter !important;
+}
+
+.pricing-hero .hero-disclaimer {
+   color: #888E9E;
+    letter-spacing: 0;
+    max-width: 900px;
+    margin: 16px 0 19px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: Inter !important;
+}
+ .smokeyGradient {
+        background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff);
+        background-size: 300%;
+        animation: smokeMove 6s ease-in-out infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      @keyframes smokeMove {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
