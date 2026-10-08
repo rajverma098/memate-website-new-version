@@ -4,4 +4,10 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+Disallow: /news/tags/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /thank-you/
+Disallow: /watch-demo/
+
 Sitemap: https://memate.com.au/sitemap.xml

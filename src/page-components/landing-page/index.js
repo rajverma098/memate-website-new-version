@@ -19,6 +19,7 @@ import CaseStudiesHome from "../../components/casestudies-home";
 import BrandLogoSlide from "../../components/logopartner";
 import HowItWork from "../../components/how-it-work";
 import HomePageFeatuchers from "./HomePageFeatuchers";
+import ReviewAppLogo from "./ReviewAppLogo";
 
 // import AppWrapper from "../../components/AppWrapper";
 import SmoothScroll from "./SmoothScroll";
@@ -58,8 +59,9 @@ const LandingPage = ({ postsLatest }) => {
         <SmoothScroll/> 
         <Layout>
       
-          <BussinessManagement />       
-          <LessBusyness />      
+          <BussinessManagement />   
+           <ReviewAppLogo />       
+          <LessBusyness />    
           <LessMoreBusinessGrid />      
           <FeaturedOn />      
           <FindOneApplication /> 

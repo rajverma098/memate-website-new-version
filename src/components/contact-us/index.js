@@ -80,7 +80,7 @@ const ContactUsComponent = () => {
             </div>
             <div className='query-button'>
                 {/* <button>Chat now</button> */}
-                <ChatButton />
+                <ChatButton / >
             </div>
           </div>
           <div className='query-card query-3 '>

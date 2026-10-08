@@ -1,0 +1,349 @@
+.erp-compare .erp-compare-container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.erp-compare .erp-header {
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 860px;
+  margin: 0 auto;
+}
+.erp-compare .main-heading {
+  letter-spacing: 0px;
+    text-align: center;
+    color: rgb(41, 41, 43);
+    font-size: 48px;
+    font-weight: 420;
+    line-height: 60px;
+    font-family: sequel_sans_semi_bold_disp !important;
+    margin: 0px 0px 14px;
+}
+.erp-compare .sub-heading {
+ color: #757b8a;
+    letter-spacing: 0;
+    margin: 0 0 19px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    font-family: Inter !important;
+}
+.erp-compare .erp-card {
+    border: 1px solid #eff0f7;
+    border-radius: 32px;
+    margin-top: 48px;
+    padding: 32px 48px;
+    box-shadow: 0 2px 52px #14142b14;
+    position: relative;
+    z-index: 1;
+}
+.erp-compare .card-title {
+    font-weight: 370;
+    text-align: center;
+    color: #29292B;
+    margin: 0 0 41px;
+    font-size: 28px;
+    line-height: 32px;
+    font-family: sequel_sans !important;
+    letter-spacing: 0;
+}
+.erp-compare .card-body {
+    grid-template-columns: 1fr auto 268px;
+    align-items: center;
+    gap: 21px;
+    display: grid;
+}
+.erp-compare .rows-column {
+    flex-direction: column;
+    gap: 0;
+    display: flex;
+}
+.erp-compare .compare-row {
+    grid-template-columns: 193px 1fr;
+    align-items: center;
+    gap: 21px;
+    display: grid;
+}
+.erp-compare .row-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.erp-compare .brand-memate {
+    letter-spacing: 0;
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: 420;
+    line-height: 60px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+}
+.erp-compare .row-label .brand-erp{
+font-weight: 420;
+    text-align: left;
+    color: #29292B;
+    font-size: 30px;
+    line-height: 60px;
+    font-family: sequel_sans !important;
+    letter-spacing: 0;
+}
+.erp-compare .brand-sub {
+    color: #757b8a;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: Inter !important;
+}
+.erp-compare .row-bar {
+    width: 100%;
+    position: relative;
+    border-left: 1px solid #D9DBE3;
+    height: 100%;
+}
+.erp-compare .bar-fill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 40px;
+  border-radius: 0 6px 6px 0;
+}
+.erp-compare .memate-fill {
+    background: #FFB358;
+    width: 18px;
+}
+.erp-compare .erp-fill {
+  width: 60%;
+  background: #d9dce0;
+}
+.erp-compare .row-value {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.erp-compare .value-primary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.erp-compare .value-amount {
+    color: #29292B;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: Inter !important;
+    letter-spacing: 0%;
+}
+
+.erp-compare .value-sub {
+    color: #757B8A;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    font-family: Inter !important;
+    letter-spacing: 0%;
+}
+.erp-compare .arrow-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4px;
+}
+.erp-compare .statement-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  min-width: 200px;
+}
+.erp-compare .statement-label {
+    color: #29292B;
+    margin: 0 0 2px;
+    font-size: 24px;
+    font-weight: 420;
+    line-height: 130%;
+    font-family: sequel_sans !important;
+}
+.erp-compare .statement-highlight {
+    letter-spacing: 0;
+    color: #29292B;
+    margin: 0;
+    font-size: 48px;
+    font-weight: 100;
+    line-height: 60px;
+    font-family: sequel_sans !important;
+}
+.erp-compare .statement-sub {
+  color: #757B8A;
+    font-size: 20px;
+    font-weight: 420;
+    line-height: 130%;
+    font-family: sequel_sans !important;
+}
+.erp-compare .card-footnote {
+   color: #999EAB;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: Inter !important;
+    letter-spacing: 0%;
+    margin-top: 32px;
+    text-align: center;
+}
+.graph-wrapper {
+    border-left: 1px solid #d9dbe3;
+    flex-direction: column;
+    gap: 24px;
+    padding: 21px 11px 21px 0;
+    display: flex;
+}
+.graph-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+.bar-and-amount {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  height: 40px;
+}
+.chip-orange {
+    background: #ffb358;
+    border-radius: 0 6px 6px 0;
+    flex-shrink: 0;
+    width: 18px;
+    height: 40px;
+}
+.bar-grey {
+    background: #E8EBF0;
+    border-radius: 0 6px 6px 0;
+    flex-shrink: 0;
+    width: 315px;
+    height: 40px;
+}
+.bargreyProgress {
+    background: #CCD1D9;
+    width: 72%;
+    height: 40px;
+}
+.value-amount {
+  font-size: 22px;
+  font-weight: 700;
+  color: #29292B;
+  line-height: 26px;
+  letter-spacing: -0.2px;
+  white-space: nowrap;
+}
+.value-sub {
+  font-size: 16px;
+  font-weight: 400;
+  color: #757B8A;
+  line-height: 22px;
+  padding-left: 0; 
+}
+.erp-card:before {
+    content: "";
+    filter: blur(30px);
+    pointer-events: none;
+    pointer-events: none;
+    will-change: transform, opacity;
+    z-index: -1;
+    background: radial-gradient(circle, #1eb3dc60 0%, #1eb2dc00 70%);
+    width: 142px;
+    height: 539px;
+    animation: 6s ease-in-out infinite blueGlow;
+    position: absolute;
+    bottom: -153px;
+    left: -120px;
+}
+.erp-card:after {
+    content: "";
+    filter: blur(30px);
+    pointer-events: none;
+    pointer-events: none;
+    will-change: transform, opacity;
+    background: radial-gradient(circle, #ffb25969 0%, #ffb25900 70%);
+    width: 142px;
+    height: 539px;
+    animation: 6s ease-in-out infinite blueGlow;
+    position: absolute;
+    top: -153px;
+    right: 0px;
+    z-index: -1;
+}
+
+@media (max-width: 767px) {
+.erp-compare .main-heading {
+    margin: 0 0 14px;
+    font-size: 30px;
+    line-height: 36px;
+    padding: 0 4px;
+}
+.erp-compare .sub-heading {
+    font-size: 20px;
+    line-height: 27px;
+}
+.erp-compare .erp-compare-container {
+    width: 100%;
+    max-width: 100%;
+}
+.erp-compare .card-title {
+    margin: 0 0 32px;
+    font-size: 23px;
+    line-height: 28px;
+}
+.erp-compare .compare-row {
+    grid-template-columns: 1fr;
+}
+.bar-grey {
+    width: 100%;
+}
+.erp-compare .card-body {
+    grid-template-columns: 1fr;
+}
+.erp-compare .row-label {
+    flex-direction: column;
+    gap: 2px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+.erp-compare .value-amount {
+    font-size: 13px;
+    line-height: 18px;
+}
+.erp-compare .value-sub {
+    font-size: 12px;
+    line-height: 17px;
+}
+.erp-compare .erp-card {
+    padding: 32px 23px;
+    margin: 0 12px;
+}
+.erp-compare .arrow-column {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    display: flex;
+    transform: rotate(90deg);
+}
+.bar-and-amount {
+    align-items: center;
+    gap: 16px;
+    height: 40px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.erp-compare .statement-column {
+    min-width: auto;
+    display: flex;
+    text-align: center;
+}
+.erp-compare .statement-highlight {
+    font-size: 39px;
+    line-height: 52px;
+    text-align: center;
+}
+}

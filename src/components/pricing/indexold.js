@@ -64,7 +64,7 @@ const PricingComponent = () => {
                 </div>
           </div> */}
         </div>
-      <PricingTable /> 
+      <PricingTable />  
       <PricingLightTable />
 
       <div className={style.questionText}>

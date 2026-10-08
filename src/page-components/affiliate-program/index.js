@@ -1,14 +1,16 @@
 'use client'
 import React from 'react'
 import Layout from '../../layout';
-import AffiliateProgramComponent from '../../components/affiliate-program';
+import ReferAndEarnComponent from '../../components/affiliate-program';
 import AppWrapper from '../../components/AppWrapper';
-const PartnerProgramPage = () => {
+import SmoothScroll from "./SmoothScroll";
+const ReferAndEarnPage = () => {
   return (
     <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
-        <AffiliateProgramComponent/>
+         <SmoothScroll/>  
+        <ReferAndEarnComponent/>  
         </div>
     </Layout>
     </AppWrapper>
@@ -16,4 +18,4 @@ const PartnerProgramPage = () => {
 }
 
 
-export default PartnerProgramPage;
+export default ReferAndEarnPage;

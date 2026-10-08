@@ -6,7 +6,7 @@ const PricingHero = () => {
     <section className="pricing-hero">
       <div className="container">
         <div className="title-wrapper">
-          <h1 className="smokeyGradient">pricing</h1>
+          <h1 className="smokeyGradient">meMate pricing</h1>
           <img
             className="hero-image"
             srcSet={`https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing3x.png 600w, https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing2x.png 1200w, https://memate-website.s3.ap-southeast-2.amazonaws.com/media/pricing1x.png 1800w`}
@@ -26,8 +26,8 @@ const PricingHero = () => {
         </p>
         <div className='topSpaceGap'>
          <DarkMemateBlackBut
-      link1=""
-      link2="https://app.memate.com.au/onboarding"
+      link1="https://app.memate.com.au/onboarding"
+      link2="https://app.memate.com.au/requestdemo"
       target="_blank"
       buttonTextdark="Start free trial"
       buttonTextlight="Book a demo"

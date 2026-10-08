@@ -1500,7 +1500,7 @@ body::-webkit-scrollbar-thumb ,
   text-align: center;
 }
 
-.kb-section-wiki-description, h2, p, span {
+/* .kb-section-wiki-description, h2, p, span {
   color: #29292b;
   font-family: sequel_sans_semi_bold_disp !important;
     font-size: 13px;
@@ -1508,7 +1508,7 @@ body::-webkit-scrollbar-thumb ,
   font-weight: 420;
   line-height: 40px;
   text-decoration: none;
-}
+} */
 
 .MainPageLink, .pageBreadcrumbs ul li {
   color: #667085;

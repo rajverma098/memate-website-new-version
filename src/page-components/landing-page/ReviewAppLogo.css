@@ -1,0 +1,138 @@
+/* ===== Container ===== */
+.memateRewardWrap {
+  width: 1100px;
+  max-width: 100%;
+  margin: 50px auto 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.memateRewardTrack {
+    will-change: transform;
+    align-items: center;
+    gap: 32px;
+    width: max-content;
+    padding: 10px 37px 73px;
+    display: flex;
+}
+
+/* 5 or fewer → static, spread evenly */
+.memateRewardTrack.is-static {
+  width: 100%;
+  justify-content: space-between;
+  animation: none;
+}
+
+/* Hide duplicate group in static (desktop) mode */
+.memateRewardTrack.is-static .memateRewardItem:nth-child(n + 6) {
+  display: none;
+}
+
+/* More than 5 → infinite marquee */
+.memateRewardTrack.is-sliding {
+   animation: memateScroll 30s linear infinite;
+}
+
+.memateRewardWrap:hover .memateRewardTrack.is-sliding {
+  animation-play-state: paused;
+}
+
+/* ===== Card ===== */
+.memateRewardItem {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-color: #fff;
+  background-image:
+    linear-gradient(#fff, #fff),
+    radial-gradient(
+      43.74% 561.99% at 27.57% 30.42%,
+      rgb(26, 179, 255) 0.15%,
+      rgb(255, 178, 88) 100%
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+
+  padding: 6px 9px;
+  min-width: 180px;
+  min-height: 90px;
+
+  box-shadow:
+    2.02px 4.03px 10.08px 0px #4d596f14,
+    8.06px 16.8px 18.14px 0px #4d596f12,
+    18.14px 36.95px 24.86px 0px #4d596f0a,
+    32.25px 65.85px 29.56px 0px #4d596f03,
+    50.39px 102.8px 32.25px 0px #4d596f00;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.memateRewardItem:hover {
+  box-shadow:
+    0 4px 8px rgba(77, 89, 111, 0.08),
+    0 10px 20px rgba(77, 89, 111, 0.1),
+    0 20px 35px rgba(77, 89, 111, 0.08);
+  transform: translateY(-2px);
+}
+
+.memateRewardItem img {
+  width: 153px;
+  height: 43px;
+  object-fit: contain;
+}
+
+/* ===== Keyframes: 2 identical groups → move exactly -50% ===== */
+@keyframes memateScroll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+/* ================================================================
+   MOBILE: always infinite slide, 2 items visible per screen
+   ================================================================ */
+@media (max-width: 767px) {
+  .memateRewardWrap {
+    width: 100%;
+    margin: 40px 0 -60px;
+    overflow: hidden;
+  }
+
+  .memateRewardTrack,
+  .memateRewardTrack.is-static,
+  .memateRewardTrack.is-sliding {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    width: max-content;
+    padding: 10px 16px 53px;
+    animation: 18s linear infinite memateScroll;
+    display: flex;
+  }
+
+  /* Re-show all items on mobile even if is-static */
+  .memateRewardTrack.is-static .memateRewardItem:nth-child(n + 6) {
+    display: flex;
+  }
+
+  .memateRewardItem {
+    min-width: calc(50vw - 40px);
+    max-width: calc(50vw - 40px);
+    min-height: 80px;
+    padding: 6px;
+    box-sizing: border-box;
+  }
+
+  .memateRewardItem img {
+    width: 100%;
+    max-width: 135px;
+    height: 67px;
+    object-fit: contain;
+  }
+}

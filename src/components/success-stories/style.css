@@ -117,7 +117,7 @@
 .slick-slide.slick-active.slick-center.slick-current img {
     object-fit: cover;
     height: 244px;
-    transition: height 1s ease-in-out;
+    /* transition: height 1s ease-in-out; */
 }
 .slider-item img {
   width: 100%;

@@ -41,29 +41,40 @@
 .page-partner-program .sticky-section-switch {
     display: none;
 }
-.affiliateWrapper .headWrap h1 {
+.referAndEarnWrap .headWrap h1 {
     -webkit-text-fill-color: transparent;
     letter-spacing: 0px;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
     position: relative;
     font-family: 'sequel_sans_semi_bold_disp' !important;
     font-weight: 420;
-    font-size: 72px;
-    line-height: 91px;
+    font-size: 144px;
+    line-height: 124px;
     letter-spacing: -2.16px;
     text-align: center;
 
 }
-.affiliateWrapper .headWrap p {
-     font-family: 'sequel_sans' !important;
-        font-weight: 415;
-        font-size: 48px;
-        line-height: 60px;
-        letter-spacing: 0px;
-        text-align: center;
-       color: rgba(41, 41, 43, 1);
-       margin-bottom: 25px;
+.referAndEarnWrap .headWrap h6 {
+    letter-spacing: 0;
+    text-align: center;
+    color: #29292b;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 415;
+    line-height: 60px;
+    font-family: sequel_sans !important;
+}
+.referAndEarnWrap .headWrap p {
+    letter-spacing: 0px;
+    text-align: center;
+    color: #757B8A;
+    max-width: 750px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 24px;
+    font-family: 'sequel_sans_roman_head' !important;
+    margin: 40px auto 40px;
 }
 .partNerGridItem {
   border-radius: 16px;
@@ -78,14 +89,83 @@
     transition: transform .6s;
     margin-bottom: -3px;
 }
+.questionAnswerMain .question-answer-ques.selected .question-answer-ques-infoF {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg,#1ab2ff,#ffb258,#1ab2ff) 0 0/100%;
+    -webkit-background-clip: text;
+}
+
+.question-answer-wrappercl{
+  width: 900px;
+  margin: 70px auto 40px;
+}
+.cleaningFaqs .question-answer-headingcl {
+    color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 46px;
+    font-weight: 100;
+    line-height: 120%;
+    font-family: sequel_sans !important;
+    text-align: center;
+}
+.cleaningFaqs .question-answer-headingcl span{
+ color: #101828;
+    letter-spacing: -1.3px;
+    margin: 0;
+    font-size: 46px;
+     font-family: 'sequel_sans_bold_disp' !important;
+  font-weight: 100;
+    line-height: 120%;
+    display: block;
+}
+
+.tw-longParagraph p {
+    letter-spacing: 0;
+    text-align: center;
+    color: #757b8a;
+    margin: 70px auto 0;
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 24px;
+    font-family: sequel_sans_roman_head !important;
+}
 .partNerGridItem:hover img {
   transform: scale(1.12);
+}
+.tw-bottomTextGradient {
+    margin: 160px 0;
+    text-align: center;
+}
+.tw-bottomTextGradient h5 {
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0;
+    text-align: center;
+    letter-spacing: -2.16px;
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 72px;
+    font-weight: 420;
+    line-height: 86px;
+    position: relative;
+    font-family: sequel_sans_semi_bold_disp !important;
+}
+.tw-bottomTextGradient p {
+    letter-spacing: -0.72px;
+    text-align: center;
+    color: #757b8a;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 32px;
+    font-family: sequel_sans_roman_head !important;
+    max-width: 1022px;
+    margin: 0 auto;
 }
 .partNerGridWrap {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     gap: 20px;
-    padding: 20px 0 3px;
+    padding: 40px 0 30px;
     display: grid;
 }
 .partNerGridItem{
@@ -118,23 +198,34 @@
     margin: 50px auto 0;
     text-align: center;
 }
-.partNerEnquiryWrap span{
-   font-family: 'sequel_sansbook_head' !important;
-    font-weight: 405;
-    font-size: 32px;
-    line-height: 60px;
-    letter-spacing: 0px;
+.partNerEnquiryWrap span {
+    letter-spacing: 0;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
+    color: #29292B;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'sequel_sans' !important;
+    font-weight: 100;
 }
-.partNerEnquiryWrap span b{
-   font-family: 'sequel_sans_bold_disp' !important;
-    font-weight: 405;
-    font-size: 32px;
-    line-height: 60px;
-    letter-spacing: 0px;
+.partNerEnquiryWrap span em {
+    letter-spacing: 0;
     text-align: center;
-    color: rgba(0, 0, 0, 1);
+    color: #29292B;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'sequel_sans' !important;
+    font-weight: 100;
+    font-style: normal;
+    display: block;
+}
+.partNerEnquiryWrap span b {
+    letter-spacing: 0;
+    text-align: center;
+    color: #29292b;
+    font-size: 48px;
+    line-height: 60px;
+    font-family: 'sequel_sans_bold_disp' !important;
+    font-weight: 100;
 }
 .addMorePartner {
     position: relative;
@@ -308,6 +399,10 @@
  text-align: center;
     margin: 100px 0;
 }
+.topSpaceGapFlex {
+    display: flex;
+    justify-content: center;
+}
 .processStepPartner h5{
     font-family: 'sequel_sans' !important;
     font-weight: 415;
@@ -462,31 +557,67 @@ margin: 0 auto 27px;
     display: block;
 }
       @media screen and (max-width: 767px) {
+        .topSpaceGapFlex {
+    justify-content: center;
+    display: block;
+}
+
+    .referAndEarnWrap .headWrap h6 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 415;
+    line-height: 36px;
+}
         .affiliateWrapper {
             width: 100%;
             padding: 0 15px;
         }
+        .question-answer-wrappercl {
+    width: 100%;
+    margin: 38px auto 40px;
+}
         .affiliateWrapper .headWrap h1 {
             font-size: 47px;
             line-height: 83px;
                 margin-bottom: 5px;
         }
-        .affiliateWrapper .headWrap p {
-            font-size: 28px;
-            line-height: 36px;
-        }
+        .tw-bottomTextGradient p {
+    letter-spacing: 0;
+    margin: 0 auto;
+    font-size: 19px;
+    line-height: 32px;
+}
+ .affiliateWrapper .headWrap p {
+    font-size: 21px;
+    line-height: 28px;
+}
+.referAndEarnWrap .headWrap p {
+    max-width: 100%;
+    margin: 14px auto 31px;
+}
+
         .partNerEnquiryWrap {
     width: 100%;
     margin: 32px auto 0;
     }
-    .partNerEnquiryWrap span,.partNerEnquiryWrap span b {
-    font-size: 16px;
-        line-height: 22px;
-    }
+  .partNerEnquiryWrap span, .partNerEnquiryWrap span b {
+    font-size: 23px;
+    line-height: 22px;
+}
+.tw-bottomTextGradient {
+    text-align: center;
+    margin: 60px 0;
+}
     .growingWrapPartner {
     text-align: center;
     width: 100%;
     margin: 32px auto;
+}
+.tw-bottomTextGradient h5 {
+    letter-spacing: 0;
+    margin-bottom: 40px;
+    font-size: 42px;
+    line-height: 48px;
 }
 .partNerGridWrap {
     grid-template-columns: 1fr 1fr;

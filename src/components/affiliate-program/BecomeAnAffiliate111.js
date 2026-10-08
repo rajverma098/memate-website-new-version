@@ -187,7 +187,7 @@ const BecomeAnAffiliate = (props) => {
 
       <Dialog
         visible={visible}
-        style={{ width: '620px' }}
+        style={{ width: '700px' }}
         className={style.requestsendModel}
         onHide={() => setVisible(false)}
         footer={footerContent}
@@ -199,6 +199,7 @@ const BecomeAnAffiliate = (props) => {
               display: 'grid',
               gridTemplateColumns: '1fr 1fr',
               gap: '20px',
+              alignItems: 'flex-end'
             }}
           >
             <div className={style.marginbotton}>
@@ -335,33 +336,36 @@ const BecomeAnAffiliate = (props) => {
             />
           </div>
 
-          <div
-            className={style.marginbotton}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '8px',
-              marginTop: '15px',
-            }}
-          >
-            <Controller
-              name="terms_accepted"
-              control={control}
-              render={({ field }) => (
-                <input
-                  type="checkbox"
-                  checked={field.value}
-                  onChange={(e) => field.onChange(e.target.checked)}
-                />
-              )}
-            />
-            <label style={{ marginBottom: 0 }}>
-              I agree to the Referral & Affiliate Program Terms
-            </label>
-            {errors.terms_accepted && (
-              <p className="error-message">{errors.terms_accepted.message}</p>
-            )}
-          </div>
+          <div className={`affiliateFormCheckBox ${style.marginbotton}`}>
+  <Controller
+    name="terms_accepted"
+    control={control}
+    render={({ field }) => (
+      <label className="custom-checkbox">
+        <input
+          type="checkbox"
+          checked={field.value}
+          onChange={(e) => field.onChange(e.target.checked)}
+        />
+
+        <span className="checkmark">
+          {field.value && <span className="checkmarkIcon" />}
+        </span>
+
+        <span className="checkboxText">
+          I agree to the Referral & Affiliate Program Terms
+        </span>
+      </label>
+    )}
+  />
+
+  {errors.terms_accepted && (
+    <p className="error-message">
+      {errors.terms_accepted.message}
+    </p>
+  )}
+</div>
+
 
           <div className={style.marginbotton} style={{ marginTop: '20px' }}>
             {typeof window !== "undefined" && (

@@ -1,9 +1,17 @@
 import PricingHero from "./PricingHero";
+import PricingAddons from "./PricingAddons";
+import HowItWorks from "./HowItWorks";
+import SpApps from "./SpApps";
+import ErpComparison from "./ErpComparison";
 
 const PricingComponent = () => {
   return (
     <>
-   <PricingHero />
+   <PricingHero />  
+   <PricingAddons />
+   <HowItWorks />
+   <SpApps />
+   <ErpComparison />
     </>
   );
 };

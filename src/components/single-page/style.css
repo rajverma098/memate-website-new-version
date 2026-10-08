@@ -238,15 +238,17 @@
 .parentSingleBlogMemate br{
   display: none;
 }
-
-.parentSingleBlogMemate h3, .parentSingleBlogMemate h3 span,.parentSingleBlogMemate h3 a span,.parentSingleBlogMemate h3 a, .parentSingleBlogMemate h3 b, .parentSingleBlogMemate h3 b a, .parentSingleBlogMemate h3 b {
+.parentSingleBlogMemate h2,.parentSingleBlogMemate h3,.parentSingleBlogMemate h4,.parentSingleBlogMemate h5,.parentSingleBlogMemate h6{
+  margin: 10px 0;
+}
+/* .parentSingleBlogMemate h3, .parentSingleBlogMemate h3 span,.parentSingleBlogMemate h3 a span,.parentSingleBlogMemate h3 a, .parentSingleBlogMemate h3 b, .parentSingleBlogMemate h3 b a, .parentSingleBlogMemate h3 b {
   font-size: 32px !important;
   font-style: normal !important;
   font-weight: 100 !important;
   color: #29292B !important;
   line-height: 40px;
   font-family: 'sequel_sans' !important;
-} 
+}  */
 .parentSingleBlogMemate h4, .parentSingleBlogMemate h4 span, .parentSingleBlogMemate h4 b, .parentSingleBlogMemate h4 b a,.parentSingleBlogMemate h4 a, .parentSingleBlogMemate h4 strong a,.parentSingleBlogMemate h4 b span, .parentSingleBlogMemate h4 b {
   font-style: normal !important;
   margin-top: 10px;
@@ -847,10 +849,10 @@ padding: 0;
     line-height: 29px;
     letter-spacing: 0;
 }
-.parentSingleBlogMemate h3, .parentSingleBlogMemate h3 span, .parentSingleBlogMemate h3 a span, .parentSingleBlogMemate h3 a, .parentSingleBlogMemate h3 b, .parentSingleBlogMemate h3 b a, .parentSingleBlogMemate h3 b {
+/* .parentSingleBlogMemate h3, .parentSingleBlogMemate h3 span, .parentSingleBlogMemate h3 a span, .parentSingleBlogMemate h3 a, .parentSingleBlogMemate h3 b, .parentSingleBlogMemate h3 b a, .parentSingleBlogMemate h3 b {
     font-size: 19px !important;
     line-height: 21px;
-}
+} */
 }
 @media screen and (max-width: 992px) and (min-width: 768px){
   .parent.parentSingle .pageBreadcrumbs {

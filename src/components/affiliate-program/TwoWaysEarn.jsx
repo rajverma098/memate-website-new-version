@@ -17,7 +17,7 @@ const TwoWaysEarn = () => {
             Your personal referral link is waiting in <strong>Settings → Refer & Earn</strong>. Copy it, share it by email, SMS, WhatsApp or LinkedIn, and track every referral and payment from the same screen.
           </p>
           <DarkMemateBlackBut
-      link1="https://app.memate.com.au/requestdemo"
+      link1="https://app.memate.com.au/login"
       target="_blank"
       buttonTextdark="Log in to get your link"
       showButton1={true}

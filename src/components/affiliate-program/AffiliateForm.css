@@ -9,8 +9,6 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   box-sizing: border-box;
 }
-
-/* --- Modal Container --- */
 .affiliate-modal {
   background-color: #ffffff;
   border-radius: 20px;
@@ -26,8 +24,6 @@
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
-/* --- Modal Header --- */
 .affiliate-modal .modal-header {
   display: flex;
   justify-content: space-between;
@@ -51,26 +47,20 @@
   padding: 0;
   line-height: 1;
 }
-
-/* --- Form Grid Layout --- */
 .affiliate-modal .form-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-
 .affiliate-modal .input-group {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-
 .affiliate-modal .input-group.full-width {
   grid-column: 1 / -1;
   margin-top: 10px;
 }
-
-/* --- Labels & Inputs --- */
 .affiliate-modal label {
   font-size: 14px;
   font-weight: 500;
@@ -103,7 +93,50 @@
 .affiliate-modal textarea::placeholder {
   color: #999;
 }
+.affiliateFormCheckBox .custom-checkbox {
+    cursor: pointer;
+    align-items: center;
+    gap: 18px;
+    margin: 24px 0;
+    display: flex;
+}
 
+.affiliateFormCheckBox .custom-checkbox input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.affiliateFormCheckBox .checkmark {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border: 2px solid #16a9f5;
+  border-radius: 6px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.affiliateFormCheckBox .checkmarkIcon {
+  width: 6px;
+  height: 11px;
+  border: solid #16a9f5;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  margin-top: -3px;
+}
+
+.affiliateFormCheckBox .checkboxText {
+    color: #475467;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 22px;
+    font-family: 'sequel_sans_medium_body' !important;
+    letter-spacing: 0;
+}
 .affiliate-modal input:focus,
 .affiliate-modal select:focus,
 .affiliate-modal textarea:focus {
@@ -244,13 +277,27 @@
   border-color: #1a1a1a;
   background-color: #fff;
 }
-
+.custom-option span {
+    color: #101828;
+    font-family: 'Inter' !important;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+}
 .custom-select-trigger .placeholder-text {
-  color: #999;
+    color: #101828;
+    font-family: 'Inter' !important;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
 }
 
 .custom-select-trigger .selected-text {
-  color: #333;
+   color: #101828;
+    font-family: 'Inter' !important;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
 }
 
 .chevron-icon {

@@ -17,13 +17,7 @@ const Footer = () => {
     <>
     <div className="footer-section">
       <div className="main-footer">
-        <div className="section1" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="5200"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+        <div className="section1">
           <div className="heading-section">
             <div>
               <p className="footer-heading footer-headingimageGif">
@@ -38,6 +32,24 @@ const Footer = () => {
               <div><Link href="https://www.facebook.com/mematesoftware/" target="_blank"><img src={FacebookIcon} alt="FacebookIcon"/></Link></div>
               <div><Link href="https://www.instagram.com/memateapp/" target="_blank"><img src={InstagramIcon} alt="InstagramIcon" /></Link></div>
               <div><Link href="https://www.linkedin.com/company/mematesoftware/" target="_blank"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
+            </div>
+            <div className="memateRewardWrapflex">
+            <Link href="" target="_blank">
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/google-review-img.png" alt="google-review"/>
+            </Link>
+            <Link href="" target="_blank">
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/getapp-review-img.png" alt="getapp-review"/>
+            </Link>
+            <Link href="" target="_blank">
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/winner-award-img.png" alt="winner-review"/>
+            </Link>
+            <Link href="" target="_blank">
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/capterra-img.png" alt="capterra-review"/>
+            </Link>
+            <Link href="" target="_blank">
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/software-adv-img.png" alt="software-review"/>
+            </Link>
+  
             </div>
           </div>
           <div className="download-section">
@@ -61,13 +73,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="section2" data-aos="fade-up"
-    data-aos-offset="50"
-    data-aos-delay="50"
-    data-aos-duration="5500"
-    data-aos-mirror="true"
-    data-aos-once="false"
-    data-aos-anchor-placement="top-bottom">
+        <div className="section2">
           <div className="footer-links">
             <div className="links">
               <p className="link-heading">Company</p>

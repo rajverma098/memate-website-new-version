@@ -19,7 +19,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en-AU">
       <head>
         <meta name="theme-color" content="#000000" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />

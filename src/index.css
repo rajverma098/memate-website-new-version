@@ -34,33 +34,38 @@ body {
 }
 .heroBannerHomePage:after {
     content: "";
-    position: absolute;
-    width: 164px;
-    height: 539px;
-    background: radial-gradient(circle, rgba(255, 178, 89, 0.411) 0%, rgb(255 178 89 / 0%) 70%);
     filter: blur(30px);
     pointer-events: none;
-    right: -112px;
+    pointer-events: none;
+    will-change: transform, opacity;
+    background: radial-gradient(circle, #ffb25969 0%, #ffb25900 70%);
+    width: 164px;
+    height: 539px;
+    animation: 6s ease-in-out infinite blueGlow;
+    position: absolute;
     top: -53px;
-     pointer-events: none;
-
-  animation: blueGlow 6s ease-in-out infinite;
-  will-change: transform, opacity;
+    right: 44px;
 }
+.headerMainButton button {
+    padding: 9px 0 !important;
+}
+
+
+
 .heroBannerHomePage:before {
     content: "";
     filter: blur(30px);
     pointer-events: none;
+    pointer-events: none;
+    will-change: transform, opacity;
     background: radial-gradient(circle, #1eb3dc60 0%, #1eb2dc00 70%);
     width: 164px;
     height: 539px;
+    animation: 6s ease-in-out infinite blueGlow;
     position: absolute;
-    top: -53px;
-    left: -112px;
-     pointer-events: none;
-
-  animation: blueGlow 6s ease-in-out infinite;
-  will-change: transform, opacity;
+    top: 0;
+    left: 0;
+    z-index: 0;
 }
 
 
@@ -502,6 +507,7 @@ span.ssMDFont {
     font-weight: 400;
     font-family: 'sequel_sans_bold_disp' !important;
 }
+
 .chat-message-wrapper ,.chat-actions .chatHideMobile{
     display: none;
 }
