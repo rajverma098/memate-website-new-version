@@ -9,34 +9,34 @@ const AutomotiveQuesitonAndAns = () => {
 
  const questions = [
   {
-    question: "I’m flat out on jobs all day — when am I supposed to learn new software?",
+    question: "How can landscaping business software help manage customer enquiries and prepare quotes?",
     key: 0,
     answer:
-      "Setup takes under an hour. Most MeMate users are running their first job through it on day one — no training course required.",
+      "Landscaping business software helps you organise customer details, manage enquiries and prepare quotes in one central system. With meMate, you can use the sales pipeline to manage quotes, follow-ups and approvals, while preset calculators help estimate service costs, margins and markups. This makes it easier to keep track of potential landscaping projects and move approved quotes into project management.",
   },
   {
-    question: "I’ve got a mix of one-off jobs and weekly regulars — can it handle both?",
+    question: "Can meMate help schedule recurring and one-off landscaping jobs?",
     key: 1,
     answer:
-      "Yes. Set up recurring rounds once and MeMate auto-creates every job. One-offs are just as easy — quote, schedule, done.",
+      "meMate helps landscaping businesses organise job schedules, team shifts and project timelines through its job scheduling and company calendar features. You can plan work, manage staff availability and coordinate jobs across your team. For businesses handling regular garden maintenance alongside one-off landscaping projects, these tools provide a central view of scheduled work and help keep daily operations organised.",
   },
   {
-    question: "My guys aren’t great with tech. Will they actually use it?",
+    question: "How can landscapers assign jobs and coordinate employees or contractors?",
     key: 2,
     answer:
-      "The crew app is dead simple — they see their jobs for the day, update progress and that’s it. No manuals, no confusion.",
+      "meMate allows landscaping businesses to assign jobs and tasks to employees or contractors and coordinate work through a central platform. Its contractor management features support individual or group job assignments, work updates and approval processes. Employee management and timesheets also help businesses keep track of team hours and scheduled shifts, making it easier to coordinate field teams across multiple projects.",
   },
   {
-    question: "Does it talk to Xero or MYOB?",
+    question: "Can landscaping business software manage invoices and customer payments?",
     key: 3,
     answer:
-      "Yes. Invoices and payments flow straight to your accounting software. No double entry, no chasing your bookkeeper.",
+      "Yes, meMate helps landscaping businesses create invoices from approved quotes, manage invoice statuses and record partial or full payments. You can also send invoices to customers, support online payments and follow up on overdue amounts. Keeping quotes, invoices, and payment records connected helps reduce administrative work and gives you a clearer view of outstanding customer payments.",
   },
   {
-    question: "What if I try it and it’s not for me?",
+    question: "How can landscaping software help track job costs and project profitability?",
     key: 4,
     answer:
-      "14-day free trial, no credit card needed. And there’s a real Australian you can call if you need help — not a chatbot.",
+      "meMate helps landscaping businesses monitor project profitability by linking budgets, expenses, timesheets and costs to individual jobs. You can establish budgets during the quotation stage and review project expenses alongside sales and invoicing information. This helps you compare costs against your planned budget, understand which landscaping projects are performing well and make more informed decisions about future pricing.",
   },
 
 ];

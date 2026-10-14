@@ -183,6 +183,7 @@ export function middleware(request) {
     '/cleaning-business': '/cleaning-companies',   
     '/partner-program-new': '/partner-program',   
     '/refer-and-earn': '/affiliate-program',   
+    '/landscapers': '/landscaping-business-software',   
  
   };
 

@@ -31,7 +31,7 @@ const cards = [
     description:
       "Schedule recurring jobs, quote on the spot and manage your crew — from the first enquiry to the final invoice.",
     image: "https://memate-website.s3.ap-southeast-2.amazonaws.com/landscapers-grid-man-img.png",
-    href: "/landscapers",
+    href: "/landscaping-business-software",
     theme: "#BBE8FE",
   },
 

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import Layout from '../../layout';
-import LandscapersComponent from '../../components/landscapers';
+import LandscapersComponent from '../../components/landscaping-business-software';
 import AppWrapper from '../../components/AppWrapper';
 import SmoothScroll from "./SmoothScroll";
 

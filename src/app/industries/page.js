@@ -19,7 +19,7 @@ export const metadata = {
 export default function Industries() {
   return (
     // <AppWrapper>
-      <IndustriesPage />
+      <IndustriesPage />  
     // </AppWrapper>
   );
 }
