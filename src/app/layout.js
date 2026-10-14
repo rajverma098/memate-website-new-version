@@ -6,6 +6,7 @@ import "../App.css";
 import "aos/dist/aos.css";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 import { Providers } from "../providers";
+import MemateJsonLd from "./MemateJsonLd";
 import ChatWidgetLoader from "../components/chat-widget/ChatWidgetLoader";
 import Script from "next/script";
 export const metadata = {
@@ -50,7 +51,7 @@ export default function RootLayout({ children }) {
 })(window, document, "clarity", "script", "vin6f2k3rk");
 `}
 </Script>
-
+{/* 
 <Script
   id="ld-localbusiness"
   type="application/ld+json"
@@ -90,7 +91,9 @@ export default function RootLayout({ children }) {
       "priceRange": "$$" 
     })
   }}
-/>
+/> */}
+
+{/* 
 <script
   id="ld-memate"
   type="application/ld+json"
@@ -101,203 +104,170 @@ export default function RootLayout({ children }) {
         {
           "@type": "Organization",
           "@id": "https://memate.com.au/#organization",
-          "name": "MeMate",
-          "url": "https://memate.com.au/",
-          "description": "MeMate is a business management software platform designed for small and medium-sized businesses, helping them manage clients, sales, projects, jobs, scheduling, quoting, invoicing, employees, contractors, time tracking, reporting and business operations.",
-          "logo": {
-            "@type": "ImageObject",
-            "@id": "https://memate.com.au/#logo",
-            "url": "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg"
+          name: "meMate",
+          alternateName: "MeMate",
+          legalName: "MEMATE ENTERPRISE PTY LIMITED",
+          taxID: "49 654 081 482",
+          url: "https://memate.com.au/",
+          description:
+            "meMate is an Australian company that makes all-in-one business management software for small and medium-sized service businesses.",
+          logo: { "@id": "https://memate.com.au/#logo" },
+          image: { "@id": "https://memate.com.au/#logo" },
+          telephone: "+61-2-8080-2100",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "9/89-97 Jones St",
+            addressLocality: "Ultimo",
+            addressRegion: "NSW",
+            postalCode: "2007",
+            addressCountry: "AU",
           },
-          "brand": {
-            "@id": "https://memate.com.au/#brand"
-          }
+          contactPoint: {
+            "@type": "ContactPoint",
+            contactType: "customer support",
+            telephone: "+61-2-8080-2100",
+            areaServed: "AU",
+            availableLanguage: "en",
+          },
+          areaServed: { "@type": "Country", name: "Australia" },
+          knowsAbout: [
+            "Business management software",
+            "Job management software",
+            "Client management (CRM)",
+            "Quoting and invoicing",
+            "Project management",
+            "Employee and contractor management",
+            "Team communication",
+            "Business reporting",
+          ],
+          sameAs: [
+            "https://www.facebook.com/mematesoftware/",
+            "https://www.instagram.com/memateapp/",
+            "https://www.linkedin.com/company/mematesoftware/",
+            "https://www.youtube.com/@MeMate-Aus",
+          ],
         },
-
         {
-          "@type": "Brand",
-          "@id": "https://memate.com.au/#brand",
-          "name": "MeMate",
-          "url": "https://memate.com.au/",
-          "logo": {
-            "@id": "https://memate.com.au/#logo"
-          }
+          "@type": "ImageObject",
+          "@id": "https://memate.com.au/#logo",
+          url: "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
+          contentUrl:
+            "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg",
+          caption: "meMate",
         },
-
         {
-          "@type": [
-            "SoftwareApplication",
-            "WebApplication"
-          ],
-          "@id": "https://memate.com.au/#software",
-          "name": "MeMate",
-          "url": "https://memate.com.au/",
-          "description": "MeMate is an all-in-one business management software platform that helps small and medium-sized businesses manage clients, sales, projects, jobs, scheduling, quoting, invoicing, employees, contractors, time tracking, reporting and business operations.",
-          "applicationCategory": "BusinessApplication",
-          "applicationSubCategory": "Business Management Software",
-          "operatingSystem": "Web",
-          "browserRequirements": "Requires a modern web browser and an internet connection.",
-          "inLanguage": "en-AU",
-
-          "brand": {
-            "@id": "https://memate.com.au/#brand"
-          },
-
-          "publisher": {
-            "@id": "https://memate.com.au/#organization"
-          },
-
-          "featureList": [
-            "Client Management",
-            "Supplier Management",
-            "Sales Pipeline",
-            "Project Management",
-            "Team Communication",
-            "Scheduling",
-            "Quoting",
-            "Invoicing",
-            "Statistics and Reports",
-            "Profitability and Budgeting",
-            "Employee Management",
-            "Contractor Management",
-            "Job Management",
-            "Time Tracking",
-            "Job Approval",
-            "Multi Location Management",
-            "Internal Chat",
-            "Timesheets",
-            "Task Management",
-            "Calendar",
-            "Business Calculators"
-          ],
-
-          "softwareHelp": {
-            "@type": "CreativeWork",
-            "url": "https://memate.com.au/faqs"
-          },
-
-          "downloadUrl": [
-            "https://apps.apple.com/app/memate/id1563935364",
-            "https://play.google.com/store/apps/details?id=com.memate"
-          ],
-
-          "audience": {
-            "@type": "BusinessAudience",
-            "audienceType": "Small and medium-sized businesses"
-          },
-
-          "mainEntityOfPage": {
-            "@id": "https://memate.com.au/#webpage"
-          }
+          "@type": "AggregateRating",
+          ratingValue: "4.8",
+          reviewCount: "37",
+          bestRating: "5",
+          worstRating: "1",
         },
-
         {
           "@type": "WebSite",
           "@id": "https://memate.com.au/#website",
-          "url": "https://memate.com.au/",
-          "name": "MeMate",
-          "description": "MeMate business management software for small and medium-sized businesses.",
-          "publisher": {
-            "@id": "https://memate.com.au/#organization"
-          },
-          "inLanguage": "en-AU"
+          url: "https://memate.com.au/",
+          name: "meMate",
+          alternateName: "MeMate",
+          inLanguage: "en-AU",
+          publisher: { "@id": "https://memate.com.au/#organization" },
         },
-
         {
           "@type": "WebPage",
           "@id": "https://memate.com.au/#webpage",
-          "url": "https://memate.com.au/",
-          "name": "MeMate | Business Management Software",
-          "description": "MeMate is business management software for managing clients, sales, projects, jobs, scheduling, quoting, invoicing, employees, time tracking, reporting and business operations.",
-          "isPartOf": {
-            "@id": "https://memate.com.au/#website"
-          },
-          "about": {
-            "@id": "https://memate.com.au/#software"
-          },
-          "mainEntity": {
-            "@id": "https://memate.com.au/#software"
-          },
-          "publisher": {
-            "@id": "https://memate.com.au/#organization"
-          },
-          "inLanguage": "en-AU"
-        }
-      ]
-    })
-  }}
-/>
-
-{/* <Script
-  id="ld-softwareapp"
-  type="application/ld+json"
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "@id": "https://memate.com.au/#software",
-      "name": "MeMate",
-      "url": "https://memate.com.au/",
-      "applicationSuite": "MeMate Business Management Software",
-      "applicationCategory": "BusinessApplication",
-      "applicationSubCategory": ["ProjectManagement","CRM","ERP"],
-      "operatingSystem": ["iOS","Android","macOS","Web"], 
-      "softwareVersion": "2.9",
-      "description": "MeMate is an all-in-one cloud business management software for Australian SMEs, combining ERP, CRM, job & project management, scheduling, invoicing, and time tracking.",
-      "keywords": [
-        "Business Management Software",
-        "ERP software",
-        "CRM software",
-        "Project management software",
-        "Job management software",
-        "SME software Australia"
-      ],
-      "inLanguage": "en-AU",
-      "publisher": {
-        "@type": "Organization",
-        "name": "MeMate",
-        "url": "https://memate.com.au/",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg"
+          url: "https://memate.com.au/",
+          name: "Business Management Software for Service Businesses | meMate",
+          description:
+            "Manage enquiries, quotes, projects, jobs, shifts, employees and invoicing — all in one place. Built for Australian businesses. Free onboarding and setup.",
+          inLanguage: "en-AU",
+          isPartOf: { "@id": "https://memate.com.au/#website" },
+          about: { "@id": "https://memate.com.au/#organization" },
+          mainEntity: { "@id": "https://memate.com.au/#software" },
+          publisher: { "@id": "https://memate.com.au/#organization" },
         },
-        "sameAs": [
-          "https://apps.apple.com/app/memate/id1563935364",
-          "https://play.google.com/store/apps/details?id=com.memate"
-        ]
-      },
-      "featureList": [
-        "https://memate.com.au/features",
-        "https://memate.com.au/features/project-management-software",
-        "https://memate.com.au/features/job-management-software",
-        "https://memate.com.au/features/employee-management-tools",
-        "https://memate.com.au/features/profitability-and-budgeting-software",
-        "https://memate.com.au/features/business-reporting-tools"
+        {
+          "@type": ["SoftwareApplication", "WebApplication"],
+          "@id": "https://memate.com.au/#software",
+          name: "meMate",
+          url: "https://memate.com.au/",
+          description:
+            "meMate is all-in-one, cloud-based business management software for Australian small and medium-sized service businesses. The browser-based base plan covers clients, suppliers, quotes, projects, invoicing, expenses, real-time profit, reports and team chat, with add-ons for job scheduling, shifts, timesheets, employee and contractor management, enquiries, assets and multiple locations, plus iOS and Android apps for field teams.",
+          applicationCategory: "BusinessApplication",
+          applicationSubCategory: "Business Management Software",
+          operatingSystem: "Any (web browser)",
+          browserRequirements:
+            "Requires a modern web browser and an internet connection.",
+          inLanguage: "en-AU",
+          countriesSupported: "AU",
+          image: { "@id": "https://memate.com.au/#logo" },
+          publisher: { "@id": "https://memate.com.au/#organization" },
+          provider: { "@id": "https://memate.com.au/#organization" },
+          mainEntityOfPage: { "@id": "https://memate.com.au/#webpage" },
+          audience: {
+            "@type": "BusinessAudience",
+            audienceType:
+              "Small and medium-sized service businesses in Australia",
+          },
+          softwareHelp: {
+            "@type": "CreativeWork",
+            url: "https://memate.com.au/faqs",
+          },
+          featureList: [
+            "Client Management",
+            "Supplier Management",
+            "Sales Pipeline",
+            "Quoting",
+            "Project Management",
+            "Invoicing",
+            "Expenses",
+            "Real-time Profit and Budgeting",
+            "Statistics and Reports",
+            "Team Chat",
+            "Job Scheduling (meMate Work add-on)",
+            "Shifts and Timesheets (meMate Work add-on)",
+            "Employee and Contractor Management (meMate Work add-on)",
+            "Enquiries Inbox (add-on)",
+            "Asset Management (add-on)",
+            "Multi-Location Management (add-on)",
+            "Business Calculators",
+          ],
+          hasPart: [
+            { "@id": "https://memate.com.au/#app-ios" },
+            { "@id": "https://memate.com.au/#app-android" },
+          ],
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://memate.com.au/#app-ios",
+          name: "meMate for iOS",
+          operatingSystem: "iOS",
+          applicationCategory: "BusinessApplication",
+          description:
+            "meMate mobile app for crews and contractors. Requires a meMate subscription with mobile app users.",
+          installUrl: "https://apps.apple.com/au/app/memate/id1563935364",
+          downloadUrl: "https://apps.apple.com/au/app/memate/id1563935364",
+          isPartOf: { "@id": "https://memate.com.au/#software" },
+          publisher: { "@id": "https://memate.com.au/#organization" },
+        },
+        {
+          "@type": "MobileApplication",
+          "@id": "https://memate.com.au/#app-android",
+          name: "meMate for Android",
+          operatingSystem: "Android",
+          applicationCategory: "BusinessApplication",
+          description:
+            "meMate mobile app for crews and contractors. Requires a meMate subscription with mobile app users.",
+          installUrl:
+            "https://play.google.com/store/apps/details?id=com.memate",
+          downloadUrl:
+            "https://play.google.com/store/apps/details?id=com.memate",
+          isPartOf: { "@id": "https://memate.com.au/#software" },
+          publisher: { "@id": "https://memate.com.au/#organization" },
+        },
       ],
-      "softwareHelp": "https://memate.com.au/faqs",
-      "downloadUrl": [
-        "https://apps.apple.com/app/memate/id1563935364",
-        "https://play.google.com/store/apps/details?id=com.memate"
-      ],
-      "installUrl": [
-        "https://apps.apple.com/app/memate/id1563935364",
-        "https://play.google.com/store/apps/details?id=com.memate"
-      ],
-      "potentialAction": {
-        "@type": "InstallAction",
-        "target": [
-          "https://apps.apple.com/app/memate/id1563935364",
-          "https://play.google.com/store/apps/details?id=com.memate"
-        ]
-      },
-      "audience": {
-        "@type": "BusinessAudience",
-        "audienceType": "Small and medium businesses"
-      }
-    })
+    }),
   }}
 /> */}
+
 
 <Script
   id="apollo-tracker"
@@ -448,6 +418,7 @@ export default function RootLayout({ children }) {
         </noscript>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <Providers>
+           <MemateJsonLd />
           {children}
           <ChatWidgetLoader />
         </Providers>

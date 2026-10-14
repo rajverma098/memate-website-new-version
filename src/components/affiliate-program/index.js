@@ -12,6 +12,7 @@ import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
 import BecomeAnAffiliate from "./BecomeAnAffiliate";
 import React, { useState } from 'react';
 
+
 const ReferAndEarnComponent = () => {
     const [visible, setVisible] = useState(false);
   return (
@@ -45,6 +46,7 @@ const ReferAndEarnComponent = () => {
     
        </div> 
     </div>
+    
     <EarnReward />
     <BetterStart />
     <TwoWaysEarn />

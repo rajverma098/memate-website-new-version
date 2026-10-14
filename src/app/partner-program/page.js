@@ -19,7 +19,7 @@ export const metadata = {
 export default function PartNerProgramNew() {
   return (
     // <AppWrapper>
-      <PartnerProgramPageNew />  
+      <PartnerProgramPageNew />   
     // </AppWrapper>
   );
 }

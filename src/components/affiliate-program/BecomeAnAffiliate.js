@@ -9,9 +9,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Dialog } from "primereact/dialog";
 import ReCAPTCHA from "react-google-recaptcha";
-import { useRouter } from "next/navigation";
+
 
 import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
+import CustomSelect from "./CustomSelect";
 
 // API
 const API_BASE_URL =
@@ -23,6 +24,25 @@ const API_ENDPOINT = `${API_BASE_URL}/referrals/public/applications/`;
 // --------------------------------------------------
 // API FUNCTION
 // --------------------------------------------------
+
+
+const CATEGORY_OPTIONS = [
+  { value: "Accountant / Bookkeeper", label: "Accountant / Bookkeeper" },
+  { value: "Business Advisor / Consultant", label: "Business Advisor / Consultant" },
+  { value: "Association / Network", label: "Association / Network" },
+  { value: "Tech Support / Setup", label: "Tech Support / Setup" },
+  { value: "Creator / Influencer", label: "Creator / Influencer" },
+  { value: "Biz Hub / Co-working", label: "Biz Hub / Co-working" },
+  { value: "Training Provider", label: "Training Provider" },
+  { value: "Other", label: "Other" },
+];
+
+const NETWORK_SIZE_OPTIONS = [
+  { value: "1–10", label: "1–10" },
+  { value: "11–50", label: "11–50" },
+  { value: "51–200", label: "51–200" },
+  { value: "200+", label: "200+" },
+];
 
 const addAffiliateApplication = async (data) => {
   const response = await fetch(API_ENDPOINT, {
@@ -93,10 +113,16 @@ const schema = yup.object().shape({
     .required("Please select the number of businesses"),
 
   website: yup
-    .string()
-    .trim()
-    .url("Please enter a valid URL")
-    .nullable(),
+  .string()
+  .trim()
+  .transform((value) => {
+    if (!value) return value;
+    return /^https?:\/\//i.test(value)
+      ? value
+      : `https://${value}`;
+  })
+  .url("Please enter a valid URL")
+  .nullable(),
 
   notes: yup
     .string()
@@ -116,14 +142,12 @@ const schema = yup.object().shape({
 // --------------------------------------------------
 
 const BecomeAnAffiliate = (props) => {
-  const router = useRouter();
-
   const [visible, setVisible] = useState(false);
   const [captchaValue, setCaptchaValue] = useState(null);
   const [captchaError, setCaptchaError] = useState("");
   const [serverError, setServerError] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+const [isSuccess, setIsSuccess] = useState(false);
   const {
     control,
     handleSubmit,
@@ -163,106 +187,74 @@ const BecomeAnAffiliate = (props) => {
   // OPEN MODAL
   // --------------------------------------------------
 
-  const openModal = () => {
-    setVisible(true);
-    setServerError("");
-    setCaptchaError("");
-  };
+ const openModal = () => {
+  setIsSuccess(false);
+  setVisible(true);
+  setServerError("");
+  setCaptchaError("");
+};
 
   // --------------------------------------------------
   // CLOSE MODAL
   // --------------------------------------------------
 
-  const closeModal = () => {
-    if (isSubmitting) return;
-
-    setVisible(false);
-    setServerError("");
-    setCaptchaError("");
-  };
+const closeModal = () => {
+  if (isSubmitting) return;
+  setVisible(false);
+  setIsSuccess(false);
+  setServerError("");
+  setCaptchaError("");
+};
 
   // --------------------------------------------------
   // SUBMIT
   // --------------------------------------------------
 
-  const onSubmit = async (data) => {
-    // CAPTCHA validation
-    if (!captchaValue) {
-      setCaptchaError("Please complete the CAPTCHA.");
-      return;
-    }
+const onSubmit = async (data) => {
+  if (!captchaValue) {
+    setCaptchaError("Please complete the CAPTCHA.");
+    return;
+  }
 
-    setIsSubmitting(true);
+  setIsSubmitting(true);
+  setServerError("");
+
+  try {
+    const payload = {
+      name: data.name.trim(),
+      email: data.email.trim(),
+      phone: data.phone.trim(),
+      business_name: data.business_name.trim(),
+      abn: data.abn?.trim() || "",
+      applicant_type: "business",
+      category: data.category,
+      network_size: data.network_size,
+      website: data.website?.trim() || "",
+      notes: data.notes?.trim() || "",
+      terms_accepted: data.terms_accepted === true,
+      recaptcha_token: captchaValue,
+    };
+
+    const result = await addAffiliateApplication(payload);
+    console.log("Affiliate Application Success:", result);
+
+    // Reset the form + captcha, but DON'T close the dialog
+    reset();
+    setCaptchaValue(null);
+    setCaptchaError("");
     setServerError("");
 
-    try {
-      // ----------------------------------------------
-      // API PAYLOAD
-      // ----------------------------------------------
-
-      const payload = {
-        name: data.name.trim(),
-
-        email: data.email.trim(),
-
-        phone: data.phone.trim(),
-
-        business_name: data.business_name.trim(),
-
-        abn: data.abn?.trim() || "",
-
-        applicant_type: "business",
-
-        category: data.category,
-
-        network_size: data.network_size,
-
-        website: data.website?.trim() || "",
-
-        notes: data.notes?.trim() || "",
-
-        terms_accepted: data.terms_accepted === true,
-
-        recaptcha_token: captchaValue,
-      };
-
-      console.log("Affiliate Application Payload:", payload);
-
-      // ----------------------------------------------
-      // API REQUEST
-      // ----------------------------------------------
-
-      const result = await addAffiliateApplication(payload);
-
-      console.log("Affiliate Application Success:", result);
-
-      // ----------------------------------------------
-      // RESET
-      // ----------------------------------------------
-
-      reset();
-
-      setCaptchaValue(null);
-      setCaptchaError("");
-      setServerError("");
-      setVisible(false);
-
-      // ----------------------------------------------
-      // REDIRECT
-      // ----------------------------------------------
-
-      router.push("/thank-you");
-    } catch (error) {
-      console.error("Affiliate Application Error:", error);
-
-      setServerError(
-        error?.message ||
-          "Submission failed. Please try again."
-      );
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
+    // ✅ Show success view
+    setIsSuccess(true);
+  } catch (error) {
+    console.error("Affiliate Application Error:", error);
+    setServerError(
+      error?.message || "Submission failed. Please try again."
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   // --------------------------------------------------
   // FOOTER
@@ -301,7 +293,24 @@ const BecomeAnAffiliate = (props) => {
       </h1>
     </div>
   );
+  
+const successHeader = (
+  <div className={`${style.successHeader} flexWrapBoxc requestCallback`}>
+    <h1>Thanks!</h1>
+  </div>
+);
 
+const successFooter = (
+  <div className={`${style.successFooter} flexWrapBoxE`}>
+    <button
+      type="button"
+      className="darkbuttonStyle"
+      onClick={closeModal}
+    >
+      Done
+    </button>
+  </div>
+);
   // --------------------------------------------------
   // RETURN
   // --------------------------------------------------
@@ -331,20 +340,42 @@ const BecomeAnAffiliate = (props) => {
           AFFILIATE MODAL
       ---------------------------------------------- */}
 
-      <Dialog
-        visible={visible}
-        style={{ width: "566px" }}
-        className={style.requestsendModel}
-        onHide={closeModal}
-        footer={footerContent}
-        header={HeaderContent}
-        closable={!isSubmitting}
-        modal
-      >
+
+<Dialog
+  visible={visible}
+  style={{
+    width: "700px",
+    maxHeight: "90vh",
+    display: "flex",
+    padding: "0 19px",
+    flexDirection: "column",
+  }}
+  className={style.requestsendModel}
+  onHide={closeModal}
+  footer={isSuccess ? successFooter : footerContent}
+  header={isSuccess ? successHeader : HeaderContent}
+  closable={!isSubmitting}
+  modal
+  blockScroll={false}
+  draggable={false}
+  dismissableMask={false}
+  contentStyle={{ overflowY: "auto", flex: "1 1 auto", minHeight: 0 }}
+  data-lenis-prevent
+>
+   {isSuccess ? (
+    <div className={style.successContent}>
+      <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/successForm-icon.png" alt="Success Form" />
+      <p className={style.successTitle}>Our Affiliate Manager </p>
+      <p className={style.successSubtitle}>
+       will be in touch within <strong> 2 business days</strong>
+      </p>
+    </div>
+  ) : (
         <form
           className={style.requestsendForm}
           onSubmit={handleSubmit(onSubmit)}
         >
+          
           {/* ------------------------------------------
               FORM GRID
           ------------------------------------------ */}
@@ -481,110 +512,58 @@ const BecomeAnAffiliate = (props) => {
               )}
             </div>
 
-            {/* I'M A */}
-            <div className={style.marginbotton}>
-              <label htmlFor="affiliate-category">
-                I'm a... <span>*</span>
-              </label>
+         {/* I'M A */}
+<div className={`${style.marginbotton} ${style.selectField}`}>
+  <label htmlFor="affiliate-category">
+    I'm a... <span>*</span>
+  </label>
 
-              <Controller
-                name="category"
-                control={control}
-                render={({ field }) => (
-                  <select
-                    id="affiliate-category"
-                    {...field}
-                  >
-                    <option value="">
-                      Select
-                    </option>
+  <Controller
+    name="category"
+    control={control}
+    render={({ field }) => (
+      <CustomSelect
+        options={CATEGORY_OPTIONS}
+        value={field.value}
+        onChange={field.onChange}
+        placeholder="Select"
+      />
+    )}
+  />
 
-                    <option value="Accountant / Bookkeeper">
-                      Accountant / Bookkeeper
-                    </option>
+  {errors.category && (
+    <p className="error-message">
+      {errors.category.message}
+    </p>
+  )}
+</div>
 
-                    <option value="Business Advisor / Consultant">
-                      Business Advisor / Consultant
-                    </option>
+           {/* NETWORK SIZE */}
+<div className={`${style.marginbotton} ${style.selectField}`}>
+  <label htmlFor="affiliate-network">
+    How many small businesses do you work with?
+    <span> *</span>
+  </label>
 
-                    <option value="Association / Network">
-                      Association / Network
-                    </option>
+  <Controller
+    name="network_size"
+    control={control}
+    render={({ field }) => (
+      <CustomSelect
+        options={NETWORK_SIZE_OPTIONS}
+        value={field.value}
+        onChange={field.onChange}
+        placeholder="Select"
+      />
+    )}
+  />
 
-                    <option value="Tech Support / Setup">
-                      Tech Support / Setup
-                    </option>
-
-                    <option value="Creator / Influencer">
-                      Creator / Influencer
-                    </option>
-
-                    <option value="Biz Hub / Co-working">
-                      Biz Hub / Co-working
-                    </option>
-
-                    <option value="Training Provider">
-                      Training Provider
-                    </option>
-
-                    <option value="Other">
-                      Other
-                    </option>
-                  </select>
-                )}
-              />
-
-              {errors.category && (
-                <p className="error-message">
-                  {errors.category.message}
-                </p>
-              )}
-            </div>
-
-            {/* NETWORK SIZE */}
-            <div className={style.marginbotton}>
-              <label htmlFor="affiliate-network">
-                How many small businesses do you work with?
-                <span> *</span>
-              </label>
-
-              <Controller
-                name="network_size"
-                control={control}
-                render={({ field }) => (
-                  <select
-                    id="affiliate-network"
-                    {...field}
-                  >
-                    <option value="">
-                      Select
-                    </option>
-
-                    <option value="1–10">
-                      1–10
-                    </option>
-
-                    <option value="11–50">
-                      11–50
-                    </option>
-
-                    <option value="51–200">
-                      51–200
-                    </option>
-
-                    <option value="200+">
-                      200+
-                    </option>
-                  </select>
-                )}
-              />
-
-              {errors.network_size && (
-                <p className="error-message">
-                  {errors.network_size.message}
-                </p>
-              )}
-            </div>
+  {errors.network_size && (
+    <p className="error-message">
+      {errors.network_size.message}
+    </p>
+  )}
+</div>
 
             {/* WEBSITE */}
             <div className={style.marginbotton}>
@@ -710,6 +689,7 @@ const BecomeAnAffiliate = (props) => {
             </div>
           )}
         </form>
+        )}
       </Dialog>
     </>
   );

@@ -24,6 +24,17 @@ const cards = [
     href: "/removalists",
     theme: "#FFE1BD",
   },
+  {
+    id: 3,
+    tags: ["Landscapers & Lawn", "Crews & trucks"],
+    title: "Landscapers",
+    description:
+      "Schedule recurring jobs, quote on the spot and manage your crew — from the first enquiry to the final invoice.",
+    image: "https://memate-website.s3.ap-southeast-2.amazonaws.com/landscapers-grid-man-img.png",
+    href: "/landscapers",
+    theme: "#BBE8FE",
+  },
+
 
  
 ];
@@ -45,12 +56,9 @@ export default function ListIndustriesSlider() {
     };
   }, []);
 
-  const visibleCards = isMobile ? 1 : 3.5;
+ const visibleCards = isMobile ? 1 : 2;
 
-  const maxIndex = Math.max(
-    0,
-    cards.length - visibleCards
-  );
+  const maxIndex = Math.max(0, Math.ceil(cards.length - visibleCards));
   useEffect(() => {
     setCurrentIndex((current) =>
       Math.min(current, maxIndex)

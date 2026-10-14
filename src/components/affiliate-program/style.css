@@ -110,7 +110,96 @@
     justify-content: center;
     margin-right: 12px;
 }
+/* ---------- Custom Select ---------- */
+.custom-select-wrapper {
+  position: relative;
+  width: 100%;
+}
 
+.custom-select-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  padding: 0 12px;
+  border: 1px solid #d0d5dd;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 14px;
+  color: #1d1d1d;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+  font-family: 'sequel_sans_roman_body', sans-serif;
+}
+
+.custom-select-trigger.open,
+.custom-select-trigger:hover {
+  border-color: #0fafff;
+}
+
+.custom-select-trigger .placeholder-text {
+  color: #98a2b3;
+}
+
+.custom-select-trigger .selected-text {
+  color: #1d1d1d;
+}
+
+.chevron-icon {
+  transition: transform 0.2s ease;
+  color: #667085;
+  flex-shrink: 0;
+}
+
+.chevron-icon.rotate {
+  transform: rotate(180deg);
+}
+
+.custom-select-options {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  z-index: 99999;              /* <-- higher than PrimeReact modal (1100/1101) */
+  background: #fff;
+  border: 1px solid #d0d5dd;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.12);
+  max-height: 220px;
+  overflow-y: auto;
+  padding: 4px;
+  pointer-events: auto;        /* <-- ensure it's clickable even if parent has pointer-events: none */
+}
+.selectField {
+  position: relative;
+  z-index: 10;
+}
+
+.custom-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  font-size: 14px;
+  color: #1d1d1d;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'sequel_sans_roman_body', sans-serif;
+}
+
+.custom-option:hover {
+  background: #f2f4f7;
+}
+
+.custom-option.selected {
+  background: #eff8ff;
+  color: #0fafff;
+}
+
+.custom-option .checkmark {
+  color: #0fafff;
+  font-weight: 600;
+}
 .borderbuttonStyle {
     background: #fff;
     border: 1px solid #d0d5dd;
@@ -122,19 +211,18 @@
 }
 .borderbuttonStyle, .darkbuttonStyle {
     align-items: center;
-    display: flex
-;
-    font-size: 16px;
-    font-style: normal;
     gap: 8px;
     gap: var(--spacing-md, 8px);
-    height: 44px;
-    justify-content: center;
-    line-height: normal;
+    height: 51px;
     padding: 10px 32px;
-    padding: 10px var(--spacing-4xl, 32px);
+    padding: 10px var(--spacing-4xl, 25px);
     text-align: center;
-    width: 142.154px;
+    justify-content: center;
+    width: 169px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
 }
 .darkbuttonStyle {
     background: #29292b;
@@ -423,9 +511,19 @@ input:focus-visible {
     cursor: pointer;
 }
 
+button.darkbuttonStyle {
+    background: #29292B;
+    padding: 0 31px;
+    width: auto;
+    height: 51px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-
-
+.flexWrapBoxE {
+    justify-content: flex-end;
+}
 .query-cards .query-card .query-main .query-color p {
     color: #29292B;
 }
@@ -476,6 +574,34 @@ input:focus-visible {
 }
 
 @media screen and (max-width: 767px) {
+    button.darkbuttonStyle {
+    width: auto;
+    padding: 0 21px;
+    height: 44px !important;
+    line-height: 60px;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+.borderbuttonStyle, .darkbuttonStyle {
+    height: 44px;
+    padding: 10px 32px;
+    width: 120px;
+    font-size: 16px;
+}
+.requestCallback, .requestCallback h1 {
+    letter-spacing: 0;
+    font-size: 21px;
+    line-height: 22px;
+    margin: 0;
+}
+.p-dialog-footer {
+    border-top: 1px solid #eaecf0;
+    padding: 9px 29px;
+}
+    .p-dialog .p-dialog-content {
+    padding: 0 20px;
+    height: 400px;
+}
    #contactUsPage .main-image img {
     width: 100%;
     height: auto;
