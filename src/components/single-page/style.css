@@ -240,6 +240,7 @@
 }
 .parentSingleBlogMemate h2,.parentSingleBlogMemate h3,.parentSingleBlogMemate h4,.parentSingleBlogMemate h5,.parentSingleBlogMemate h6{
   margin: 10px 0;
+  font-weight: 100;
 }
 /* .parentSingleBlogMemate h3, .parentSingleBlogMemate h3 span,.parentSingleBlogMemate h3 a span,.parentSingleBlogMemate h3 a, .parentSingleBlogMemate h3 b, .parentSingleBlogMemate h3 b a, .parentSingleBlogMemate h3 b {
   font-size: 32px !important;

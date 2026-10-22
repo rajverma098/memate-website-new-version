@@ -69,15 +69,15 @@ img.listIndustriesSlider__image {
     line-height: normal;
     display: flex;
     position: absolute;
-    bottom: 27px;
+    bottom: 104px;
     font-family: sequel_sans !important;
 }
 .enquiry-profit1 {
     margin: 40px 0;
 }
-.listIndustriesSlider__imageWrap {
+/* .listIndustriesSlider__imageWrap {
     position: relative;
-}
+} */
 span.listIndustriesSlider__readMoreArrow {
     background: #FFFFFF;
     border-radius: 36px;

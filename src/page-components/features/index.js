@@ -8,7 +8,7 @@ const FeaturesPage = () => {
     <AppWrapper>
     <Layout>
       <div className="bgshadowwrapper">
-        <FeatureseComponent/>
+        <FeatureseComponent/> 
         </div>
     </Layout>
     </AppWrapper>

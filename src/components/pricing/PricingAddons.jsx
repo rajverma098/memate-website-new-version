@@ -46,7 +46,7 @@ const PricingAddons = () => {
                 <span className="amount">+$62.32</span>
                 <span className="period">/mo</span>
               </div>
-              <p className="addon-includes">Includes 5 mobile users</p>
+              <p className="addon-includes">Includes 4 mobile users</p>
             </div>
             <div className="addons-row">
               <div className="addon-card addon-cardL01">
@@ -109,7 +109,7 @@ const PricingAddons = () => {
           <div className="addon-card addon-cardL04">
             <div className="addon-header">
               <span className="addon-dot purple">+</span>
-              <span className="addon-name">Locations</span>
+              <span className="addon-name">Locations (Coming Soon)</span>
             </div>
             <h4 className="addon-title">Grow to more sites</h4>
             <p className="addon-desc">

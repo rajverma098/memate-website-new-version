@@ -69,6 +69,26 @@ const SitemapComponent = () => {
         
       </li>
       <li>
+        <h3>Resources & Tools</h3>
+        <div className={style.sitemapGrid}>
+        <div className={style.sitemapGridItem}>
+            <Link href="/knowledge-base">Knowledge Base</Link>
+            <Link href="/customer-stories">Customer Stories</Link>
+            <Link href="/supplier-database">Supplier Database</Link>
+            <Link href="/business-valuation-calculator">Business Valuation Calculator</Link>
+        </div>
+        <div className={style.sitemapGridItem}>
+            <Link href="/subprocessors">Subprocessors</Link>
+            <Link href="/brand">Brand</Link>
+            <Link href="/affiliate-program">Affiliate Program</Link>
+            <Link href="/partner-program">Partner Program</Link>
+        </div>
+       
+        
+        </div>
+        
+      </li>
+      <li>
         <h3>Industry Pages</h3>
         <div className={style.sitemapGrid}>
         <div className={style.sitemapGridItem}>
@@ -79,6 +99,9 @@ const SitemapComponent = () => {
             <Link href="/industries/business-software-for-automotive-industry">Automotive</Link>
             <Link href="/industries/business-management-software-for-startups">Startups</Link>
             <Link href="/industries/business-software-for-construction-industry">Construction</Link>
+            <Link href="/industries/cleaning-companies">Cleaning Companies</Link>
+            <Link href="/industries/removalists">Removalists</Link>
+            <Link href="/industries/landscaping-business-software">Landscapers</Link>
         </div>
         </div>
       </li>

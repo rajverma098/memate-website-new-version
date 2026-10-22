@@ -33,31 +33,36 @@ export default function ArticleServerContent({ post }) {
     ],
   };
 
-  const article = {
-    type: 'NewsArticle',
-    headline: post.title,
-    datePublished: (() => {
-      const d = post.publish_date ? new Date(post.publish_date) : null;
-      return d && !Number.isNaN(d.getTime()) ? d.toISOString() : undefined;
-    })(),
-    dateModified: (() => {
-      const raw = post.updated_at || post.publish_date;
-      const d = raw ? new Date(raw) : null;
-      return d && !Number.isNaN(d.getTime()) ? d.toISOString() : undefined;
-    })(),
-    author: post.author || 'MeMate News',
-    publisherName: 'MeMate Media',
-    publisherLogo:
-      'https://memate-website.s3.ap-southeast-2.amazonaws.com/assets/logo.svg',
-    image: post.featured_img_url || Images.blogImgempty,
-    url: `https://memate.com.au/news/${post.slug}`,
-    keywords: post.keywords || post.title?.split(' ').slice(0, 5).join(', '),
-    genre: post.category?.title || 'General',
-    articleSection: post.category?.title || 'General',
-  };
+const article = {
+  type: 'BlogPosting',
+  headline: post.title,
+  datePublished: (() => {
+    const d = post.publish_date ? new Date(post.publish_date) : null;
+    return d && !Number.isNaN(d.getTime()) ? d.toISOString() : undefined;
+  })(),
+  dateModified: (() => {
+    const raw = post.updated_at || post.publish_date;
+    const d = raw ? new Date(raw) : null;
+    return d && !Number.isNaN(d.getTime()) ? d.toISOString() : undefined;
+  })(),
+  author: post.author || 'MeMate',        // ← standardized (was 'MeMate News')
+  publisherName: 'MeMate',
+  publisherLogo:
+    'https://memate-website.s3.ap-southeast-2.amazonaws.com/memte-512x512-logo.png',
+  publisherLogoWidth: 512,
+  publisherLogoHeight: 512,
+  image: post.featured_img_url || Images.blogImgempty,
+  url: `https://memate.com.au/news/${post.slug}`,
+  keywords: (post.keywords || post.meta_keyword || '')
+    .split(',')
+    .map((k) => k.trim())
+    .filter(Boolean),
+  genre: post.category?.title || 'Industry Insights and Best Practices',
+  articleSection: post.category?.title || 'Industry Insights and Best Practices',
+};
 
   const publishDate = post.publish_date
-    ? new Date(post.publish_date).toLocaleString('en-IN', {
+    ? new Date(post.publish_date).toLocaleString('en-AU', {
         day: '2-digit',
         month: 'short',
         year: 'numeric',
@@ -69,7 +74,8 @@ export default function ArticleServerContent({ post }) {
   return (
     <>
       <NewsSchema article={article} breadcrumbList={breadcrumbList} />
-
+ 
+      <article>
       <div className="pageBreadcrumbs">
         <ul className="postlist">
           <li>
@@ -101,10 +107,19 @@ export default function ArticleServerContent({ post }) {
         </div>
       )}
 
-      <h1 className="singlePageheading">{post.title}</h1>
+     <h1 className="singlePageheading">{post.title}</h1>
+    <div className="singlePageAuthor">
+     By <span className="authorName">meMate</span>
+    </div>
       <div className="singlePageDate">
-        {publishDate} | Editorial - AUSTRALIAN BUSINESS
-      </div>
+          {publishDate ? (
+            <>
+              <time dateTime={article.datePublished}>{publishDate}</time>
+              {' | '}
+            </>
+          ) : null}
+          Editorial - AUSTRALIAN BUSINESS
+        </div>
 
       <div className="img-1-container-A img-1-container-singlenews">
         {post.video_url ? (
@@ -146,6 +161,8 @@ export default function ArticleServerContent({ post }) {
           </div>
         </div>
       )}
+        </article>
+    
     </>
   );
 }

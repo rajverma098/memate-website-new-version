@@ -69,19 +69,20 @@ const MemateWiki = () => {
       </div>
       <div className={style.mainwikiMibile}>
         {initialLoading || isLoading ? (
-          <p className='loaderBarCircle'>
-          <Oval
-          visible={true}
-          height={40}
-          width={40}
-          color="#1ab2ff"
-          ariaLabel="oval-loading"
-          wrapperStyle={{}}
-          wrapperClass=""
-          /></p>
-        ) : error ? (
-          <p className={style.errorMessage}>{error}</p>
-        ) : (
+            <div className='loaderBarCircle'>
+              <Oval
+                visible={true}
+                height={40}
+                width={40}
+                color="#1ab2ff"
+                ariaLabel="oval-loading"
+                wrapperStyle={{}}
+                wrapperClass=""
+              />
+            </div>
+          ) : error ? (
+            <p className={style.errorMessage}>{error}</p>
+          ) : (
           (filteredData || []).map((item, index) => (
             
             <div key={index} className={style.mainGridWrap}>

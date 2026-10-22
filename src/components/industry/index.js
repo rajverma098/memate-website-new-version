@@ -19,7 +19,7 @@ const IndustryPageContent = ({postsLatest}) => {
       <div className='industry-page-parent'>
         <IndustryHeader/>
         <IndustryBussinessManagement/> 
-        <IndustryCrousel/> 
+        <IndustryCrousel/>  
          </div>
          <div className='singleHeadWrapper'>
           <h4>Reach out to us to discover how meMate can streamline operations at your company.</h4>

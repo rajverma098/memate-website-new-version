@@ -4,6 +4,14 @@ export const metadata = {
   title: 'Job Scheduling Software | MeMate',
   description:
     'Discover the best job scheduling software for your business. Streamline your job scheduling with MeMate.',
+     robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
     title: 'Job Scheduling Software | MeMate',
     description:

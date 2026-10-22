@@ -154,7 +154,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     />
                   </Link>
                   <div className="img-heading-container">
-                    <div className="date-A date-Ab">{formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.author}</div>
+                    <div className="date-A date-Ab">{formatDateWithOrdinal(postsLatest[0]?.publish_date)} | meMate</div>
                     <div className="date-heading-mainb"><Link href={`/news/${postsLatest[0]?.slug}`}>{postsLatest[0]?.title}</Link></div>
                   </div>
                   <div className='postCategory postCategoryb'>
@@ -172,7 +172,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     />
                   </Link>
                   <div className="img-heading-container">
-                    <div className="date-A date-Ab">{formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.author}</div>
+                    <div className="date-A date-Ab">{formatDateWithOrdinal(postsLatest[1]?.publish_date)} | meMate</div>
                     <div className="date-heading-mainb"><Link href={`/news/${postsLatest[1]?.slug}`} aria-label="Read more about 'There Are No Unicorns — Just Direction and Determination'">{postsLatest[1]?.title}</Link></div>
                   </div>
                   <div className='postCategory postCategoryb'>
@@ -190,7 +190,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     />
                   </Link>
                   <div className="img-heading-container">
-                    <div className="date-A date-Ab">{formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.author}</div>
+                    <div className="date-A date-Ab">{formatDateWithOrdinal(postsLatest[2]?.publish_date)} | meMate</div>
                     <div className="date-heading-mainb"><Link href={`/news/${postsLatest[2]?.slug}`} aria-label="Read more about 'There Are No Unicorns — Just Direction and Determination'">{postsLatest[2]?.title}</Link></div>
                   </div>
                   <div className='postCategory postCategoryb'>
@@ -235,7 +235,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                       <div>
                         <div className="blog-image-container-div">
                           <div className="blogdatetext">
-                            {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | {postsLatest[0]?.author}
+                            {formatDateWithOrdinal(postsLatest[0]?.publish_date)} | meMate
                           </div>
                         </div>
                         <div className="img-container-1-div-text-2 blogtitle">
@@ -266,7 +266,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                   )}
                   <div className="img-heading-container ">
                     <div className="date-A date-Ab">
-                      {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | {postsLatest[1]?.author}
+                      {formatDateWithOrdinal(postsLatest[1]?.publish_date)} | meMate
                     </div>
                     <div className="date-heading-mainb"><Link href={`/news/${postsLatest[1]?.slug}`} aria-label="Read more about 'There Are No Unicorns — Just Direction and Determination'">{postsLatest[1]?.title}</Link></div>
                     <div className='postCategory postCategoryb'>
@@ -284,7 +284,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                   )}
                   <div className="img-heading-container">
                     <div className="date-A date-Ab">
-                      {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | {postsLatest[2]?.author}
+                      {formatDateWithOrdinal(postsLatest[2]?.publish_date)} | meMate
                     </div>
                     <div className="date-heading-mainb"><Link href={`/news/${postsLatest[2]?.slug}`} aria-label="Read more about 'There Are No Unicorns — Just Direction and Determination'">{postsLatest[2]?.title}</Link></div>
                     <div className='postCategory postCategoryb'>
@@ -324,7 +324,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                     />
                   </Link>
                   <div className="img-heading-container">
-                    <div className="date-A date-Ab">{formatDateWithOrdinal(post.publish_date)} | {post.author}</div>
+                    <div className="date-A date-Ab">{formatDateWithOrdinal(post.publish_date)} | meMate</div>
                     <div className="date-heading-mainb"><Link href={`/news/${post.slug}`} aria-label="Read more about 'There Are No Unicorns — Just Direction and Determination'">{post.title}</Link></div>
                   </div>
                   <div className='postCategory postCategoryb'>

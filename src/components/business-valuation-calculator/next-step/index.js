@@ -9,10 +9,10 @@ const NextStep = (props) => {
 
   return (
     <div className="next-step">
-      <h3>Take the</h3>
+      {/* <h3>Take the</h3>
       <div className="next-title">
         <div className="nextStepHeading">next step</div>
-      </div>
+      </div> */}
       <div className="next-step-page-description">
         <p className="next-step-data">
           We believe in supporting Australian businesses.

@@ -24,7 +24,7 @@ const PartnerProgramComponentNew = () => {
               link1=""
               link2="https://app.memate.com.au/requestdemo"
               target="_blank"
-              buttonTextdark="Become a partenr"
+              buttonTextdark="Become a partner"
               buttonTextlight="Request a Demo"
               showButton1={true}
               showButton2={true}

@@ -6,30 +6,55 @@ import ArticleServerContent from './ArticleServerContent';
 
 const getPost = cache(async (slug) => blogSingle(slug));
 
-// Generate dynamic metadata for SEO and social sharing
-export async function generateMetadata({ params }) {
-  try {
-    const resolvedParams = await params;
-    const slug = resolvedParams.slug;
+const BASE_URL = 'https://memate.com.au';
+const DEFAULT_OG_IMAGE = `${BASE_URL}/images/og-default.jpg`;
+const DEFAULT_SECTION = 'Industry Insights and Best Practices';
 
-    // console.log('🔍 Generating metadata for slug:', slug);
-    
+/**
+ * Normalise an author value coming out of the CMS.
+ * - Rejects placeholder values like "admin"
+ * - Falls back to the Organization name so E-E-A-T isn't undermined
+ */
+function resolveAuthor(author) {
+  if (!author || typeof author !== 'string') return 'MeMate';
+  const cleaned = author.trim().toLowerCase();
+  if (!cleaned || cleaned === 'admin' || cleaned === 'administrator') return 'MeMate';
+  return author.trim();
+}
+
+/**
+ * Normalise an image URL.
+ * - Makes it absolute
+ * - Replaces spaces with hyphens (fixes "When the Tide Goes Out.jpeg")
+ */
+function resolveImageUrl(rawUrl) {
+  if (!rawUrl) return DEFAULT_OG_IMAGE;
+  let url = rawUrl;
+  if (!url.startsWith('http')) {
+    url = url.startsWith('/') ? `${BASE_URL}${url}` : `${BASE_URL}/${url}`;
+  }
+  return url.replace(/\s+/g, '-');
+}
+
+export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
+  const slug = resolvedParams.slug;
+
+  try {
     const post = await getPost(slug);
-    
-    // console.log('📡 API response:', post ? 'Found post' : 'No post found');
-    
+
     if (!post || post.error) {
-      // console.log('❌ Post not found, using fallback metadata');
-      const fallbackMetadata = {
+      return {
         title: 'News Article Not Found | MeMate',
         description: 'The requested news article could not be found.',
+        robots: { index: false, follow: true }, // don't index 404-style pages
         openGraph: {
           title: 'News Article Not Found | MeMate',
           description: 'The requested news article could not be found.',
-          url: `https://memate.com.au/news/${slug}`,
+          url: `${BASE_URL}/news/${slug}`,
           siteName: 'MeMate',
           images: [{
-            url: 'https://memate.com.au/images/og-default.jpg',
+            url: DEFAULT_OG_IMAGE,
             width: 1200,
             height: 630,
             alt: 'MeMate - Business Management Software',
@@ -41,96 +66,100 @@ export async function generateMetadata({ params }) {
           card: 'summary_large_image',
           title: 'News Article Not Found | MeMate',
           description: 'The requested news article could not be found.',
-          images: ['https://memate.com.au/images/og-default.jpg'],
+          images: [DEFAULT_OG_IMAGE],
           creator: '@memateapp',
           site: '@memateapp',
         },
       };
-      return fallbackMetadata;
     }
 
-    const baseUrl = 'https://memate.com.au';
-    const postUrl = `${baseUrl}/news/${slug}`;
-    
-    let imageUrl = post.featured_img_url || post.thumbnail_img_url;
-    
-    if (imageUrl) {
-      if (!imageUrl.startsWith('http')) {
-        imageUrl = imageUrl.startsWith('/') ? `${baseUrl}${imageUrl}` : `${baseUrl}/${imageUrl}`;
-      }
-    } else {
-      imageUrl = `${baseUrl}/images/og-default.jpg`;
-    }
-    
+    const postUrl = `${BASE_URL}/news/${slug}`;
+    const imageUrl = resolveImageUrl(post.featured_img_url || post.thumbnail_img_url);
+    const imageWidth = post.featured_img_width || 1200;
+    const imageHeight = post.featured_img_height || 630;
+
+    // --- Description cleanup ---
     let cleanDescription = post.meta_description;
-    
     if (!cleanDescription && post.description) {
       cleanDescription = post.description
-        .replace(/<[^>]*>/g, '') 
-        .replace(/\s+/g, ' ') 
+        .replace(/<[^>]*>/g, '')
+        .replace(/\s+/g, ' ')
         .trim()
-        .substring(0, 155) + '...'; 
+        .substring(0, 155) + '...';
     }
-    
     if (!cleanDescription) {
-      cleanDescription = 'Read the latest news and updates from MeMate - Australia\'s leading business management software.';
+      cleanDescription =
+        "Read the latest news and updates from MeMate — Australia's leading business management software.";
     }
-    
+
     const title = post.seo_title || post.title || 'News Article | MeMate';
-    
-    // Ensure title isn't too long for social media
     const socialTitle = title.length > 60 ? title.substring(0, 57) + '...' : title;
-    
-    // console.log('✅ Generated metadata:', {
-    //   title: socialTitle,
-    //   description: cleanDescription.substring(0, 50) + '...',
-    //   imageUrl,
-    //   postUrl
-    // });
-    
-    const metadata = {
+
+    // --- Author: never "admin" ---
+    const authorName = resolveAuthor(post.author);
+
+    // --- Section: never default to "General"/"News" ---
+    const section = post.category?.title || DEFAULT_SECTION;
+
+    // --- Tags: real tags only, never the auto-split headline ---
+    // If your CMS doesn't expose structured tags yet, this stays empty
+    // rather than echoing the headline back into schema.
+    const tags = Array.isArray(post.tags)
+      ? post.tags
+          .map((t) => (typeof t === 'string' ? t : t?.name))
+          .filter(Boolean)
+      : [];
+
+    return {
       title,
       description: cleanDescription,
-      keywords: post.meta_keyword || post.title,
-      authors: [{ name: post.author || 'MeMate' }],
-      
-      // CRITICAL: Open Graph for Facebook sharing
+      // keywords: intentionally omitted — Google ignores the meta keywords
+      // tag, and post.meta_keyword was auto-split from the headline.
+
+      authors: [{ name: authorName }],
+
       openGraph: {
         title: socialTitle,
         description: cleanDescription,
         url: postUrl,
         siteName: 'MeMate',
-        images: [
-          {
-            url: imageUrl,
-            width: 1200,
-            height: 630,
-            alt: post.featured_img_alt || post.title || 'MeMate News Article',
-            type: 'image/jpeg',
-          },
-        ],
+        images: [{
+          url: imageUrl,
+          width: imageWidth,
+          height: imageHeight,
+          alt: post.featured_img_alt || post.title || 'MeMate News Article',
+        }],
         locale: 'en_AU',
         type: 'article',
-        publishedTime: post.publish_date ? new Date(post.publish_date).toISOString() : undefined,
-        modifiedTime: post.updated_at ? new Date(post.updated_at).toISOString() : undefined,
-        authors: [post.author || 'MeMate'],
-        section: post.category?.title || 'News',
-        tags: post.meta_keyword ? post.meta_keyword.split(',').map(tag => tag.trim()).filter(Boolean) : [],
+        publishedTime: post.publish_date
+          ? new Date(post.publish_date).toISOString()
+          : undefined,
+        modifiedTime: post.updated_at
+          ? new Date(post.updated_at).toISOString()
+          : (post.publish_date ? new Date(post.publish_date).toISOString() : undefined),
+        authors: [authorName],
+        section,
+        tags,
       },
-      
+
       twitter: {
-        card: 'summary_large_image',
-        title: socialTitle,
-        description: cleanDescription,
-        images: [imageUrl],
-        creator: '@memateapp',
-        site: '@memateapp',
-      },
-      
-      alternates: {
-        canonical: postUrl,
-      },
-      
+  card: 'summary_large_image',
+  title: socialTitle,
+  description: cleanDescription,
+  images: [imageUrl],
+  creator: '@memateapp',
+  site: '@memateapp',
+},
+
+  alternates: {
+  canonical: postUrl,
+  languages: {
+    'en-AU': postUrl,
+    'en-NZ': postUrl,
+    'x-default': postUrl,
+  },
+},
+
       robots: {
         index: true,
         follow: true,
@@ -142,31 +171,29 @@ export async function generateMetadata({ params }) {
           'max-snippet': -1,
         },
       },
-   
-      
-      other: {
-        'article:author': post.author || 'MeMate',
-        'article:published_time': post.publish_date,
-        'article:modified_time': post.updated_at || post.publish_date,
-        'article:section': post.category?.title || 'News',
-        'og:image:secure_url': imageUrl, 
-      },
+
+      // `other` block REMOVED.
+      // It was re-emitting article:author / article:published_time /
+      // article:modified_time / article:section — all of which Next.js
+      // already renders from the openGraph object above. That duplication
+      // is what Google flagged.
     };
-    
-    return metadata;
-    
+
   } catch (error) {
     console.error('❌ Error generating metadata for news slug:', error);
-    const errorMetadata = {
+
+    return {
       title: 'News Article | MeMate',
-      description: 'Read the latest news and updates from MeMate - Australia\'s leading business management software.',
+      description:
+        "Read the latest news and updates from MeMate — Australia's leading business management software.",
+      robots: { index: false, follow: true },
       openGraph: {
         title: 'News Article | MeMate',
         description: 'Read the latest news and updates from MeMate.',
-        url: `https://memate.com.au/news/${slug}`,
+        url: `${BASE_URL}/news/${slug}`,
         siteName: 'MeMate',
         images: [{
-          url: 'https://memate.com.au/images/og-default.jpg',
+          url: DEFAULT_OG_IMAGE,
           width: 1200,
           height: 630,
           alt: 'MeMate - Business Management Software',
@@ -178,12 +205,11 @@ export async function generateMetadata({ params }) {
         card: 'summary_large_image',
         title: 'News Article | MeMate',
         description: 'Read the latest news and updates from MeMate.',
-        images: ['https://memate.com.au/images/og-default.jpg'],
+        images: [DEFAULT_OG_IMAGE],
         creator: '@memateapp',
         site: '@memateapp',
       },
     };
-    return errorMetadata;
   }
 }
 
@@ -197,8 +223,10 @@ export default async function BlogPost({ params }) {
   }
 
   return (
-    <ClientBlogPost params={resolvedParams} initialPost={post}>
-      <ArticleServerContent post={post} />
-    </ClientBlogPost>
+    <main>
+      <ClientBlogPost params={resolvedParams} initialPost={post}>
+        <ArticleServerContent post={post} />
+      </ClientBlogPost>
+    </main>
   );
 }

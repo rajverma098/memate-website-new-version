@@ -289,7 +289,7 @@ const breadcrumbList = post ? {
       </Link>
       <div className="img-heading-container">
         <div className="date-A date-Ab">
-        {formatDateWithOrdinal(post.publish_date)} | {post.author}
+        {formatDateWithOrdinal(post.publish_date)} | meMate
         </div>
         <div className="date-heading-mainb">
           <Link href={`/news/${post.slug}`}>{post.title}</Link>

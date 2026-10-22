@@ -14,7 +14,7 @@ export const metadata = {
 export default function Sitemap() {
   return (
     // <AppWrapper>
-      <SitemapPage />
+      <SitemapPage /> 
     // </AppWrapper>
   );
 }

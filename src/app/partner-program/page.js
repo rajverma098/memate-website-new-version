@@ -45,7 +45,7 @@ export default function PartnerProgram() {
           __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
         }}
       />
-      <PartnerProgramPageNew />
+      <PartnerProgramPageNew /> 
     </>
   );
 }

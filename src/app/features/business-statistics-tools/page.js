@@ -4,6 +4,14 @@ export const metadata = {
   title: 'MeMate Business Statistics Tools | Boost Your Insights',
   description:
     'Unlock powerful business statistics tools with MeMate. Track growth, boost performance & make smarter decisions. Try MeMate today! For more details visit now.',
+     robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
   openGraph: {
     title: 'MeMate Business Statistics Tools | Boost Your Insights',
     description:

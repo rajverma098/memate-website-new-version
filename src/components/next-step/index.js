@@ -7,7 +7,7 @@ const NextStep = (props) => {
 
   return (
     <div className="nextStepWrapper">
-      <h3>Take the</h3>
+      <p className="cta-lead">Take the</p>
       <div className="next-title">
         <div className="nextStepHeading">next step</div>
       </div>

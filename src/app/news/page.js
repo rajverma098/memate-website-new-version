@@ -11,9 +11,34 @@ export const metadata = {
     url: 'https://memate.com.au/news',
     siteName: 'MeMate',
     type: 'website',
+    locale: 'en_AU',
+    images: [{
+      url: 'https://memate.com.au/images/og-default.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'MeMate News',
+    }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MeMate News | Business Software & Tech Updates for SMEs',
+    description:
+      'Stay updated with MeMate on business software news, Australian tech trends, ERP & CRM updates, and tools for SMEs.',
+    images: ['https://memate.com.au/images/og-default.jpg'],
+    creator: '@memateapp',
+    site: '@memateapp',
   },
   alternates: {
     canonical: 'https://memate.com.au/news',
+    languages: {
+      'en-AU': 'https://memate.com.au/news',
+      'en-NZ': 'https://memate.com.au/news',
+      'x-default': 'https://memate.com.au/news',
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 
@@ -34,6 +59,23 @@ export default function NewsPage() {
         mainEntity: { '@id': 'https://memate.com.au/#organization' },
         publisher: { '@id': 'https://memate.com.au/#organization' },
       },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          {
+            '@type': 'ListItem',
+            position: 1,
+            name: 'Home',
+            item: 'https://memate.com.au/',
+          },
+          {
+            '@type': 'ListItem',
+            position: 2,
+            name: 'News',
+            item: 'https://memate.com.au/news',
+          },
+        ],
+      },
     ],
   };
 
@@ -45,7 +87,9 @@ export default function NewsPage() {
           __html: JSON.stringify(jsonLd).replace(/</g, '\\u003c'),
         }}
       />
-      <BlogPage />
+      <main>
+        <BlogPage />
+      </main>
     </>
   );
 }
