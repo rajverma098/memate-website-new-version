@@ -1,31 +1,18 @@
 "use client";
-
 import "./style.css";
 import style from "./contactus.module.scss";
-
 import React, { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { Dialog } from "primereact/dialog";
 import ReCAPTCHA from "react-google-recaptcha";
-
-
 import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
 import CustomSelect from "./CustomSelect";
-
-// API
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL ||
   "https://app.memate.com.au/api/v1";
-
 const API_ENDPOINT = `${API_BASE_URL}/referrals/public/applications/`;
-
-// --------------------------------------------------
-// API FUNCTION
-// --------------------------------------------------
-
-
 const CATEGORY_OPTIONS = [
   { value: "Accountant / Bookkeeper", label: "Accountant / Bookkeeper" },
   { value: "Business Advisor / Consultant", label: "Business Advisor / Consultant" },

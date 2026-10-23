@@ -6,8 +6,12 @@ import {ArrowRight} from "lucide-react";
 import ServicesProviderIcon from "../../svg/ServicesProviderIcon";
 import "./partner-program-page-new.css";
 import { motion } from "framer-motion";
-
+import BecomeAnAffiliate from "./BecomeAnAffiliate";
+import { useState } from "react";
+import FormMemateBlackBut from "@/layout/hover-button/FormMemateBlackBut";
+ 
 const PartnerProgramComponentNew = () => {
+  const [visible, setVisible] = useState(false);
   return (
 <>
       <div className="partnerProgramWrapper">
@@ -15,21 +19,30 @@ const PartnerProgramComponentNew = () => {
          <div className="headWrap">
           <h1 className="smokeyGradient">Grow with the businesses already using meMate</h1>
           <p>The meMate Partner Program puts your business in front of thousands of Australian small and medium business owners — directly inside the app they use to run their company every day.</p>
-              {/* <DarkMemateBlackBut
-              link1="https://app.memate.com.au/requestdemo"
-              target="_blank"
-              buttonTextdark="Request a Demo"
-              showButton1={true}/> */}
-               <DarkMemateBlackBut
-              link1=""
-              link2="https://app.memate.com.au/requestdemo"
-              target="_blank"
-              buttonTextdark="Become a partner"
-              buttonTextlight="Request a Demo"
-              showButton1={true}
-              showButton2={true}
-            
-            />
+            <div className='buttonFlexRow'>
+      <BecomeAnAffiliate 
+        buttonText="Become a partner" 
+        headingText="Affiliate application form" 
+        visible={visible}
+        setVisible={setVisible}
+        className="btnFormNewDesign1"
+      >
+        <FormMemateBlackBut 
+          className="alignLeft"
+          target="_blank"
+          buttonTextdark="Become a partner"
+          showButton1={true}
+        />
+      </BecomeAnAffiliate>
+         <DarkMemateBlackBut
+      link1=""
+      link2="https://app.memate.com.au/requestdemo"
+      target="_blank"
+      buttonTextlight="Request a Demo"
+      showButton2={true}
+    />
+       </div> 
+          
        </div>
        </div>
        <div className="sectionFlexBoxWrapper">
