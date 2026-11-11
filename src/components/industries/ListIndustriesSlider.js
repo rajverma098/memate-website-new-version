@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import {ArrowLeft,ArrowRight} from "lucide-react";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 import "./ListIndustriesSlider.css";
 
 const cards = [
@@ -10,7 +10,8 @@ const cards = [
     title: "Cleaning Companies",
     description:
       "Schedule regular cleans, send your teams out with job details, and invoice straight after each visit.",
-    image: "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaningListCard01.png",
+    image:
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/industries-grid-img01.png",
     href: "/cleaning-companies",
     theme: "#BBE8FE",
   },
@@ -20,61 +21,60 @@ const cards = [
     title: "Removalists",
     description:
       "Quote moves quickly, assign crews and vehicles, and track every job from booking to final invoice.",
-    image: "https://memate-website.s3.ap-southeast-2.amazonaws.com/cleaningListCard02.png",
+    image:
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/industries-grid-img2.png",
     href: "/removalists",
     theme: "#FFE1BD",
   },
   {
     id: 3,
-    tags: ["Landscapers & Lawn", "Crews & trucks"],
+    tags: ["Landscapers & Lawn", "Scheduling & Crews"],
     title: "Landscapers",
     description:
       "Schedule recurring jobs, quote on the spot and manage your crew — from the first enquiry to the final invoice.",
-    image: "https://memate-website.s3.ap-southeast-2.amazonaws.com/landscapers-grid-man-img.png",
+    image:
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/industries-grid-img3.png",
     href: "/landscaping-business-software",
     theme: "#BBE8FE",
   },
-
-
- 
+  {
+    id: 4,
+    tags: ["Vehicle wrap", "Contractor & Invoicing"],
+    title: "Car Detailing",
+    description:
+      "Business management software for Australian car detailing and vehicle wrapping businesses.",
+    image:
+      "https://memate-website.s3.ap-southeast-2.amazonaws.com/industries-grid-img4.png",
+    href: "/car-detailing-software",
+    theme: "#FFE1BD",
+  },
 ];
 
 export default function ListIndustriesSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 767);
+    const mq = window.matchMedia("(max-width: 767px)");
+
+    const update = () => {
+      setIsMobile(mq.matches);
+      // Reset slider position when leaving mobile
+      if (!mq.matches) setCurrentIndex(0);
     };
 
-    checkMobile();
-
-    window.addEventListener("resize", checkMobile);
-
-    return () => {
-      window.removeEventListener("resize", checkMobile);
-    };
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
   }, []);
 
- const visibleCards = isMobile ? 1 : 2;
-
-  const maxIndex = Math.max(0, Math.ceil(cards.length - visibleCards));
-  useEffect(() => {
-    setCurrentIndex((current) =>
-      Math.min(current, maxIndex)
-    );
-  }, [maxIndex]);
+  const maxIndex = Math.max(0, cards.length - 1);
 
   const handleNext = () => {
-    setCurrentIndex((current) =>
-      Math.min(current + 1, maxIndex)
-    );
+    setCurrentIndex((c) => Math.min(c + 1, maxIndex));
   };
-
   const handlePrevious = () => {
-    setCurrentIndex((current) =>
-      Math.max(current - 1, 0)
-    );
+    setCurrentIndex((c) => Math.max(c - 1, 0));
   };
 
   return (
@@ -82,77 +82,71 @@ export default function ListIndustriesSlider() {
       <div className="apple-facts-inner">
         <div className="enquiry-profit__container">
           <div className="enquiry-profit__header">
-            <h2 className="enquiry-profit__heading">
-              Industries
-            </h2>
-            <div className="enquiry-profit__arrows">
-              <button
-                type="button"
-                className="enquiry-profit__arrow"
-                onClick={handlePrevious}
-                disabled={currentIndex === 0}
-                aria-label="Previous">
-                   <ArrowLeft size={16} strokeWidth={1.6} />
-              
-              </button>
-              <button
-                type="button"
-                className="enquiry-profit__arrow"
-                onClick={handleNext}
-                disabled={currentIndex === maxIndex}
-                aria-label="Next">
-                <ArrowRight size={16} strokeWidth={1.6} />
-              </button>
-            </div>
+            <h2 className="enquiry-profit__heading">Industries</h2>
+
+            {isMobile && (
+              <div className="enquiry-profit__arrows">
+                <button
+                  type="button"
+                  className="enquiry-profit__arrow"
+                  onClick={handlePrevious}
+                  disabled={currentIndex === 0}
+                  aria-label="Previous"
+                >
+                  <ArrowLeft size={16} strokeWidth={1.6} />
+                </button>
+                <button
+                  type="button"
+                  className="enquiry-profit__arrow"
+                  onClick={handleNext}
+                  disabled={currentIndex >= maxIndex}
+                  aria-label="Next"
+                >
+                  <ArrowRight size={16} strokeWidth={1.6} />
+                </button>
+              </div>
+            )}
           </div>
         </div>
+
         <div className="apple-facts-slider">
           <div
             className="apple-facts-track listIndustriesSlider__track"
-            style={{
-              "--current-index": currentIndex,
-            }}
+            style={{ "--current-index": String(currentIndex) }}
           >
-            {cards.map((card) => {
-              return (
-               <article
-  key={card.id}
-  className="listIndustriesSlider__card"
-  style={{ backgroundColor: card.theme }}
->
-                    
-                 
-                   <div className="listIndustriesSlider__tags">
-                    {card.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="listIndustriesSlider__tag">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                  <h3>{card.title}</h3>
-                  <p>{card.description}</p>
-                  <div className="listIndustriesSlider__imageWrap">
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      className="listIndustriesSlider__image"
-                    />
-                    <a
-                      href={card.href}
-                      className="listIndustriesSlider__readMore"
-                    >
-                      <span>Read more</span>
-
-                      <span className="listIndustriesSlider__readMoreArrow">
-                        <ArrowRight size={16} strokeWidth={1.6} />
-                      </span>
-                    </a>
-                  </div>
-                </article>
-              );
-            })}
+            {cards.map((card) => (
+              <article
+                key={card.id}
+                className="listIndustriesSlider__card"
+                style={{ backgroundColor: card.theme }}
+              >
+                <div className="listIndustriesSlider__tags">
+                  {card.tags.map((tag) => (
+                    <span key={tag} className="listIndustriesSlider__tag">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <h3>{card.title}</h3>
+                <p>{card.description}</p>
+                <div className="listIndustriesSlider__imageWrap">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="listIndustriesSlider__image"
+                  />
+                  <a
+                    href={card.href}
+                    className="listIndustriesSlider__readMore"
+                  >
+                    <span>Read more</span>
+                    <span className="listIndustriesSlider__readMoreArrow">
+                      <ArrowRight size={16} strokeWidth={1.6} />
+                    </span>
+                  </a>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>

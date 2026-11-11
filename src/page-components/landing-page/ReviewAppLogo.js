@@ -4,27 +4,27 @@ import './ReviewAppLogo.css';
 
 const logos = [
   {
-    href: '',
+    href: 'https://share.google/xx2fGHt4nyQ9Zz7jt',
     src: 'https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-google-review-logo.png',
     alt: 'meMate Google Review',
   },
   {
-    href: '',
+    href: 'https://www.productreview.com.au/listings/memate',
     src: 'https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-awards-winner-logo.png',
     alt: 'meMate Awards Winner',
   },
   {
-    href: '',
+    href: 'https://www.capterra.com.au/software/1025204/memate',
     src: 'https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-capterra-review-logo.png',
     alt: 'meMate Capterra Review',
   },
   {
-    href: '',
+    href: 'https://www.softwareadvice.com.au/software/342497/memate',
     src: 'https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-software-advice-review-logo.png',
     alt: 'meMate Software Advice Review',
   },
   {
-    href: '',
+    href: 'https://www.getapp.com.au/software/2054882/memate',
     src: 'https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-getuser-review-logo.png',
     alt: 'meMate Getuser Review',
   },

@@ -34,19 +34,19 @@ const Footer = () => {
               <div><Link href="https://www.linkedin.com/company/mematesoftware/" target="_blank"><img src={LinkdinIcon} alt="LinkdinIcon" /></Link></div>
             </div>
             <div className="memateRewardWrapflex">
-            <Link href="" target="_blank">
+            <Link href="https://share.google/xx2fGHt4nyQ9Zz7jt" target="_blank">
             <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/google-review-img.png" alt="google-review"/>
             </Link>
-            <Link href="" target="_blank">
+            <Link href="https://www.getapp.com.au/software/2054882/memate" target="_blank">
             <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/getapp-review-img.png" alt="getapp-review"/>
             </Link>
-            <Link href="" target="_blank">
+            <Link href="https://www.productreview.com.au/listings/memate" target="_blank">
             <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/winner-award-img.png" alt="winner-review"/>
             </Link>
-            <Link href="" target="_blank">
+            <Link href="https://www.capterra.com.au/software/1025204/memate" target="_blank">
             <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/capterra-img.png" alt="capterra-review"/>
             </Link>
-            <Link href="" target="_blank">
+            <Link href="https://www.softwareadvice.com.au/software/342497/memate" target="_blank">
             <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/software-adv-img.png" alt="software-review"/>
             </Link>
   

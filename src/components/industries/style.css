@@ -22,7 +22,7 @@
 .industryNewStyle .headWrapStyle h1 {
     letter-spacing: -6.16px;
     margin: 0 auto;
-    padding-bottom: 40px;
+    padding-bottom: 16px;
     font-size: 220px;
     font-weight: 420;
     line-height: 200px;
@@ -48,7 +48,7 @@
     line-height: 24px;
     font-family: "sequel_sans_roman_head" !important;
     max-width: 750px;
-    margin: 32px auto 0;
+    margin: 15px auto 0;
 }
 .smokeyGradient {
     background: linear-gradient(90deg,#1ab2ff,#ffb258,#1ab2ff) 0 0/300%;
