@@ -551,7 +551,9 @@ li.linkspaceMobile span a::before {
   .bm-burger-button {
     display: block;
   }
-
+.logoMobileWrap .header-menu-header-div-memate-component {
+  padding-left: 0px;
+}
   .burger-menu-wrapper.active{
     height: 4rem;
     width: 100%;

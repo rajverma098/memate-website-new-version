@@ -32,7 +32,7 @@
     font-weight: 360;
     font-size: 24px;
     line-height: 140%;
-    letter-spacing: -0.48px;
+    letter-spacing: 0px;
     text-align: center;
 }
 
@@ -108,7 +108,7 @@ background: rgba(249, 250, 251, 1);
 }
 .SubPageHead p {
     color: rgb(117, 123, 138);
-    letter-spacing: -0.48px;
+    letter-spacing: 0px;
     text-align: center;
     font-size: 24px;
     font-weight: 360;

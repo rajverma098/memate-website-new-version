@@ -41,7 +41,7 @@
 }
 .questions-wrapperFQ ul li {
     color: #29292b;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
     padding-right: 49px;
     font-size: 16px;
     font-style: normal;
@@ -64,7 +64,7 @@
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
     font-family: 'sequel_sansbook_head' !important;
 }
 .question-answer-quesFQ.selected .question-answer-ques-infoFQ {
@@ -82,7 +82,7 @@
 
 
 .question-answer-wrapper {
-  margin-top: 70px;
+  margin-top: 0px;
   margin-bottom: 70px;
   display: flex;
   align-items: center;

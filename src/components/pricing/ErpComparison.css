@@ -45,7 +45,7 @@
     margin: 0 0 41px;
     font-size: 28px;
     line-height: 32px;
-    font-family: sequel_sans !important;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
     letter-spacing: 0;
 }
 .erp-compare .card-body {
@@ -68,17 +68,17 @@
 .erp-compare .row-label {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 0px;
 }
 .erp-compare .brand-memate {
     letter-spacing: 0;
-    margin: 0 auto;
-    font-size: 48px;
-    font-weight: 420;
-    line-height: 60px;
     text-align: left;
     margin: 0;
     padding: 0;
+    font-size: 48px;
+    font-weight: 420;
+    line-height: 60px;
+    font-family: sequel_sans_semi_bold_disp !important;
 }
 .erp-compare .row-label .brand-erp{
 font-weight: 420;
@@ -159,7 +159,7 @@ font-weight: 420;
 }
 .erp-compare .statement-label {
     color: #29292B;
-    margin: 0 0 2px;
+    margin: 0 0 0px;
     font-size: 24px;
     font-weight: 420;
     line-height: 130%;
@@ -167,12 +167,12 @@ font-weight: 420;
 }
 .erp-compare .statement-highlight {
     letter-spacing: 0;
-    color: #29292B;
+    color: #29292b;
     margin: 0;
     font-size: 48px;
     font-weight: 100;
     line-height: 60px;
-    font-family: sequel_sans !important;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
 }
 .erp-compare .statement-sub {
   color: #757B8A;
@@ -194,7 +194,7 @@ font-weight: 420;
 .graph-wrapper {
     border-left: 1px solid #d9dbe3;
     flex-direction: column;
-    gap: 24px;
+    gap: 48px;
     padding: 21px 11px 21px 0;
     display: flex;
 }

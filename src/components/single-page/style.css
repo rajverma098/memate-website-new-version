@@ -74,7 +74,7 @@
     font-size: 16px;
     font-style: normal;
     font-weight: 355;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
     line-height: 20px;
     margin-top: 20px;
 }
@@ -102,7 +102,7 @@
     font-style: normal;
     font-weight: 420;
     line-height: 33px;
-    margin: 17px 0;
+    margin: 0px 0;
 }
 .img-container-3 {
     grid-gap: 20px;
@@ -233,7 +233,7 @@
     font-style: normal !important;
     font-weight: 100 !important;
     line-height: 150% !important;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
 }
 .parentSingleBlogMemate br{
   display: none;
@@ -650,14 +650,14 @@ padding: 0;
     letter-spacing: 0;
 }
 .singlePageDate {
-    margin-top: 24px;
+    margin-top: 13px;
     font-family: 'sequel_sansbook_head' !important;
     color: #888E9E;
     font-size: 16px;
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
 }
 [dir="ltr"] h2 span{
   font-family: 'sequel_sans_semi_bold_disp' !important;
@@ -1175,7 +1175,7 @@ text-decoration: none;
   font-weight: 420;
   line-height: 33px;
   font-family: 'sequel_sans_semi_bold_disp' !important;
-  margin: 17px 0 17px;
+  margin: 0;
   display: inline-block;
 }
 span.articlesHeading.articlesHeadingb {
@@ -1185,7 +1185,7 @@ span.articlesHeading.articlesHeadingb {
   font-weight: 420;
   line-height: normal;
   letter-spacing: -1px;
-  margin-bottom: 30px;
+  margin-bottom: 9px;
   margin-top: 60px;
 }
   

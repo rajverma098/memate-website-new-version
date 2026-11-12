@@ -19,15 +19,19 @@
     letter-spacing:0px;
     font-family: 'sequel_sans_semi_bold_head' !important;
 }
-
+ .question-answer-ques.selected .question-answer-ques-infoF {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #1ab2ff, #ffb258, #1ab2ff) 0 0 / 100%;
+    -webkit-background-clip: text;
+}
 .question-answer-ans-infoF p {
-    color: #29292B;
+    color: #757b8a;
     font-size: 16px;
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
-    font-family: 'sequel_sansbook_head' !important;
+letter-spacing: 0;
+   font-family: 'inter' !important;
     padding-right: 49px;
 }
 .question-answer-ans-infoF {
@@ -36,7 +40,7 @@
 
 
 .question-answer-wrapper {
-  margin-top: 70px;
+  margin-top: 0px;
   margin-bottom: 70px;
   display: flex;
   align-items: center;

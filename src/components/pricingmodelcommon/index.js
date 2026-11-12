@@ -1,5 +1,5 @@
 import "./style.css";
-import PricingTableDemo from "./PricingTableDemo";
+import PricingAddonsTable from '../../layout/pricingtable/PricingAddons';
 import DarkMemateBlackBut from "@/layout/hover-button/DarkMemateBlackBut";
 
 
@@ -30,7 +30,7 @@ const PricingModelCommon = () => {
       showButton2={true}
     />
           </div> 
-     <PricingTableDemo />
+     <PricingAddonsTable />
     </div>
   );
 };

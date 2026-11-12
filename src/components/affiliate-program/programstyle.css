@@ -349,7 +349,7 @@
     font-weight: 355;
     font-size: 16px;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
     text-align: center;
     color: rgba(136, 142, 158, 1);
     display: inline-block;

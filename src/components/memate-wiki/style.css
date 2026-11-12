@@ -65,7 +65,7 @@ position: fixed;
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
     font-family: 'sequel_sansbook_head' !important;
     padding: 4px 0;
 }

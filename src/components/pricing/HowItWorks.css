@@ -10,6 +10,7 @@
     font-size: 48px;
     line-height: 60px;
     font-family: sequel_sans !important;
+    font-weight: 415;
 }
 .how-it-works-card {
     background: #F7F8FA;
@@ -69,14 +70,14 @@
     line-height: 24px;
 }
 .step-description strong {
-    font-family: 'sequel_sans_semi_bold_disp' !important;
-    font-weight: 100;
-    display: block;
-    font-size: 20px;
-    line-height: 28px;
     letter-spacing: -1%;
-    margin-bottom: 12px;
-    color: #29292B;
+    color: #29292b;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    display: block;
+    font-family: 'Inter';
 }
 .step-line {
     opacity: 1;

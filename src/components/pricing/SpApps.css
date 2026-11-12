@@ -3,7 +3,7 @@
     align-items: center;
     width: 100%;
     display: flex;
-    padding: 80px 20px;
+    padding: 80px 20px 0;
 }
 .sp-apps .sp-apps-container {
   width: 100%;
@@ -69,8 +69,12 @@
     color: #29292B;
     font-size: 22px;
     line-height: 28px;
-    font-weight: 800;
+    font-weight: 600;
     font-family: 'Inter' !important;
+}
+.sp-apps .memate-card .memate-label strong {
+    font-weight: 800;
+
 }
 .sp-apps .arrow-divider {
     background-color: #fff;
@@ -137,7 +141,7 @@
   grid-template-columns: 1fr 60px 1fr;
   gap: 16px;
   align-items: center;
-  padding: 12px 0;
+  padding: 20px 0;
   border-bottom: 1px solid #E5E8ED;
 }
 .sp-apps .table-row .col-left {

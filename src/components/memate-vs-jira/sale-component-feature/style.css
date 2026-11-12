@@ -12,7 +12,7 @@
 }
 .m8InFlexLeftQuick ul li {
     color: #888e9e;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 355;
@@ -24,7 +24,7 @@
 }
 .m8InFlexLeftQuick1 ul li {
     color: #fff;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 355;
@@ -75,7 +75,7 @@
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
 }
 .m8compaireSwitchingSection01 .m8InSection01 ul {
     margin-top: 30px;

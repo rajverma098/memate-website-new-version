@@ -7,7 +7,9 @@
     background-size: cover;
     background-position: center;
 }
-
+.ComingSonnBg h1{
+        font-family: 'Inter';
+}
 .ComingSonnBg h2{
     background: linear-gradient(to right, #1ab2ff 33.15%, #ffb258 62%);
     -webkit-background-clip: text;

@@ -35,19 +35,19 @@ const Footer = () => {
             </div>
             <div className="memateRewardWrapflex">
             <Link href="https://share.google/xx2fGHt4nyQ9Zz7jt" target="_blank">
-            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/google-review-img.png" alt="google-review"/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-google-review-logo.png" alt="google-review" height={32}/>
             </Link>
             <Link href="https://www.getapp.com.au/software/2054882/memate" target="_blank">
-            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/getapp-review-img.png" alt="getapp-review"/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-getuser-review-logo.png" alt="getapp-review" height={50}/>
             </Link>
             <Link href="https://www.productreview.com.au/listings/memate" target="_blank">
-            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/winner-award-img.png" alt="winner-review"/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-awards-winner-logo.png" alt="winner-review" height={50}/>
             </Link>
             <Link href="https://www.capterra.com.au/software/1025204/memate" target="_blank">
-            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/capterra-img.png" alt="capterra-review"/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-capterra-review-logo.png" alt="capterra-review" height={34}/>
             </Link>
             <Link href="https://www.softwareadvice.com.au/software/342497/memate" target="_blank">
-            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/software-adv-img.png" alt="software-review"/>
+            <img src="https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-software-advice-review-logo.png" alt="software-review" height={34}/>
             </Link>
   
             </div>

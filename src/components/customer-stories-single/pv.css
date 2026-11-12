@@ -83,7 +83,7 @@
 }
 .flexboxitems p {
     color: #3f3f3f;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
     padding-bottom: 10px;
     font-size: 16px;
     font-style: normal;
@@ -183,7 +183,7 @@
 }
 .flexboxitems ul li {
     color: #3f3f3f;
-    letter-spacing: -.38px;
+    letter-spacing: 0;
     font-size: 16px;
     font-style: normal;
     font-weight: 355;

@@ -125,7 +125,7 @@
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
     font-family: "sequel_sansbook_head";
 }
 .img-container-1-div-text-2.blogtitle span {
@@ -283,7 +283,7 @@ h1.heading-blog-description {
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
     font-family: "sequel_sansbook_head";
     margin-top: 20px;
 }
@@ -303,7 +303,7 @@ h1.heading-blog-description {
     font-weight: 420;
     line-height: 33px;
     font-family: 'sequel_sans_semi_bold_disp' !important;
-    margin: 17px 0 17px;
+    margin: 0;
     display: inline-block;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -317,7 +317,7 @@ span.articlesHeading.articlesHeadingb {
     font-weight: 420;
     line-height: normal;
     letter-spacing: -1px;
-    margin-bottom: 30px;
+    margin-bottom: 9px;
     margin-top: 60px;
 }
     

@@ -172,7 +172,7 @@
     font-style: normal;
     font-weight: 355;
     line-height: 20px;
-    letter-spacing: -0.38px;
+letter-spacing: 0;
   }
   .alphabetFilter .accInnercontent .accInnerhead ul li {
     display: inline-block;

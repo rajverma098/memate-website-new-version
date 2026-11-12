@@ -71,7 +71,7 @@ const TimeSheetPage = () => {
           <SalesComponentFeature />
         </div>
         <div className="bgshadowwrapper">
-            <PricingModelCommon />
+            <PricingModelCommon /> 
         </div>
         <div className="bgshadowwrapper">
           <QuestionAnswer />

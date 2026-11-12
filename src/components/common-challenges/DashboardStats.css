@@ -145,13 +145,13 @@
 }
 .dashboard-wrapper .stat-amount span, .dashboard-wrapper .stat-amount {
     color: #344054;
-    letter-spacing: -.39px;
+    letter-spacing: 0;
     margin-top: 0;
     margin-bottom: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
-    font-family: Inter var !important;
+    font-family: 'inter' !important;
 }
 
 .dashboard-wrapper .stat-amount.light {

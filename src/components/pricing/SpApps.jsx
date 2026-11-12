@@ -33,7 +33,7 @@ const SpApps = () => {
             <div className="memate-logo">
               <img src='https://memate-website.s3.ap-southeast-2.amazonaws.com/memate-logo-img-sp.png' alt='meMate business software logo' />
             </div>
-            <p className="memate-label">1 app · from $99.85</p>
+            <p className="memate-label">1 app · from <strong>$99.85</strong></p>
           </div>
         </div>
         <div className="comparison-table">
@@ -101,7 +101,7 @@ const SpApps = () => {
         </div>
         <div className="bottom-highlight">
           <p>
-            Add up what you pay today. If it's more than <strong>$162</strong> a month, meMate pays for
+            Add up what you pay today. If it's more than $162 a month, meMate pays for
             itself from day one.
           </p>
         </div>

@@ -134,6 +134,7 @@ function Blog({ PostsCategories, activeCategory, handleTabClick, posts, totalPos
                       ))}
                     </div>
                     <div className="nextbtn-container-A">
+                      
                         {totalPosts > filteredPosts?.length && <button onClick={handleNext} className="next-page-btn-A">{loading ? "Loading..." : "Load More"}</button>}
                     </div>
                     </>

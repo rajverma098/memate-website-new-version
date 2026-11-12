@@ -1,29 +1,3 @@
-/* @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-} */
 
 .question-answer-heading-wrapperF p {
   color: #29292B;
@@ -34,6 +8,9 @@ body {
   line-height: 80px;
   letter-spacing: -2.16px;
   font-family: 'sequel_sans_semi_bold_disp' !important;
+}
+.singlePageAuthor {
+    font-family: sequel_sans_roman_head !important;
 }
 .question-answer-ques-infoF {
   width: 100%;
@@ -700,7 +677,6 @@ white-space: normal;
 .sales-component-contentF span {
 text-align: center;
 line-height: 130%;
-font-family: 'Inter' !important;
 color: #757B8A;
 font-size:18px;
 font-style: normal;
@@ -710,7 +686,6 @@ letter-spacing: 0;
 .sales-component-contentF span b{
 text-align: center;
 line-height: 130%;
-font-family: 'Inter' !important;
 color: #000000;
 font-size:18px;
 font-style: normal;

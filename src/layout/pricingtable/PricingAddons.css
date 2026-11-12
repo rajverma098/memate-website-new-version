@@ -1,3 +1,55 @@
+
+.smart-investment-headingF {
+    color: #29292B;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 415;
+    line-height: 60px;
+    letter-spacing: 0;
+    font-family: 'sequel_sans' !important;
+}
+.smart-investment-bannerF {
+    margin-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    font-family: 'sequel_sans_semi_bold_disp' !important;
+    text-align: center;
+    font-size: 144px;
+    font-style: normal;
+    font-weight: 420;
+    line-height: 124px;
+    letter-spacing: -2.16px;
+}
+.smart-investment-descriptionF span {
+    color: #888E9E;
+    text-align: center;
+   font-family: 'sequel_sans_roman_head' !important;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 360;
+    line-height: 32px;
+    letter-spacing:0px;
+}
+.smart-investment-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.smart-investment-descriptionF {
+    margin-top: 41px;
+        margin-bottom: 20px;
+}
+.dflexbannerbtnFT {
+    margin: 8px 0 40px;
+}
+.pricingHeadWrapF {
+    text-align: center;
+}
 .pricing-addons {
   width: 100%;
   display: flex;
@@ -241,6 +293,7 @@
   align-items: baseline;
   gap: 4px;
   margin-top: auto;
+  margin-bottom: 5px;
 }
 .pricing-addons .addon-price .amount {
     color: #29292B;
@@ -293,12 +346,14 @@
 }
 
 .pricing-addons .user-sub {
-    color: #757B8A;
-    font-family: Inter, sans-serif !important;
-    font-size: 15px;
+    color: #757b8a;
     letter-spacing: 0;
+    font-size: 15px;
     font-weight: 400;
     line-height: 22px;
+    font-family: Inter, sans-serif !important;
+    margin: 5px 0;
+    display: inline-block;
 }
 
 .pricing-addons .two-col-pricing .addon-price {
@@ -378,7 +433,7 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 32px;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
     display: block;
 }
 .pricing-addons .enterprise-sub {
@@ -634,7 +689,7 @@
 
 @media (max-width: 767px) {
 .pricing-addons {
-    padding: 32px 20px;
+    padding: 32px 10px;
 }
 .pricing-addons .pricing-addons-header h2 {
     font-size: 36px;
